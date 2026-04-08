@@ -14,6 +14,12 @@
   "scripts": {
     "quartz": "./quartz/bootstrap-cli.mjs",
     "docs": "npx quartz build --serve -d docs",
+    "audit:publish": "node scripts/audit-publish.mjs ../CompSci_UCB",
+    "build:ucb": "npx quartz build -d ../CompSci_UCB",
+    "build:pages": "npx quartz build -d content",
+    "preview:ucb": "npx quartz build --serve -d ../CompSci_UCB",
+    "preview:pages": "npm run sync:publish && npx quartz build --serve -d content",
+    "sync:publish": "node scripts/export-published.mjs ../CompSci_UCB content",
     "check": "tsc --noEmit && npx prettier . --check",
     "format": "npx prettier . --write",
     "test": "tsx --test",
