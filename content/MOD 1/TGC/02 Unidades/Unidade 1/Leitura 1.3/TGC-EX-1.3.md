@@ -21,6 +21,7 @@ publish: true
 > **E.**  
 > Tipo de memória que permite armazenar os dados necessários para o arranque do computador.
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: C**
 >>
 >> **A. Errada.**  
@@ -68,6 +69,7 @@ publish: true
 > **E.**  
 > Somente a afirmativa II está correta.
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: B**
 >>
 >> **I. Correta.**  
@@ -108,6 +110,7 @@ publish: true
 > **E.**  
 > Todas as afirmativas estão corretas.
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: A**
 >>
 >> **I. Certa.**  
@@ -146,6 +149,7 @@ publish: true
 > **E.**  
 > Somente a afirmativa II está correta.
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: D**
 >>
 >> **I. Errada.**  
@@ -187,6 +191,7 @@ publish: true
 > **E.**  
 > Somente a afirmativa II está correta.
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: C**
 >>
 >> **I. Certa.**  

@@ -21,6 +21,7 @@ publish: true
 > **E.**  
 > Software original.
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: D**
 >>
 >> **A. Errada.**  
@@ -59,6 +60,7 @@ publish: true
 > **E.**  
 > É um tipo de software desenvolvido para ser utilizado em equipamentos eletrônicos que não sejam computadores.
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: A**
 >>
 >> **A. Certa.**  
@@ -97,6 +99,7 @@ publish: true
 > **E.**  
 > Software livre.
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: B**
 >>
 >> **A. Errada.**  
@@ -135,6 +138,7 @@ publish: true
 > **E.**  
 > Micorsoft Word.
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: D**
 >>
 >> **A. Errada.**  
@@ -173,6 +177,7 @@ publish: true
 > **E.**  
 > Microsoft Word e Write (da BrOffice).
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: E**
 >>
 >> **A. Errada.**  

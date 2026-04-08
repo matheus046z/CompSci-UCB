@@ -34,6 +34,7 @@ publish: true
 > As afirmativas I, III e V estão corretas.
 >
 >> [!question]- Resposta
+>>
 >> **A.** As afirmativas I, III e IV estão corretas.
 >>
 >> **Justificativa:**  
@@ -87,6 +88,7 @@ publish: true
 > F – F – V – F – V.
 >
 >> [!question]- Resposta
+>>
 >> **A.** V – V – F – V – F.
 >>
 >> **Justificativa:**  
@@ -129,6 +131,7 @@ publish: true
 > O pensamento computacional não pode ser representado por nenhuma estrutura computacional, pois descreve somente a forma de pensar do ser humano, sendo estes mais inteligentes que as máquinas.
 >
 >> [!question]- Resposta
+>>
 >> **B.** Um computador quântico capaz de processar informações armazenadas no sistema de unidade básica de informação, chamado de qubit, para resolver problemas computacionais em um curto tempo de processamento.
 >>
 >> **Justificativa:**  
@@ -168,6 +171,7 @@ publish: true
 > a máquina de Pascal, utilizando a tecnologia de roda dentada, deu origem ao conceito de *Stored-Program Computer* por processar os cálculos utilizando memória interna de alta capacidade.
 >
 >> [!question]- Resposta
+>>
 >> **C.** é um computador que armazena instruções do programa eletronicamente ou por meio de uma memória acessível, como a arquitetura de Von Neumann.
 >>
 >> **Justificativa:**  
@@ -215,6 +219,7 @@ publish: true
 > As afirmativas II, III e IV estão corretas.
 >
 >> [!question]- Resposta
+>>
 >> **A.** As afirmativas I, II e III estão corretas.
 >>
 >> **Justificativa:**  

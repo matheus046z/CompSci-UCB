@@ -50,6 +50,7 @@ publish: true
 > **E.**  
 > 24, 4 e 11.
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: A.**
 >>
 >> **Teste de mesa:**
@@ -137,6 +138,7 @@ publish: true
 > **E.**  
 > Teste de mesa – sintaxe – sintaxe – sintaxe - semântica.
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: B.**
 >>
 >> **Preenchimento correto das sentenças:**
@@ -212,6 +214,7 @@ publish: true
 > **E.**  
 > 2.500,00
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: D.**
 >>
 >> **Teste de mesa:**
@@ -298,6 +301,7 @@ publish: true
 > **E.**  
 > a = 1 e i = 1.
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: E.**
 >>
 >> **Teste de mesa com m = 12:**
@@ -416,6 +420,7 @@ publish: true
 > **E.**  
 > Todas as alternativas.
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: E.**
 >>
 >> **Justificativa geral:**
@@ -455,4 +460,3 @@ publish: true
 >>
 >> **E.** Correta.  
 >> As três alternativas representam, em níveis diferentes de detalhamento, um teste de mesa válido.
-

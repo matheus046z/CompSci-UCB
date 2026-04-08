@@ -103,6 +103,7 @@ publish: true
 > fimalgoritmo
 > ```
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: A.**
 >>
 >> O enunciado pede o **somatório de todos os números inteiros do intervalo [A,B]**.  
@@ -265,6 +266,7 @@ publish: true
 > fimalgoritmo
 > ```
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: A.**
 >>
 >> Para o algoritmo estar correto, ele precisa:
@@ -388,6 +390,7 @@ publish: true
 > **E.**  
 > Na estrutura de repetição `"para...faça"`, a instrução **fimpara** é opcional e poderia ser retirada do algoritmo, pois ele continuaria correto.
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: B.**
 >>
 >> Na estrutura **para L de 1 até meta passo 1**, se **meta = 10**, a variável de controle **L** assume os valores **1 até 10** durante as repetições e, ao encerrar o laço, fica com o valor seguinte, **11**. Por isso, a sequência apresentada na alternativa **B** é a verdadeira.
@@ -517,6 +520,7 @@ publish: true
 > fimalgoritmo
 > ```
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: C.**
 >>
 >> Para resolver corretamente a série, o algoritmo precisa:
@@ -580,6 +584,7 @@ publish: true
 > **E.**  
 > Permutação
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: D.**
 >>
 >> O algoritmo:

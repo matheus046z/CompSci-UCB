@@ -31,6 +31,7 @@ publish: true
 > **E.**  
 > II e III, apenas.
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: C.**
 >>
 >> **Análise das afirmações:**
@@ -172,6 +173,7 @@ publish: true
 > FimAlgoritmo
 > ```
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: E.**
 >>
 >> Para atender ao enunciado, o algoritmo precisa:
@@ -227,6 +229,7 @@ publish: true
 > **E.**  
 > O bloco de repetição não pode ser executado infinitas vezes.
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: D.**
 >>
 >> **Análise das alternativas:**
@@ -309,6 +312,7 @@ publish: true
 > **E.**  
 > O algoritmo calcula a média dos números.
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: B.**
 >>
 >> **Explicação do algoritmo:**
@@ -486,6 +490,7 @@ publish: true
 > FimAlgoritmo
 > ```
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: A.**
 >>
 >> **Ideia do método:**

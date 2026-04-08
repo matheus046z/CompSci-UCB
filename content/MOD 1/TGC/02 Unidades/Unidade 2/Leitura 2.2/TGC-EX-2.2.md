@@ -23,6 +23,7 @@ publish: true
 > ter conhecimento em todos os recursos e pensar como um computador.
 >
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: A**
 >>
 >> **A. Correta.**  
@@ -77,6 +78,7 @@ publish: true
 > II, IV e V.
 >
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: D**
 >>
 >> **A. Errada.**  
@@ -133,6 +135,7 @@ publish: true
 > V – V – V – F – F.
 >
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: B**
 >>
 >> **Análise das afirmações:**
@@ -194,6 +197,7 @@ publish: true
 > uma das limitações do processamento computacional está relacionada ao fato de seus conceitos somente serem aplicados à área de Educação.
 >
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: A**
 >>
 >> **A. Correta.**  
@@ -249,6 +253,7 @@ publish: true
 > III e IV.
 >
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: B**
 >>
 >> **Análise das afirmações:**

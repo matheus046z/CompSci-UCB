@@ -24,6 +24,7 @@ publish: true
 > Desenvolvimento do conceito de cidades inteligentes e big data como soluções urbanas baseadas em conectividade.
 >
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: A.**
 >>
 >> **A. Correta.** A 2ª geração de computadores foi marcada pela substituição das válvulas por transistores, o que reduziu o tamanho das máquinas, o consumo de energia e aumentou a confiabilidade.
@@ -65,6 +66,7 @@ publish: true
 > A CPU opera de forma autônoma, realizando tarefas aleatórias até que um sistema operacional seja instalado.
 >
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: B.**
 >>
 >> **A. Errada.** O processador não depende apenas de comandos diretos do usuário; ele executa instruções previamente programadas armazenadas na memória.
@@ -105,6 +107,7 @@ publish: true
 > A presença humana não se faz necessária quando se trata de sistemas baseados em aprendizagem de máquina, pois eles definem seus próprios objetivos.
 >
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: C.**
 >>
 >> **A. Errada.** A atuação humana não se limita à observação; os algoritmos são criados, ajustados e definidos por pessoas.
@@ -157,6 +160,7 @@ publish: true
 > V, F, V, V, V.
 >
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: E.**
 >>
 >> **1ª sentença: Verdadeira.** A CPU, que é hardware, realiza operações lógicas e aritméticas, enquanto o software define quais instruções devem ser executadas.
@@ -198,6 +202,7 @@ publish: true
 > Aplicativos, linguagens de programação e sistemas operacionais, que compõem o ambiente de software executável.
 >
 >> [!question]- Resposta
+>>
 >> **Alternativa correta: C**
 >>
 >> **A. Errada.**  
