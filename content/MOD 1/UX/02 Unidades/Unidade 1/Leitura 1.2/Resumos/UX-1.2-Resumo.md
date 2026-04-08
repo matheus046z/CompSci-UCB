@@ -1,202 +1,199 @@
 ---
 publish: true
 ---
-# Resumo — Fatores Humanos, Ergonomia e IHC
+# Resumo — Fatores Humanos e Ergonomia em IHC
 
 > [!info] Conceito
-> O material apresenta a **Interação Humano-Computador (IHC)** como a área voltada ao **design, avaliação e implementação** de sistemas computacionais para uso humano. Nesse contexto, a interface é o ponto de contato entre pessoa e sistema, e a interação é o processo de comunicação que acontece por meio dessa interface.
+> **Interação Humano-Computador (IHC)** é a área que estuda como as pessoas interagem com sistemas computacionais e como esses sistemas podem ser projetados para atender melhor às necessidades humanas.
 
-Os anexos mostram que a evolução tecnológica transformou a forma como as pessoas estudam, trabalham, se comunicam e realizam tarefas do cotidiano. Com isso, as interfaces deixaram de ser algo secundário e passaram a ter papel central na qualidade de uso dos sistemas. A IHC não trata apenas de aparência visual: ela busca entender como o usuário percebe, interpreta e utiliza a tecnologia, para que o sistema seja mais fácil, eficiente, compreensível e aceito pelo público.
+Os materiais mostram que a qualidade de um sistema não depende apenas de ele funcionar tecnicamente. Também depende de como o usuário compreende a interface, executa suas tarefas e percebe os resultados das suas ações. Por isso, fatores humanos e ergonomia são centrais no projeto de interfaces, pois ajudam a eliminar barreiras de uso, aumentar o conforto e melhorar a aceitação do produto final.
 
 > [!tip] Resumindo
-> Em IHC, o foco não é só fazer o sistema funcionar, mas fazer com que ele funcione **bem para as pessoas**.
+> Em IHC, projetar bem significa pensar no sistema a partir do usuário, do contexto de uso e das tarefas que ele precisa realizar.
 
-## Fatores humanos e importância da ergonomia
+## O que são fatores humanos e ergonomia
 
 > [!info] Conceito
-> **Ergonomia** é o estudo dos princípios que regem a interação do ser humano com outros elementos, com o objetivo de **adequar produtos, tarefas e ambientes ao usuário**.
+> **Fatores humanos** correspondem às características das pessoas que influenciam a interação com sistemas. **Ergonomia** é o estudo dos princípios que buscam adaptar produtos, ambientes e atividades ao usuário.
 
-Nos materiais, a ergonomia aparece como uma resposta à necessidade de adaptar equipamentos e sistemas às características humanas. Embora seu fortalecimento como disciplina seja associado ao século XX, especialmente após a Segunda Guerra Mundial, a ideia de adequar ferramentas ao ser humano é muito mais antiga. O ponto central é que o desempenho de um sistema não depende apenas da máquina, mas também das condições do ambiente, da atividade realizada e das características físicas e cognitivas de quem utiliza o produto.
+Nos textos, a ergonomia é apresentada como uma área voltada a melhorar a qualidade da realização das atividades, buscando segurança, satisfação, saúde e conforto. Ela considera não apenas o equipamento utilizado, mas também o ambiente de uso, a atividade executada e as características físicas e cognitivas do usuário. Assim, a ergonomia não é apenas uma questão de conforto físico: ela também envolve compreensão, percepção e adequação do sistema à forma humana de agir e pensar.
 
-O objetivo principal da ergonomia é melhorar a qualidade da realização das tarefas, promovendo **segurança, satisfação, conforto e saúde**. Por isso, ela não se limita ao objeto em si. O estudo inclui fatores humanos, mecânicos e ambientais, além de aspectos como antropometria, fisiologia e psicologia. Em outras palavras, um sistema ergonomicamente adequado é aquele que respeita a maneira como o usuário pensa, age e trabalha.
+Os materiais também mostram que, embora o termo tenha se fortalecido como disciplina moderna, a ideia de adaptar ferramentas ao ser humano é antiga. Com a evolução dos equipamentos e dos sistemas, tornou-se cada vez mais necessário estudar como projetar soluções que realmente se ajustem às pessoas e não o contrário.
 
 > [!tip] Resumindo
-> A ergonomia procura reduzir barreiras na interação e aumentar a qualidade do uso.
+> A ergonomia busca adequar o sistema ao ser humano para melhorar o uso, reduzir dificuldades e favorecer melhores experiências.
 
-## Fatores humanos no projeto de interfaces
+## Importância de conhecer o usuário
 
 > [!info] Conceito
-> **Fatores humanos** são as características das pessoas que influenciam sua interação com sistemas, como capacidades físicas, cognição, emoções, experiência prévia, contexto de uso e cultura.
+> Conhecer o usuário significa compreender suas características, necessidades, limitações, conhecimentos prévios, contexto e expectativas.
 
-Os anexos destacam que o usuário não pode ser visto de forma genérica. Pessoas diferentes possuem necessidades diferentes, e isso afeta diretamente o projeto de interfaces. O material usa exemplos como o público idoso para mostrar que limitações de visão, audição, digitação e familiaridade com tecnologia mudam o modo como um sistema deve ser construído. Assim, conhecer o público-alvo é condição para propor soluções adequadas.
+Os anexos reforçam que cada ser humano é único, e isso afeta diretamente o projeto de interfaces. Um sistema não deve ser pensado para um “usuário genérico”, mas para pessoas reais, com condições físicas, cognitivas e contextuais diferentes. O exemplo do público idoso mostra isso de forma clara: dificuldades de visão, audição, digitação ou familiaridade com tecnologia exigem decisões de design diferentes, como melhor legibilidade, menos esforço para interação e maior clareza na organização das informações.
 
-Essa compreensão inclui não apenas o que o usuário precisa fazer, mas também **como ele percebe informações, aprende comandos, reage a mensagens do sistema e interpreta símbolos e funções**. A aceitação do produto final depende fortemente dessa adequação entre sistema e usuário. Quanto melhor o designer entende as características humanas envolvidas, maior a chance de produzir uma solução útil, inclusiva e eficaz.
+Além disso, o material destaca que o sucesso de um produto depende de se entender não apenas necessidades funcionais, mas também aspectos humanos, como sentimentos, preocupações e formas de interação com a tecnologia. Quanto melhor o designer compreender o público-alvo, maior a chance de propor uma solução assertiva e bem aceita.
 
 > [!warning] Atenção
-> O material reforça que projetar interfaces sem considerar as diferenças entre os usuários pode comprometer a usabilidade e a aceitação do sistema.
+> Um sistema tecnicamente correto pode falhar na prática se não considerar quem são seus usuários e como eles realmente interagem com a interface.
 
-## Processo de design centrado no usuário
-
-> [!info] Conceito
-> O processo de design em IHC é **centrado no usuário** e é apresentado como um processo **iterativo**, dividido em **análise**, **síntese ou intervenção** e **avaliação**.
-
-Na fase de **análise**, busca-se compreender o público-alvo, suas atividades, problemas, preferências e o ambiente de interação. O objetivo é interpretar a realidade do usuário antes de propor qualquer solução. Para isso, podem ser utilizadas técnicas como entrevistas, questionários, grupos focais e workshops.
-
-Na fase de **síntese ou intervenção**, o designer transforma o conhecimento adquirido em uma proposta de sistema. É nesse momento que os princípios de design, ergonomia e usabilidade orientam a organização do conteúdo, das funções e da apresentação das informações. A proposta precisa responder às necessidades identificadas anteriormente.
-
-Na fase de **avaliação**, o sistema é examinado para verificar se realmente resolve o problema do usuário e se apresenta falhas que precisam ser corrigidas. O infográfico destaca que esse processo não termina em uma única passagem: ele pode voltar às etapas anteriores sempre que necessário, até que a situação desejada seja alcançada.
-
-> [!tip] Resumindo
-> O design em IHC não é linear. Ele evolui por ciclos de análise, criação e avaliação, sempre com participação do usuário.
-
-## Avaliação ergonômica
+## Objetivos da ergonomia em sistemas computacionais
 
 > [!info] Conceito
-> A avaliação ergonômica é apresentada como uma etapa fundamental para melhorar a qualidade do uso e identificar problemas que prejudiquem a experiência do usuário.
+> A ergonomia em sistemas computacionais busca eliminar barreiras da interface e favorecer uma interação mais eficiente, compreensível e satisfatória.
 
-Segundo o material em vídeo, as avaliações podem ocorrer em momentos diferentes do desenvolvimento. As **avaliações formativas** acontecem durante a construção do sistema, com o objetivo de coletar dados sobre os usuários e suas necessidades. Já as **avaliações somativas** ocorrem após a construção, para verificar se o sistema se comporta como esperado e se corresponde ao que foi projetado.
+Os materiais indicam que o principal objetivo da ergonomia é investigar os fatores que influenciam o desempenho dos sistemas para promover bem-estar, segurança e eficácia no uso. Em IHC, isso significa criar interfaces que ajudem o usuário a realizar tarefas com menos esforço, menos erros e maior entendimento do que está acontecendo durante a interação.
 
-O planejamento da avaliação também possui etapas. Primeiro, há a **preparação**, em que os avaliadores buscam compreender o usuário, suas características físicas, cognitivas, ambientais e organizacionais, além de definirem qual parte do sistema será analisada. Em seguida, ocorre a **inspeção individual**, em que cada avaliador examina a interface com base em critérios ergonômicos, identificando problemas e as telas onde eles aparecem. Por fim, há a **revisão conjunta**, quando os avaliadores consolidam os achados e produzem um relatório com o que precisa ser corrigido.
-
-O material também menciona o **Ergolist**, utilizado como apoio à inspeção ergonômica, por reunir critérios e perguntas que orientam a análise das interfaces.
+Também fica claro que a ergonomia está relacionada à origem da usabilidade. Isso porque adaptar o sistema ao modo como o usuário pensa, trabalha e se comporta contribui para que a interface seja mais fácil de aprender, mais eficiente de usar e mais compatível com as necessidades reais de quem a utiliza.
 
 > [!tip] Resumindo
-> Avaliar não é apenas testar se algo funciona; é verificar se o sistema é compreensível, adequado e confortável para quem o utiliza.
+> Ergonomia e usabilidade caminham juntas, porque ambas procuram tornar o sistema mais adequado ao ser humano.
 
 ## Tipos de ergonomia
+
+> [!info] Conceito
+> Os materiais apresentam três grandes tipos de ergonomia: **física**, **cognitiva** e **organizacional**.
 
 ### Ergonomia física
 
 > [!info] Conceito
-> A **ergonomia física** estuda as características corporais e as condições materiais da atividade, buscando reduzir desgaste e desconforto.
+> A **ergonomia física** está relacionada às características corporais do usuário e às condições materiais de realização da atividade.
 
-Nos anexos, esse tipo de ergonomia aparece ligado a postura, segurança, saúde, repetição de movimentos, manuseio de objetos e organização do espaço de trabalho. Em interfaces computacionais, isso se reflete em soluções como ajuste de iluminação da tela, disposição adequada dos elementos visuais e design de dispositivos que favoreçam conforto e uso prolongado. O exemplo do mouse e da evolução dos controles de videogame mostra como a forma dos objetos influencia a experiência do usuário.
+Esse tipo de ergonomia observa fatores como postura, movimentos repetitivos, manuseio de materiais, segurança, saúde e organização do espaço de trabalho. Nos exemplos apresentados, isso aparece em elementos como a adequação de cadeiras, o design do mouse, os ajustes de iluminação em dispositivos e a evolução dos controles de videogame, todos pensados para melhorar a acomodação do usuário e reduzir desconfortos físicos.
 
-### Ergonomia organizacional
-
-> [!info] Conceito
-> A **ergonomia organizacional** considera o ambiente de interação como um sistema maior, envolvendo estrutura, comunicação, cooperação e contexto de trabalho.
-
-Esse tipo de ergonomia analisa a organização em que a atividade ocorre. O material destaca aspectos como comunicação interna e externa, atividades em grupo, cultura organizacional, qualidade da gestão e trabalho cooperativo. Em IHC, isso significa que o sistema não deve ser pensado isoladamente. É preciso considerar em que ambiente ele será usado, com quem o usuário interage e como essa organização interfere na tarefa.
+Em interfaces computacionais, a ergonomia física também se manifesta na disposição dos elementos em tela e na adaptação dos dispositivos ao ambiente, favorecendo uma interação mais confortável e ágil.
 
 ### Ergonomia cognitiva
 
 > [!info] Conceito
 > A **ergonomia cognitiva** estuda os processos mentais envolvidos na interação, como percepção, memória, atenção, raciocínio e afetividade.
 
-Os materiais mostram que não basta pensar no conforto físico; é necessário entender como o usuário interpreta a interface e decide agir sobre ela. A ergonomia cognitiva analisa a relação entre as intenções do usuário e os objetos manipuláveis do sistema. Uma interface apropriada facilita a compreensão do que pode ser feito, do que já aconteceu e do que fazer em seguida.
+Esse tipo de ergonomia procura entender como o usuário interpreta as informações apresentadas e como planeja suas ações dentro do sistema. O material destaca que a interação não depende apenas de enxergar a informação, mas também de compreender o que ela significa, o que pode ser feito com ela e como isso se relaciona com os objetivos do usuário.
 
-> [!warning] Atenção
-> O material dos exercícios reforça que a ergonomia cognitiva não se limita à percepção visual da informação. Ela também envolve a compreensão da interação e o planejamento das ações do usuário.
+A ergonomia cognitiva também aparece ligada à engenharia cognitiva, proposta por Donald Norman, que enfatiza a importância de projetar sistemas coerentes com a maneira como o usuário pensa e age. Assim, uma interface adequada cognitivamente reduz o esforço necessário para entender os objetos de interação e os resultados obtidos.
 
-## Engenharia cognitiva e teoria da ação de Norman
+### Ergonomia organizacional
 
 > [!info] Conceito
-> A teoria da ação de Norman explica o processo de interação a partir de dois grandes momentos: **golfo de execução** e **golfo de avaliação**.
+> A **ergonomia organizacional** está relacionada ao ambiente de interação e à estrutura organizacional em que a atividade acontece.
 
-Nos anexos, a engenharia cognitiva é apresentada como uma forma de estudar o desequilíbrio entre o que o usuário deseja fazer e o que o sistema permite fazer. O processo começa quando o usuário define um objetivo. Depois disso, ele formula uma intenção, planeja ações e executa essas ações no sistema. Esse primeiro movimento está relacionado ao **golfo de execução**.
+Esse campo considera aspectos como comunicação, colaboração, cultura organizacional, gestão da qualidade, trabalho cooperativo e formas de participação. O material mostra que a experiência de uso de um sistema pode mudar conforme o contexto em que ele é utilizado, como no caso de uma ferramenta de apresentação usada em escritório, sala de aula ou em edição colaborativa on-line.
 
-Depois que o sistema responde, o usuário precisa perceber a mudança ocorrida, interpretar seu significado e avaliar se o objetivo foi alcançado. Esse segundo movimento corresponde ao **golfo de avaliação**. Quanto mais clara for a interface, menor será o esforço necessário para atravessar esses dois golfos. Por isso, o bom design reduz dificuldades tanto para agir quanto para entender os resultados obtidos.
+Portanto, a interface não deve ser pensada isoladamente. É preciso considerar como o ambiente, a organização do trabalho e as relações entre pessoas e sistemas influenciam a atividade do usuário.
 
 > [!tip] Resumindo
-> Um sistema bem projetado ajuda o usuário a saber **o que fazer** e também a entender **o que aconteceu** depois da ação.
+> A ergonomia física observa o corpo, a cognitiva observa os processos mentais e a organizacional observa o contexto e a estrutura em que a interação acontece.
+
+## Processo de design centrado no usuário
+
+> [!info] Conceito
+> O processo de design em IHC é centrado no usuário e ocorre de modo iterativo, passando por **análise**, **síntese ou intervenção** e **avaliação**.
+
+Na fase de **análise**, o designer busca conhecer o público-alvo, suas atividades, o ambiente de interação, seus problemas, preferências e desejos. Para isso, podem ser usadas técnicas como entrevistas, questionários, grupos focais e workshops. O objetivo é compreender a situação atual do usuário antes de propor uma solução.
+
+Na fase de **síntese ou intervenção**, o designer utiliza o que foi aprendido na análise para projetar um sistema que atenda às necessidades observadas. É nesse momento que os princípios ergonômicos e as heurísticas de usabilidade orientam a estruturação do conteúdo e sua apresentação ao usuário.
+
+Na fase de **avaliação**, o sistema proposto é examinado para identificar erros, verificar se resolve o problema do usuário e compreender se o produto realmente atende às expectativas. O material reforça que esse processo é **iterativo**, ou seja, pode ser repetido quantas vezes forem necessárias até que a solução desejada seja alcançada.
+
+> [!tip] Resumindo
+> O design centrado no usuário começa entendendo a realidade do usuário, transforma esse entendimento em solução e depois avalia se a solução realmente funciona.
+
+## Avaliação ergonômica
+
+> [!info] Conceito
+> A avaliação ergonômica é uma etapa fundamental do processo de design, pois ajuda a melhorar a qualidade de uso e a identificar problemas da interface.
+
+Os materiais explicam que as avaliações podem ser **formativas** ou **somativas**. As avaliações formativas acontecem durante o desenvolvimento do sistema e têm como objetivo coletar dados dos usuários e entender suas necessidades. Já as avaliações somativas são realizadas após a construção do sistema, com a finalidade de verificar se ele se apresenta e se comporta como deveria.
+
+O planejamento da avaliação envolve etapas. Primeiro, ocorre a **preparação**, em que os avaliadores procuram conhecer o usuário, suas características físicas, cognitivas, ambientais e organizacionais, além da parte do sistema que será avaliada. Depois, acontece a **inspeção individual**, em que cada avaliador examina a interface com base em critérios ergonômicos, registrando os problemas encontrados. Por fim, os avaliadores se reúnem para revisar os achados e produzir um relatório com a documentação do que precisa ser corrigido.
+
+> [!warning] Atenção
+> Avaliar não é apenas testar se o sistema executa comandos, mas verificar se ele favorece uma boa experiência de uso e se está adequado ao usuário.
+
+## Engenharia cognitiva e teoria da ação
+
+> [!info] Conceito
+> A engenharia cognitiva procura explicar como o usuário transforma seus objetivos em ações dentro do sistema e como interpreta os resultados dessas ações.
+
+Segundo os materiais, Donald Norman destacou a importância de compreender o desequilíbrio entre o que o usuário quer fazer e o que o sistema oferece fisicamente. Para atingir seus objetivos, o usuário precisa interpretar o sistema, planejar ações e depois avaliar os resultados obtidos.
+
+Esse processo é descrito pela **teoria da ação**, organizada em dois grandes momentos: o **golfo de execução** e o **golfo de avaliação**. No primeiro, o usuário estabelece seu objetivo, formula sua intenção, planeja e executa ações no sistema. No segundo, ele percebe as mudanças ocorridas, interpreta o novo estado do sistema e avalia se alcançou o objetivo desejado.
+
+A ideia central é que interfaces mais claras, coerentes e fáceis de compreender reduzem o esforço necessário para atravessar esses dois momentos da interação.
+
+> [!tip] Resumindo
+> O bom design ajuda o usuário tanto a saber **o que fazer** quanto a entender **o que aconteceu** depois que ele age.
 
 ## Princípios ergonômicos
 
 > [!info] Conceito
-> Os materiais apresentam os critérios ergonômicos de **Bastien e Scapin (1993)** como um guia para analisar qualidades e problemas das interfaces interativas.
+> Os princípios ergonômicos orientam a análise, o design e a avaliação de sistemas interativos, ajudando a identificar qualidades e problemas de interface.
 
-Esses critérios ajudam o designer a observar pontos importantes da interação e a identificar problemas antes que eles prejudiquem o uso do sistema. O conteúdo destaca oito critérios principais: **condução**, **carga de trabalho**, **controle explícito**, **adaptabilidade**, **gestão de erros**, **homogeneidade/consistência**, **significado de códigos e denominações** e **compatibilidade**.
+O material cita a ISO 9241-110, que apresenta princípios gerais de design ergonômico voltados ao diálogo entre usuário e sistema, como adaptação à tarefa, autodescrição, controle do usuário, conformidade às expectativas, tolerância a erros, individualização e facilidade de aprendizagem.
 
-### Condução
+Além disso, os anexos dão destaque aos critérios ergonômicos de **Bastien e Scapin (1993)**, organizados em oito grandes grupos: **condução**, **carga de trabalho**, **controle explícito**, **adaptabilidade**, **gestão de erros**, **homogeneidade/consistência**, **significado de códigos e denominações** e **compatibilidade**. Esses critérios funcionam como um guia de observação para avaliar se a interface está adequada ao usuário.
+
+## Condução
 
 > [!info] Conceito
-> A **condução** orienta o usuário durante a interação e favorece o aprendizado, especialmente para usuários novatos.
+> A **condução** diz respeito à forma como a interface orienta, acolhe e ajuda o usuário durante a interação.
 
-Esse critério envolve a forma como o sistema acolhe, guia e informa o usuário. Ele inclui a **presteza**, que ajuda a entender o que fazer; o **agrupamento e distinção**, que organizam visualmente os elementos; o **feedback**, que informa o resultado das ações; e a **legibilidade**, que melhora a leitura e a percepção da informação. Títulos claros, rótulos identificáveis, mensagens compreensíveis, contraste adequado e boa organização visual são exemplos de aplicação desse critério.
+Esse critério favorece o aprendizado, especialmente para usuários novatos. Ele inclui subcritérios como **presteza**, **agrupamento e distinção**, **feedback imediato** e **legibilidade**. A presteza ajuda o usuário a saber o que fazer. O feedback informa o resultado das ações já realizadas. A legibilidade melhora a leitura das informações. O agrupamento e a distinção organizam os elementos visuais para facilitar a compreensão.
+
+Os exercícios reforçam que a distinção entre presteza e feedback imediato pode ser sutil, porque uma mesma mensagem pode tanto informar o que aconteceu quanto orientar o próximo passo. Também fica claro que questões de contraste, tipo e tamanho de fonte estão ligadas à legibilidade, pois influenciam a facilidade de leitura.
 
 > [!tip] Resumindo
-> Condução é a capacidade da interface de “conversar” com o usuário de forma clara.
+> Condução é a capacidade da interface de orientar o usuário com clareza, organização e retorno adequado.
 
-### Carga de trabalho
-
-> [!info] Conceito
-> A **carga de trabalho** busca reduzir o esforço cognitivo exigido pela interface.
-
-Uma interface com excesso de informação, muitas etapas ou comandos desnecessários aumenta a dificuldade de uso. Por isso, o material destaca três pontos: **concisão**, que pede informações mais breves e diretas; **ações mínimas**, que reduzem o número de passos necessários para completar uma tarefa; e **densidade informacional**, que controla a quantidade de conteúdo exibido ao mesmo tempo. Quanto mais enxuta e direta for a interface, menor tende a ser a carga mental do usuário.
-
-### Controle explícito
+## Carga de trabalho
 
 > [!info] Conceito
-> O **controle explícito** garante que o usuário permaneça no comando da interação.
+> A **carga de trabalho** procura reduzir o esforço que a interface exige do usuário.
 
-O sistema deve agir a partir de comandos claros do usuário, e não de decisões obscuras ou inesperadas. Além disso, o usuário deve poder cancelar, interromper, reiniciar ou finalizar ações quando necessário. Isso facilita o aprendizado, aumenta a sensação de domínio sobre o sistema e reduz problemas causados por execuções automáticas indesejadas.
-
-### Adaptabilidade
-
-> [!info] Conceito
-> A **adaptabilidade** permite que a interface se ajuste a perfis diferentes de usuários.
-
-Os anexos mostram que usuários novatos e experientes não têm as mesmas necessidades. Por isso, o sistema deve oferecer **flexibilidade**, isto é, diferentes modos de realizar uma mesma tarefa, e considerar a **experiência do usuário**, permitindo caminhos adequados a diferentes níveis de conhecimento. O exemplo dado é o uso de atalhos por usuários experientes e de menus por usuários iniciantes.
-
-### Gestão de erros
-
-> [!info] Conceito
-> A **gestão de erros** procura evitar falhas, explicar o que aconteceu e permitir recuperação simples.
-
-O ideal, segundo o material, é prevenir o erro por meio de um design cuidadoso. Quando isso não for possível, o sistema deve identificar o problema, exibir mensagens claras e ajudar o usuário a corrigi-lo. A proteção contra erros, a qualidade das mensagens e a facilidade de correção reduzem interrupções na atividade e melhoram a experiência geral de uso.
-
-### Homogeneidade e consistência
-
-> [!info] Conceito
-> A **homogeneidade** ou **consistência** exige padronização de termos, comportamentos e organização visual.
-
-O usuário não deve precisar adivinhar se palavras ou ações diferentes significam a mesma coisa. Quando a interface mantém padrões estáveis de nomenclatura, layout e comportamento, a aprendizagem se torna mais fácil e a navegação, mais previsível. A falta de consistência aumenta a confusão e dificulta o alcance dos objetivos.
-
-### Significado de códigos e denominações
-
-> [!info] Conceito
-> Esse critério avalia se nomes, códigos, siglas e rótulos fazem sentido para o usuário.
-
-O sistema deve utilizar termos familiares e claros, evitando códigos arbitrários que não comuniquem sua função. O material destaca que títulos e denominações devem representar corretamente o que mostram, ajudando o usuário a reconhecer rapidamente o conteúdo e as ações disponíveis.
-
-### Compatibilidade
-
-> [!info] Conceito
-> A **compatibilidade** verifica se a interface corresponde às expectativas, hábitos e lógica do usuário.
-
-As informações e procedimentos devem ser organizados de modo coerente com a tarefa e com o modo como o usuário imagina que o sistema deve funcionar. Quando a ordem do diálogo, a estrutura das informações e as funcionalidades seguem a lógica esperada, o desempenho tende a melhorar.
-
-> [!tip] Resumindo
-> Os princípios ergonômicos existem para tornar a interface mais clara, coerente, controlável e adequada ao modo de pensar do usuário.
-
-## Aplicação prática dos critérios
-
-> [!info] Conceito
-> O material traz um exemplo de avaliação de um site institucional para mostrar como os critérios ergonômicos podem ser aplicados na prática.
-
-Na análise proposta, os principais problemas encontrados foram o **excesso de informações na tela inicial**, a **baixa concisão**, a **má distribuição dos elementos** e a **dificuldade de distinguir rótulos, títulos e áreas da interface**. Esses problemas foram relacionados a critérios como **densidade informacional**, **concisão**, **legibilidade** e **agrupamento por localização**.
-
-A proposta de melhoria apresentada nos anexos inclui reduzir o volume de informações iniciais, reorganizar os elementos com mais clareza, usar símbolos compreensíveis e hierarquizar o conteúdo de forma que faça sentido para o usuário. Esse exemplo reforça que os critérios ergonômicos não são abstratos: eles servem como ferramenta concreta para identificar falhas e orientar correções.
+Nos materiais, esse critério aparece associado a elementos como **concisão** e **densidade informacional**. A concisão se refere à apresentação breve e direta das informações. A densidade informacional diz respeito à quantidade de informações exibidas ao mesmo tempo em uma tela. Quando há excesso de conteúdo ou distribuição confusa das informações, o usuário precisa gastar mais atenção e esforço para encontrar o que realmente importa.
 
 > [!warning] Atenção
-> Uma interface pode ter muitas informações corretas e, ainda assim, ser ruim para o usuário se essas informações estiverem mal organizadas.
+> Excesso de informação não significa melhor comunicação. Em muitos casos, significa mais esforço e mais dificuldade para o usuário.
 
-## Usabilidade, inclusão e qualidade do produto
+## Controle explícito e adaptabilidade
 
 > [!info] Conceito
-> Os materiais associam ergonomia e fatores humanos à **usabilidade**, à **inclusão** e ao sucesso do produto computacional.
+> O **controle explícito** garante que o usuário esteja no comando das ações do sistema, enquanto a **adaptabilidade** permite acomodar diferentes perfis de uso.
 
-Ao longo dos anexos, fica claro que um sistema bem projetado deve ser fácil de aprender, eficiente, coerente e adequado ao contexto real de uso. A interface deve ampliar as capacidades do usuário, e não criar obstáculos desnecessários. Isso vale ainda mais em um cenário de diversidade de perfis, dispositivos e ambientes de interação, em que a tecnologia faz parte do cotidiano e precisa ser acessível a diferentes públicos.
+Os exercícios mostram que **ações explícitas do usuário** e **controle do usuário** não são a mesma coisa. As ações explícitas verificam se é o usuário quem inicia claramente as ações do sistema. Já o controle do usuário está ligado à capacidade de controlar o encadeamento e o andamento dos processamentos.
 
-A preocupação com os fatores humanos também é apresentada como parte da criação de sistemas inclusivos. Quando o designer considera limitações físicas, necessidades cognitivas, diferenças de experiência e contexto organizacional, ele aumenta a chance de produzir uma solução mais justa, útil e bem aceita.
+Quanto à adaptabilidade, o material destaca a **flexibilidade** e a **experiência do usuário**. Flexibilidade significa permitir diferentes maneiras de realizar uma mesma tarefa. Experiência do usuário, nesse contexto, relaciona-se à adequação da interface a perfis distintos, como usuários iniciantes e experientes.
 
 > [!tip] Resumindo
-> Ergonomia e usabilidade não são detalhes opcionais: elas influenciam diretamente a viabilidade e a aceitação do sistema.
+> O sistema deve agir quando o usuário mandar e, ao mesmo tempo, oferecer caminhos adequados para diferentes tipos de usuários.
+
+## Significado, compatibilidade e organização dos elementos
+
+> [!info] Conceito
+> Esses critérios tratam da clareza dos códigos e nomes utilizados, da organização dos elementos na interface e da coerência com a lógica esperada pelo usuário.
+
+Os materiais mostram que **significado de códigos e denominações** envolve o uso de nomes, abreviações e códigos que façam sentido para o usuário, evitando termos arbitrários ou difíceis de interpretar. **Compatibilidade** significa que os procedimentos do sistema devem seguir uma ordem coerente com aquilo que o usuário imagina ou com o que já está acostumado a usar.
+
+Já o **agrupamento por localização** e o **agrupamento por formato** ajudam a organizar visualmente a interface, separando áreas com funções diferentes e tornando mais fácil reconhecer o papel de cada elemento. Isso melhora a compreensão e reduz ambiguidades durante a interação.
+
+> [!tip] Resumindo
+> Uma interface clara usa nomes compreensíveis, organiza bem seus elementos e segue uma lógica que o usuário reconhece.
+
+## Aplicação prática dos critérios ergonômicos
+
+> [!info] Conceito
+> Os critérios ergonômicos podem ser usados para avaliar problemas concretos de interface e orientar melhorias.
+
+No desafio apresentado, a análise de um site institucional mostra problemas como **interface poluída**, **excesso de informações**, **falta de concisão**, **má distribuição de conteúdos** e **ausência de distinção clara entre rótulos e títulos**. Esses problemas foram associados a critérios como **densidade informacional**, **concisão**, **legibilidade** e **agrupamento por localização**.
+
+A proposta de solução envolve reduzir as informações da tela inicial, melhorar a organização dos elementos, usar símbolos mais compreensíveis e hierarquizar o conteúdo de forma mais coerente para o usuário. Isso mostra que os princípios ergonômicos não são apenas conceitos teóricos, mas ferramentas práticas para melhorar a qualidade das interfaces.
+
+> [!warning] Atenção
+> Uma interface pode conter todas as informações necessárias e, ainda assim, ser ruim se essas informações estiverem mal organizadas, pouco legíveis ou excessivas.
 
 ## Síntese final
 
 > [!summary] Síntese
-> Os anexos mostram que a IHC depende da compreensão profunda do usuário, de suas características e do contexto em que a interação acontece. A ergonomia busca adaptar sistemas, tarefas e ambientes às pessoas, promovendo conforto, segurança, satisfação e melhor desempenho. Para isso, o designer precisa considerar fatores humanos, tipos de ergonomia, processos cognitivos e critérios ergonômicos.
+> Os materiais mostram que fatores humanos e ergonomia são fundamentais para o projeto de sistemas interativos de qualidade. A ergonomia busca adaptar produtos, ambientes e atividades ao ser humano, considerando características físicas, cognitivas e organizacionais. Em IHC, isso significa compreender o usuário, o contexto em que ele atua e a forma como ele interpreta e utiliza a interface.
 >
-> O processo de design centrado no usuário ocorre de forma iterativa, passando por análise, síntese e avaliação. Nesse percurso, os critérios de Bastien e Scapin oferecem um referencial prático para examinar condução, carga de trabalho, controle, adaptabilidade, erros, consistência, significados e compatibilidade. Em conjunto, esses conceitos ajudam a construir interfaces mais claras, inclusivas, eficientes e alinhadas às necessidades reais dos usuários.
+> O processo de design deve ser centrado no usuário e seguir de forma iterativa por análise, síntese e avaliação. Nesse percurso, a avaliação ergonômica ajuda a identificar problemas e orientar melhorias. Os critérios de Bastien e Scapin oferecem um guia importante para isso, ao tratar de condução, carga de trabalho, controle explícito, adaptabilidade, gestão de erros, consistência, significados e compatibilidade.
+>
+> Em conjunto, esses conceitos mostram que uma boa interface não é apenas a que funciona, mas a que permite ao usuário entender, agir, aprender e alcançar seus objetivos com clareza, conforto e menor esforço.
