@@ -1,7 +1,6 @@
 ---
 publish: true
 ---
-
 # Fundamentos computacionais e conceitos básicos de informática
 
 ## Computador e processamento de dados

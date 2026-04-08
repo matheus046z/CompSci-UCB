@@ -1,7 +1,6 @@
 ---
 publish: true
 ---
-
 ### 1
 > [!question] Exercício 1
 > **Tanto a primeira máquina de Babbage como a máquina analítica tinham cartões perfurados como principais recursos de sua estrutura.**

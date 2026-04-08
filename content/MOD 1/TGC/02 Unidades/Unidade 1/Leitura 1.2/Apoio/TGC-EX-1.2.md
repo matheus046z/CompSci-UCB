@@ -1,7 +1,6 @@
 ---
 publish: true
 ---
-
 ### 1
 > [!question] Exercício 1
 > A evolução dos computadores ao longo das gerações permitiu avanços significativos nas áreas científica, militar, empresarial e educacional. Cada geração introduziu inovações tecnológicas que transformaram as limitações anteriores e abriram novas possibilidades para o desenvolvimento computacional (Tanenbaum; Bos, 2014).

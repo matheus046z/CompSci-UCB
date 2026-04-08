@@ -1,7 +1,6 @@
 ---
 publish: true
 ---
-
 # Hardware: conceitos, componentes e memórias do computador
 
 ## O que é hardware

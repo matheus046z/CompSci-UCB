@@ -1,7 +1,6 @@
 ---
 publish: true
 ---
-
 ### 1
 > [!question] Exercício 1
 > Sobre a memória cache, assinale a alternativa correta.

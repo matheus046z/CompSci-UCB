@@ -1,7 +1,6 @@
 ---
 publish: true
 ---
-
 # Resumo — Software: conceitos, tipos e exemplos
 
 ## 1. O que é software

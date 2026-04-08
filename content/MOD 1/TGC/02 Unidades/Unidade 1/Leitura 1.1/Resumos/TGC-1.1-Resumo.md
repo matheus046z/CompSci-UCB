@@ -1,7 +1,6 @@
 ---
 publish: true
 ---
-
 # Resumo compilado
 
 ## Pensamento computacional

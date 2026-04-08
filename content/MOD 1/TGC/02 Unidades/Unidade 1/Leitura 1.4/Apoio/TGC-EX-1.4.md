@@ -1,7 +1,6 @@
 ---
 publish: true
 ---
-
 ### 1
 > [!question] Exercício 1
 > Qual o tipo de software que permite que um computador seja utilizado, ou seja, que é indispensável para o funcionamento de um computador?
