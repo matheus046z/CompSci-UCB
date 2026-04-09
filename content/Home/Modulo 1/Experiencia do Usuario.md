@@ -50,3 +50,5 @@ publish: true
 [[UX-4.3-Resumo]]
 [[UX-EX-4.3]]
 
+[[UX-4.4-Resumo]]
+[[UX-EX-4.4]]

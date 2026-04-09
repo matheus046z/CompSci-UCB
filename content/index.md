@@ -7,7 +7,7 @@ publish: true
 ## [[Design Front End]]
 
 
-## [[Teoria Geral da Computação]]
+## [[Teoria Geral da Computacao|Teoria Geral da Computação]]
 
 
-## [[Experiência do Usuário]]
+## [[Experiencia do Usuario|Experiência do Usuário]]
