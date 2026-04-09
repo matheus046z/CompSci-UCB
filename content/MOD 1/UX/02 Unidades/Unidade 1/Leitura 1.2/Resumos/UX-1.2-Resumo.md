@@ -59,7 +59,7 @@ Também fica claro que a ergonomia está relacionada à origem da usabilidade. I
 
 Esse tipo de ergonomia observa fatores como postura, movimentos repetitivos, manuseio de materiais, segurança, saúde e organização do espaço de trabalho. Nos exemplos apresentados, isso aparece em elementos como a adequação de cadeiras, o design do mouse, os ajustes de iluminação em dispositivos e a evolução dos controles de videogame, todos pensados para melhorar a acomodação do usuário e reduzir desconfortos físicos.
 
-Em interfaces computacionais, a ergonomia física também se manifesta na disposição dos elementos em tela e na adaptação dos dispositivos ao ambiente, favorecendo uma interação mais confortável e ágil.
+Em interfaces computacionais, ==a ergonomia física também se manifesta na disposição dos elementos em tela== e na adaptação dos dispositivos ao ambiente, favorecendo uma interação mais confortável e ágil.
 
 ### Ergonomia cognitiva
 
@@ -68,7 +68,7 @@ Em interfaces computacionais, a ergonomia física também se manifesta na dispos
 
 Esse tipo de ergonomia procura entender como o usuário interpreta as informações apresentadas e como planeja suas ações dentro do sistema. O material destaca que a interação não depende apenas de enxergar a informação, mas também de compreender o que ela significa, o que pode ser feito com ela e como isso se relaciona com os objetivos do usuário.
 
-A ergonomia cognitiva também aparece ligada à engenharia cognitiva, proposta por Donald Norman, que enfatiza a importância de projetar sistemas coerentes com a maneira como o usuário pensa e age. Assim, uma interface adequada cognitivamente reduz o esforço necessário para entender os objetos de interação e os resultados obtidos.
+A **ergonomia cognitiva** também aparece ligada à **engenharia cognitiva**, proposta por Donald Norman, que enfatiza a importância de projetar sistemas coerentes com a maneira como o usuário pensa e age. Assim, uma interface adequada cognitivamente reduz o esforço necessário para entender os objetos de interação e os resultados obtidos.
 
 ### Ergonomia organizacional
 
@@ -122,6 +122,16 @@ A ideia central é que interfaces mais claras, coerentes e fáceis de compreende
 > [!tip] Resumindo
 > O bom design ajuda o usuário tanto a saber **o que fazer** quanto a entender **o que aconteceu** depois que ele age.
 
+**Golfo de execução**
+- estabelece objetivo,
+- formula intenção, 
+- planeja e executa ações no sistema
+
+**Golfo de avaliação**
+- percebe as mudanças ocorridas, 
+- interpreta o novo estado do sistema
+- avalia se alcançou o objetivo desejado.
+
 ## Princípios ergonômicos
 
 > [!info] Conceito
@@ -170,7 +180,7 @@ Quanto à adaptabilidade, o material destaca a **flexibilidade** e a **experiên
 > [!info] Conceito
 > Esses critérios tratam da clareza dos códigos e nomes utilizados, da organização dos elementos na interface e da coerência com a lógica esperada pelo usuário.
 
-Os materiais mostram que **significado de códigos e denominações** envolve o uso de nomes, abreviações e códigos que façam sentido para o usuário, evitando termos arbitrários ou difíceis de interpretar. **Compatibilidade** significa que os procedimentos do sistema devem seguir uma ordem coerente com aquilo que o usuário imagina ou com o que já está acostumado a usar.
+Os materiais mostram que **significado de códigos e denominações** envolve o uso de nomes, abreviações e códigos que façam sentido para o usuário, evitando termos arbitrários ou difíceis de interpretar. **Compatibilidade** significa que os procedimentos do sistema devem seguir uma ordem ==coerente com aquilo que o usuário imagina ou com o que já está acostumado a usar.==
 
 Já o **agrupamento por localização** e o **agrupamento por formato** ajudam a organizar visualmente a interface, separando áreas com funções diferentes e tornando mais fácil reconhecer o papel de cada elemento. Isso melhora a compreensão e reduz ambiguidades durante a interação.
 
