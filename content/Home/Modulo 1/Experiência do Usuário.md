@@ -11,6 +11,11 @@ publish: true
 [[UX-1.3-Resumo]]
 [[UX-EX-1.3]]
 
+[[UX-1.4-Resumo]]
+[[UX-EX-1.4]]
+
+[[UX-1.5-Resumo]]
+[[UX-EX-1.5]]
 
 ### Unidade 2
 
