@@ -8,6 +8,9 @@ publish: true
 [[UX-1.2-Resumo]]
 [[UX-EX-1.2]]
 
+[[UX-1.3-Resumo]]
+[[UX-EX-1.3]]
+
 
 ### Unidade 2
 
