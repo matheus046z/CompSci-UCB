@@ -40,7 +40,6 @@ publish: true
 [[UX-3.3-Resumo]]
 [[UX-EX-3.3]]
 
-
 ### Unidade 4
 [[UX-4.1-Resumo]]
 [[UX-EX-4.1]]
