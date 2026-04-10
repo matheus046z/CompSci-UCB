@@ -37,6 +37,10 @@ O material afirma que o computador resolve problemas executando **instruções l
 > [!tip] Resumindo
 > O computador só faz aquilo que foi **planejado e programado** por alguém.
 
+
+> [!quote] Edsger W. Dijkstra
+> The question of whether Machines Can Think (…) is about as relevant as the question of whether Submarines Can Swim.
+
 Isso é importante porque mostra que a inteligência humana não se limita a observar o sistema. Ela está presente na criação da lógica do software, na definição dos objetivos do processamento e na escolha da forma como os dados serão manipulados.
 
 ## Evolução histórica dos computadores
