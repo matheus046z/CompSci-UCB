@@ -1,5 +1,7 @@
 ---
 publish: true
+title: TGC
+description: Exercícios e Resumos de Teoria Geral da Computação
 ---
 
 ### Unidade 1

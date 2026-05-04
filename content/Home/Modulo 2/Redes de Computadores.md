@@ -1,5 +1,7 @@
 ---
 publish: true
+title: RECOMP
+description: Exercícios e Resumos de Redes de Computadores
 ---
 ### Unidade 1
 [[RECOMP-1-Resumo]]

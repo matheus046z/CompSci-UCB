@@ -9,7 +9,7 @@ aliases:
 ---
 # Módulo 1
 
-### [[Design Front End]]
+### [[Desenvolvimento Front End]]
 
 ### [[Teoria Geral da Computacao|Teoria Geral da Computação]]
 

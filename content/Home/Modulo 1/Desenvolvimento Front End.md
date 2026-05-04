@@ -1,5 +1,7 @@
 ---
 publish: true
+title: DFE
+description: Exercícios e Resumos de Desenolvimento Front End
 ---
 ### Unidade 1
 [[DFE-1.1-Resumo]]
