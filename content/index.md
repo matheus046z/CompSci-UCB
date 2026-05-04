@@ -1,5 +1,11 @@
 ---
 publish: true
+title: CompSci UCB
+description: Hub de estudos para o curso de Ciência da Computação da UCB.
+aliases:
+  - Home
+  - Início
+  - Hub de Estudos
 ---
 # Módulo 1
 
