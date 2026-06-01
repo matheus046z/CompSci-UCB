@@ -1,6 +1,6 @@
 ---
 publish: true
-title: SICOMP
+title: SISCOMP
 description: Exercícios e Resumos de Sistemas Computacionais
 ---
 ### Unidade 1
