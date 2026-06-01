@@ -3,6 +3,8 @@ publish: true
 ---
 # Resumo 1.2 - Os principais componentes de um computador
 
+# Os principais componentes de um computador
+
 ## 1. Visão geral do sistema computacional
 
 > [!info] Conceito
@@ -11,6 +13,18 @@ publish: true
 Um computador não funciona apenas como um conjunto isolado de peças. Ele faz parte de um **sistema computacional**, composto por **hardware**, **software** e **peopleware**. O **hardware** corresponde aos componentes físicos, como processador, memória, teclado, monitor, HD e SSD. O **software** corresponde aos sistemas e programas que controlam o funcionamento da máquina. O **peopleware** representa os usuários e profissionais que utilizam, configuram ou mantêm o sistema.
 
 O funcionamento do computador depende da interação entre esses elementos. Os dados entram por dispositivos de entrada, são armazenados, processados pelo processador e depois enviados para dispositivos de saída, armazenados novamente ou transmitidos para outros sistemas.
+
+```mermaid
+flowchart TD
+    A[Sistema Computacional]
+    A --> B[Hardware<br>Componentes físicos]
+    A --> C[Software<br>Sistemas e programas]
+    A --> D[Peopleware<br>Usuários e profissionais]
+
+    B --> E[Processador, memória, teclado, monitor, HD, SSD]
+    C --> F[Sistema operacional e aplicações]
+    D --> G[Uso, configuração e manutenção]
+```
 
 > [!tip] Resumindo
 > O computador é parte de um sistema maior, em que hardware, software e usuários atuam de forma integrada para transformar dados em informações.
@@ -30,6 +44,22 @@ A **movimentação de dados** corresponde ao transporte das informações entre 
 
 O **controle** coordena as demais funções. Ele garante que as operações ocorram na ordem correta, que os componentes sejam acionados no momento adequado e que as instruções sejam executadas corretamente.
 
+```mermaid
+flowchart TD
+    C[Controle]
+    P[Processamento]
+    A[Armazenamento]
+    M[Movimentação de dados]
+
+    C --> P
+    C --> A
+    C --> M
+
+    M --> P
+    P --> A
+    A --> M
+```
+
 > [!tip] Resumindo
 > O computador recebe dados, armazena informações, processa instruções, movimenta dados entre componentes e controla a execução das tarefas.
 
@@ -47,6 +77,18 @@ A **memória principal** armazena dados e instruções utilizados durante o proc
 Os módulos de **entrada/saída**, também chamados de **E/S**, permitem a comunicação entre o computador e o meio externo. Dispositivos de entrada enviam dados ao computador, como teclado e mouse. Dispositivos de saída apresentam resultados ao usuário, como monitor e impressora. Alguns dispositivos podem atuar como entrada e saída, como HD, SSD, pendrive e placa de rede.
 
 A **interconexão** é o mecanismo de comunicação entre CPU, memória e dispositivos de entrada/saída. Normalmente, essa comunicação ocorre por meio de **barramentos**, que são caminhos físicos usados para transportar dados, endereços e sinais de controle.
+
+```mermaid
+flowchart LR
+    CPU[CPU<br>Processamento e controle]
+    MEM[Memória Principal<br>Dados e instruções]
+    IO[Entrada/Saída<br>Comunicação externa]
+    BUS[Barramento<br>Interconexão]
+
+    CPU <--> BUS
+    MEM <--> BUS
+    IO <--> BUS
+```
 
 > [!tip] Resumindo
 > A CPU processa e controla; a memória armazena; a entrada/saída comunica o computador com o exterior; e os barramentos interligam os componentes.
@@ -72,6 +114,22 @@ O **nível de unidades funcionais** reúne elementos como registradores, ULA, me
 
 O **nível das portas lógicas** corresponde à estrutura lógica dos componentes digitais. Já o **nível de transistores e fios** representa a base física mais baixa, onde os circuitos são implementados eletronicamente.
 
+```mermaid
+flowchart TD
+    A[Nível do usuário<br>Aplicativos, interfaces e periféricos]
+    B[Nível da linguagem de alto nível<br>C, Python e outras linguagens]
+    C[Nível da linguagem de montagem<br>Assembler / linguagem de máquina]
+    D[Nível de controle<br>Sinais de controle da CPU]
+    E[Nível de unidades funcionais<br>ULA, registradores, memória e barramentos]
+    F[Nível das portas lógicas<br>Estrutura lógica digital]
+    G[Nível de transistores e fios<br>Base eletrônica]
+
+    A --> B --> C --> D --> E --> F --> G
+```
+
+> [!warning] Atenção
+> Linguagens como C ou Python não operam no nível das portas lógicas. Elas pertencem ao nível de linguagem de alto nível.
+
 > [!tip] Resumindo
 > A hierarquia computacional permite entender o computador em camadas, desde os programas usados pelo usuário até os circuitos eletrônicos que executam operações básicas.
 
@@ -89,6 +147,18 @@ O **nível físico** corresponde ao hardware e inclui elementos como memória RA
 O **nível lógico** envolve o sistema operacional, drivers, linguagem de máquina e compatibilidade entre software e hardware. Problemas nesse nível podem causar lentidão mesmo quando o hardware é adequado. Atualizar drivers, otimizar a inicialização e corrigir incompatibilidades são exemplos de ações nesse nível.
 
 O **nível de aplicação** corresponde aos programas utilizados diretamente pelos usuários. Inclui simuladores, editores, configurações dos softwares e organização dos arquivos. Softwares mal configurados, obsoletos ou pesados demais podem comprometer o desempenho geral.
+
+```mermaid
+flowchart TD
+    A[Problema de desempenho]
+    A --> B[Nível Físico<br>Hardware, RAM, SSD, conexões]
+    A --> C[Nível Lógico<br>Sistema operacional, drivers, compatibilidade]
+    A --> D[Nível de Aplicação<br>Softwares, configurações e arquivos]
+
+    B --> E[Melhorias físicas]
+    C --> F[Atualizações e otimização do sistema]
+    D --> G[Reconfiguração e organização dos programas]
+```
 
 > [!warning] Atenção
 > Nem sempre um computador lento tem problema apenas no hardware. A lentidão pode estar na interação entre hardware, sistema operacional, drivers e aplicativos.
@@ -113,6 +183,24 @@ Os **registradores** são pequenas áreas de armazenamento de alta velocidade lo
 
 As **interconexões da CPU** são caminhos internos que permitem a comunicação entre Unidade de Controle, ULA e registradores.
 
+```mermaid
+flowchart TB
+    CPU[CPU<br>Unidade Central de Processamento]
+    UC[Unidade de Controle<br>Coordena operações]
+    ULA[ULA<br>Operações aritméticas e lógicas]
+    REG[Registradores<br>Dados, endereços e instruções temporárias]
+    INT[Interconexões internas<br>Barramentos da CPU]
+
+    CPU --> UC
+    CPU --> ULA
+    CPU --> REG
+    CPU --> INT
+
+    UC <--> INT
+    ULA <--> INT
+    REG <--> INT
+```
+
 > [!tip] Resumindo
 > A CPU busca instruções, interpreta comandos, executa operações e coordena o funcionamento dos demais componentes do computador.
 
@@ -129,6 +217,24 @@ A UC emite **sinais de controle**, que são comandos internos usados para aciona
 
 A Unidade de Controle pode ser implementada de forma **cabeada** ou **microprogramada**. Na UC cabeada, os sinais são gerados por circuitos lógicos fixos, o que tende a ser rápido, mas menos flexível. Na UC microprogramada, os sinais são gerados a partir de microinstruções armazenadas em uma memória de controle, o que oferece mais flexibilidade.
 
+```mermaid
+flowchart LR
+    IR[IR<br>Instrução atual]
+    UC[Unidade de Controle<br>Interpreta e coordena]
+    REG[Registradores]
+    MEM[Memória]
+    ULA[ULA]
+    IO[Entrada/Saída]
+    PC[PC<br>Próxima instrução]
+
+    IR --> UC
+    UC --> REG
+    UC --> MEM
+    UC --> ULA
+    UC --> IO
+    UC --> PC
+```
+
 > [!tip] Resumindo
 > A Unidade de Controle funciona como o “maestro” da CPU: ela não executa os cálculos, mas determina quais componentes devem agir e em qual ordem.
 
@@ -144,6 +250,27 @@ Na UC microprogramada, uma instrução da máquina é dividida em etapas menores
 A **memória de controle** guarda a sequência de microinstruções. O **decodificador de instruções** interpreta a instrução armazenada no registrador de instrução e identifica qual operação deve ser realizada. A **lógica de sequenciação** decide qual microinstrução será executada em seguida.
 
 Também podem participar desse processo o **registrador de endereço de controle**, que indica o endereço da próxima microinstrução, e o **registrador de microinstrução**, que guarda a microinstrução atual. O **gerador de sinais de controle** transforma os campos da microinstrução em comandos reais para a CPU.
+
+```mermaid
+flowchart TD
+    IR[IR<br>Instrução atual]
+    DEC[Decodificador de Instruções]
+    SEQ[Lógica de Sequenciação]
+    CAR[CAR ou µPC<br>Endereço da microinstrução]
+    CM[Memória de Controle<br>Microinstruções]
+    MIR[MIR<br>Microinstrução atual]
+    CTRL[Gerador de Sinais de Controle]
+    CPU[Registradores, ULA, Memória e E/S]
+
+    IR --> DEC
+    DEC --> SEQ
+    SEQ --> CAR
+    CAR --> CM
+    CM --> MIR
+    MIR --> CTRL
+    CTRL --> CPU
+    MIR --> SEQ
+```
 
 > [!tip] Resumindo
 > Na UC microprogramada, o decodificador identifica a instrução, a memória de controle guarda como executá-la e a lógica de sequenciação define qual passo vem depois.
@@ -169,6 +296,22 @@ O **IBR**, ou **Registrador de Buffer de Instrução**, aparece no contexto do c
 
 O **AC**, ou acumulador, e o **MQ**, ou quociente multiplicador, também aparecem no IAS e registram operandos e resultados da ULA.
 
+```mermaid
+flowchart LR
+    PC[PC<br>Endereço da próxima instrução]
+    MAR[MAR<br>Endereço de memória]
+    MEM[Memória Principal]
+    MBR[MBR<br>Dado ou instrução]
+    IR[IR<br>Instrução atual]
+    UC[Unidade de Controle]
+
+    PC --> MAR
+    MAR --> MEM
+    MEM --> MBR
+    MBR --> IR
+    IR --> UC
+```
+
 > [!warning] Atenção
 > O MAR indica o endereço de memória, enquanto o MBR guarda o conteúdo transferido. O IR guarda a instrução atual, mas não executa a instrução sozinho.
 
@@ -189,6 +332,26 @@ O **barramento de endereços** transporta a localização da memória ou do disp
 O **barramento de controle** transporta comandos e sinais de sincronização. Ele pode indicar leitura de memória, escrita de memória, leitura de entrada/saída, escrita de entrada/saída, interrupção, confirmação de operação, clock ou reset.
 
 Um barramento é um meio compartilhado. Vários dispositivos podem estar conectados a ele, mas somente um dispositivo por vez utiliza o barramento para transmitir dados.
+
+```mermaid
+flowchart TB
+    BUS[Barramento do Sistema]
+    DATA[Barramento de Dados<br>Transporta conteúdo]
+    ADDR[Barramento de Endereços<br>Transporta localização]
+    CTRL[Barramento de Controle<br>Transporta comandos e sincronização]
+
+    CPU[CPU]
+    MEM[Memória]
+    IO[Entrada/Saída]
+
+    BUS --> DATA
+    BUS --> ADDR
+    BUS --> CTRL
+
+    CPU <--> BUS
+    MEM <--> BUS
+    IO <--> BUS
+```
 
 > [!warning] Atenção
 > O barramento de endereços não transporta o conteúdo dos dados. Ele transporta apenas a localização que será acessada.
@@ -213,6 +376,21 @@ Em seguida ocorre a **execução**. A CPU realiza a operação indicada, que pod
 
 Ao final, o PC normalmente é atualizado para apontar para a próxima instrução. Quando há uma instrução de desvio, o PC pode receber outro endereço.
 
+```mermaid
+flowchart TD
+    A[PC aponta para a próxima instrução]
+    B[Endereço é enviado ao MAR]
+    C[CPU solicita leitura da memória]
+    D[Instrução é carregada no MBR]
+    E[Instrução passa para o IR]
+    F[Unidade de Controle decodifica a instrução]
+    G[Unidade de Controle gera sinais de controle]
+    H[Unidade de Execução, memória ou E/S executam a operação]
+    I[PC é atualizado]
+
+    A --> B --> C --> D --> E --> F --> G --> H --> I --> A
+```
+
 > [!tip] Resumindo
 > A CPU trabalha repetindo o ciclo: buscar a instrução, decodificar o comando, executar a operação e atualizar o próximo endereço.
 
@@ -230,6 +408,15 @@ Também podem envolver transferência entre **processador e entrada/saída**, qu
 Outra categoria é o **processamento de dados**, quando a CPU realiza operações aritméticas ou lógicas com os dados.
 
 Há ainda instruções de **controle**, que alteram a sequência normal de execução. Nesse caso, o PC pode ser modificado para que o programa continue em outro endereço.
+
+```mermaid
+flowchart TD
+    I[Instruções do processador]
+    I --> A[Processador-Memória<br>Transfere dados entre CPU e memória]
+    I --> B[Processador-E/S<br>Transfere dados entre CPU e periféricos]
+    I --> C[Processamento de dados<br>Operações aritméticas e lógicas]
+    I --> D[Controle<br>Altera sequência de execução]
+```
 
 > [!tip] Resumindo
 > As instruções podem mover dados, acessar dispositivos, realizar cálculos ou controlar o fluxo de execução do programa.
@@ -251,6 +438,21 @@ As interrupções de **entrada/saída** são geradas por controladores de E/S pa
 
 As interrupções por **falha de hardware** indicam problemas como falta de energia ou erro de paridade de memória.
 
+```mermaid
+flowchart TD
+    A[CPU executando programa]
+    B{Ocorreu interrupção?}
+    C[Continua execução normal]
+    D[Interrompe temporariamente]
+    E[Identifica a origem da interrupção]
+    F[Executa rotina de tratamento]
+    G[Retorna ao processamento]
+
+    A --> B
+    B -->|Não| C --> A
+    B -->|Sim| D --> E --> F --> G --> A
+```
+
 > [!tip] Resumindo
 > Interrupções permitem que a CPU responda a eventos importantes sem precisar verificar continuamente cada dispositivo.
 
@@ -267,6 +469,23 @@ Nesse modelo, o computador é organizado em grandes blocos: **memória**, **Unid
 
 A memória armazena tanto dados quanto instruções. A Unidade de Controle organiza a sequência de execução. A ULA realiza operações aritméticas e lógicas. Os dispositivos de entrada/saída permitem a comunicação com o exterior. Os barramentos fazem a ligação entre esses componentes.
 
+```mermaid
+flowchart LR
+    MEM[Memória Principal<br>Dados e instruções]
+    CPU[CPU]
+    UC[Unidade de Controle]
+    ULA[ULA]
+    IO[Entrada/Saída]
+    BUS[Barramento do Sistema]
+
+    CPU --> UC
+    CPU --> ULA
+
+    CPU <--> BUS
+    MEM <--> BUS
+    IO <--> BUS
+```
+
 > [!tip] Resumindo
 > A grande contribuição da arquitetura de Von Neumann foi permitir que programas e dados fossem armazenados na memória, tornando os computadores mais flexíveis e programáveis.
 
@@ -280,6 +499,17 @@ A memória armazena tanto dados quanto instruções. A Unidade de Controle organ
 O conceito de **programa armazenado** permitiu que as instruções fossem acessadas rapidamente pela CPU. Antes disso, as instruções podiam depender de cartões perfurados ou configurações manuais. Com o armazenamento interno, o computador passou a executar programas com mais velocidade e flexibilidade.
 
 Esse princípio também permitiu que o computador tratasse instruções como dados. Isso abriu caminho para ferramentas como montadores, compiladores e outros mecanismos de automação da programação.
+
+```mermaid
+flowchart TD
+    A[Programa armazenado]
+    A --> B[Instruções ficam na memória]
+    A --> C[Dados ficam na memória]
+    B --> D[CPU busca instruções automaticamente]
+    C --> E[CPU manipula dados]
+    D --> F[Execução mais flexível]
+    E --> F
+```
 
 > [!warning] Atenção
 > O conceito de programa armazenado não eliminou o armazenamento de dados. Pelo contrário, reforçou a importância da memória para guardar tanto dados quanto instruções.
@@ -299,6 +529,29 @@ O computador IAS, desenvolvido no Institute for Advanced Studies de Princeton, s
 Uma palavra podia conter duas instruções de 20 bits. Cada instrução era formada por um **opcode**, que indicava a operação, e por um campo de endereço, que indicava a posição de memória envolvida.
 
 No IAS, os registradores tinham funções específicas. O **MBR** guardava uma palavra transferida entre memória, E/S ou CPU. O **MAR** guardava o endereço da palavra a ser lida ou escrita. O **IR** guardava o código da instrução em execução. O **IBR** armazenava a próxima instrução. O **PC** indicava o endereço do próximo par de instruções. O **AC** e o **MQ** guardavam operandos e resultados da ULA.
+
+```mermaid
+flowchart LR
+    MEM[Memória Principal<br>Palavras de 40 bits]
+    CPU[CPU]
+    UC[Unidade de Controle do Programa]
+    ULA[Unidade Lógica e Aritmética]
+    IO[Equipamento de Entrada/Saída]
+
+    CPU --> UC
+    CPU --> ULA
+
+    MEM <--> CPU
+    CPU <--> IO
+
+    UC --> PC[PC]
+    UC --> IR[IR]
+    UC --> IBR[IBR]
+    UC --> MAR[MAR]
+    ULA --> AC[AC]
+    ULA --> MQ[MQ]
+    ULA --> MBR[MBR]
+```
 
 > [!tip] Resumindo
 > O IAS demonstrou na prática a organização de memória, registradores, controle, ULA e entrada/saída proposta pela arquitetura de Von Neumann.
@@ -320,6 +573,22 @@ As instruções **aritméticas** acionavam operações lógicas e aritméticas, 
 
 As instruções de **modificação de endereço** geravam ou alteravam endereços a partir de operações na central aritmética, inserindo esses endereços em instruções armazenadas na memória.
 
+```mermaid
+flowchart TD
+    A[Instruções do IAS]
+    A --> B[Transferência de dados]
+    A --> C[Desvio incondicional]
+    A --> D[Desvio condicional]
+    A --> E[Aritméticas]
+    A --> F[Modificação de endereço]
+
+    B --> G[Move dados entre memória e registradores]
+    C --> H[Altera o PC sem teste]
+    D --> I[Altera o PC conforme condição]
+    E --> J[Aciona operações da ULA]
+    F --> K[Altera campos de endereço em instruções]
+```
+
 > [!tip] Resumindo
 > As instruções do IAS mostram como um computador pode mover dados, calcular, tomar decisões e alterar a sequência de execução de um programa.
 
@@ -336,6 +605,17 @@ Alguns dispositivos podem funcionar tanto como entrada quanto como saída, como 
 
 Os **buffers** são áreas temporárias de armazenamento usadas para organizar a transferência de dados. Eles são importantes porque a CPU, a memória e os periféricos podem trabalhar em velocidades diferentes. Por exemplo, uma impressora é muito mais lenta que a CPU; o buffer guarda temporariamente os dados até que o dispositivo consiga processá-los.
 
+```mermaid
+flowchart LR
+    IN[Dispositivos de Entrada<br>Teclado, mouse, scanner]
+    BUF[Buffer<br>Armazenamento temporário]
+    CPU[CPU]
+    OUT[Dispositivos de Saída<br>Monitor, impressora, alto-falantes]
+
+    IN --> BUF --> CPU
+    CPU --> BUF --> OUT
+```
+
 > [!tip] Resumindo
 > Entrada e saída conectam o computador ao mundo externo, enquanto buffers ajudam a equilibrar diferenças de velocidade entre componentes.
 
@@ -349,6 +629,16 @@ Os **buffers** são áreas temporárias de armazenamento usadas para organizar a
 A cache é importante porque a CPU costuma ser muito mais rápida que a memória RAM. Se o processador precisasse buscar todos os dados diretamente na RAM, perderia tempo esperando. A cache reduz esse atraso mantendo informações frequentemente utilizadas mais próximas da CPU.
 
 A cache funciona como uma camada intermediária entre a CPU e a memória principal. Ela não substitui a RAM, mas ajuda a diminuir a frequência de acessos diretos à memória principal.
+
+```mermaid
+flowchart LR
+    CPU[CPU<br>Muito rápida]
+    CACHE[Memória Cache<br>Rápida e próxima]
+    RAM[Memória RAM<br>Mais lenta]
+    
+    CPU <--> CACHE
+    CACHE <--> RAM
+```
 
 > [!warning] Atenção
 > Ter um processador com alto clock ou muita RAM não garante, sozinho, o melhor desempenho. O tipo, o tamanho e a organização da cache também influenciam a velocidade do sistema.
@@ -371,6 +661,20 @@ A **cache L3** geralmente é maior e compartilhada entre vários núcleos do pro
 
 A sequência típica de busca é: primeiro a CPU procura na L1; se não encontrar, procura na L2; depois na L3; e, se necessário, acessa a RAM.
 
+```mermaid
+flowchart LR
+    CPU[CPU]
+    L1[Cache L1<br>Mais próxima, menor e mais rápida]
+    L2[Cache L2<br>Intermediária]
+    L3[Cache L3<br>Maior e geralmente compartilhada]
+    RAM[RAM<br>Memória principal]
+
+    CPU <--> L1
+    L1 <--> L2
+    L2 <--> L3
+    L3 <--> RAM
+```
+
 > [!tip] Resumindo
 > Quanto mais próximo da CPU, mais rápido e menor é o cache. Quanto mais distante, maior tende a ser a capacidade, mas menor a velocidade.
 
@@ -387,6 +691,29 @@ Um **cache miss** ocorre quando a CPU procura uma informação e ela não está 
 
 A cache utiliza dois princípios principais. A **localidade temporal** indica que um dado usado recentemente tem grande chance de ser usado novamente em breve. A **localidade espacial** indica que, quando um dado é acessado, dados próximos a ele também podem ser acessados em seguida.
 
+```mermaid
+flowchart TD
+    A[CPU precisa de um dado ou instrução]
+    B{Está na cache?}
+    C[Cache hit<br>Acesso rápido]
+    D[Cache miss<br>Busca em nível mais lento]
+    E[Busca na L2, L3 ou RAM]
+    F[Atualiza cache para acessos futuros]
+
+    A --> B
+    B -->|Sim| C
+    B -->|Não| D --> E --> F
+```
+
+```mermaid
+flowchart TD
+    A[Princípios de localidade]
+    A --> B[Localidade temporal<br>Dado usado recentemente pode ser reutilizado]
+    A --> C[Localidade espacial<br>Dados próximos podem ser usados em seguida]
+    B --> D[Cache mantém dados prováveis próximos da CPU]
+    C --> D
+```
+
 > [!tip] Resumindo
 > A cache tenta prever o que a CPU usará em seguida, mantendo próximos os dados usados recentemente e os dados próximos aos já acessados.
 
@@ -400,6 +727,19 @@ A cache utiliza dois princípios principais. A **localidade temporal** indica qu
 Na arquitetura de Von Neumann, dados e instruções ficam armazenados na memória principal. A CPU precisa buscar essas informações para executar programas. O problema é que a CPU costuma ser muito mais rápida que a RAM. Assim, o processador pode ficar esperando a chegada de dados e instruções.
 
 Essa limitação é chamada de **gargalo de Von Neumann**. A cache ajuda a reduzir esse problema, mantendo dados e instruções frequentemente usados mais próximos da CPU.
+
+```mermaid
+flowchart LR
+    CPU[CPU rápida]
+    RAM[Memória principal mais lenta]
+    G[Gargalo de Von Neumann<br>Espera na troca de dados e instruções]
+    CACHE[Cache<br>Reduz acessos diretos à RAM]
+
+    CPU <--> G
+    G <--> RAM
+    CPU <--> CACHE
+    CACHE <--> RAM
+```
 
 > [!tip] Resumindo
 > O gargalo de Von Neumann é a limitação causada pela troca constante de informações entre CPU e memória principal. A cache reduz esse impacto.
@@ -417,6 +757,7 @@ Esse computador foi considerado mais adequado porque tarefas como edição de im
 
 O processador Core i7 representa a unidade de processamento. A RAM permite armazenar temporariamente dados e instruções em uso. O SSD acelera abertura do sistema e dos programas. O HD oferece espaço para arquivos e projetos. A placa de vídeo dedicada melhora o desempenho em tarefas gráficas.
 
+
 > [!tip] Resumindo
 > Para tarefas pesadas de design gráfico, a melhor escolha é a máquina com processador mais forte, mais memória, armazenamento híbrido e placa de vídeo dedicada.
 
@@ -429,9 +770,27 @@ O processador Core i7 representa a unidade de processamento. A RAM permite armaz
 
 No exemplo prático do técnico Vicente, a lentidão dos computadores não foi tratada apenas como problema de hardware. A análise mostrou que o desempenho depende da integração entre nível físico, nível lógico e nível de aplicação.
 
-No **nível físico**, foram consideradas ações como limpeza, aumento de RAM, verificação de conexões e substituição de HD por SSD. No **nível lógico**, foram feitas atualizações de sistema operacional e drivers, além da otimização da inicialização e verificação de malwares. No **nível de aplicação**, foram reconfigurados programas pesados, removidos softwares obsoletos e organizados arquivos.
+No nível físico, foram consideradas ações como limpeza, aumento de RAM, verificação de conexões e substituição de HD por SSD. No nível lógico, foram feitas atualizações de sistema operacional e drivers, além da otimização da inicialização e verificação de malwares. No nível de aplicação, foram reconfigurados programas pesados, removidos softwares obsoletos e organizados arquivos.
 
 Essa abordagem mostrou que a solução eficiente exige entender o computador como um conjunto de camadas interdependentes.
+
+```mermaid
+flowchart TD
+    A[Lentidão nos computadores]
+    A --> B[Análise por níveis]
+
+    B --> C[Nível físico]
+    B --> D[Nível lógico]
+    B --> E[Nível de aplicação]
+
+    C --> F[Limpeza, RAM, SSD, conexões]
+    D --> G[Drivers, sistema operacional, segurança]
+    E --> H[Softwares, configurações, arquivos]
+
+    F --> I[Melhor desempenho]
+    G --> I
+    H --> I
+```
 
 > [!tip] Resumindo
 > A análise por níveis ajuda a localizar gargalos e aplicar melhorias mais precisas, sem tratar o computador como um conjunto isolado de peças.
@@ -453,6 +812,17 @@ O **PC** aponta para a próxima instrução, mas não gerencia dados da ULA. Em 
 
 O **MAR** guarda endereços, enquanto o **MBR** guarda dados ou instruções transferidos. O barramento de endereços transporta localizações, não conteúdo.
 
+```mermaid
+flowchart TD
+    A[Cuidados conceituais]
+    A --> B[PC<br>Aponta próxima instrução]
+    A --> C[IR<br>Guarda instrução atual]
+    A --> D[MAR<br>Guarda endereço]
+    A --> E[MBR<br>Guarda conteúdo]
+    A --> F[UC<br>Coordena sinais de controle]
+    A --> G[ULA<br>Executa operações]
+```
+
 > [!tip] Resumindo
 > Entender a função específica de cada componente evita confundir armazenamento, endereçamento, controle e execução.
 
@@ -473,6 +843,29 @@ Dentro da CPU, a **Unidade de Controle** coordena as operações, a **ULA** real
 
 A **memória cache** complementa essa organização ao reduzir o atraso entre CPU e RAM. Ela armazena dados e instruções usados com frequência, diminuindo o impacto do gargalo de Von Neumann e melhorando o desempenho geral do sistema.
 
+```mermaid
+flowchart TD
+    A[Computador]
+    A --> B[CPU]
+    A --> C[Memória]
+    A --> D[Entrada/Saída]
+    A --> E[Barramentos]
+
+    B --> F[Unidade de Controle]
+    B --> G[ULA]
+    B --> H[Registradores]
+
+    C --> I[Dados e instruções]
+    E --> J[Dados, endereços e controle]
+
+    F --> K[Ciclo de instrução]
+    K --> L[Busca]
+    K --> M[Decodificação]
+    K --> N[Execução]
+
+    C --> O[Gargalo de Von Neumann]
+    O --> P[Memória cache]
+```
+
 > [!summary] Ideia central
 > Compreender os principais componentes de um computador significa entender como CPU, memória, entrada/saída, barramentos, registradores, Unidade de Controle, ULA e cache cooperam para buscar, interpretar, executar e armazenar instruções e dados.
-
