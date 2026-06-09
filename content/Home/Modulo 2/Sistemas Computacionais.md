@@ -29,6 +29,7 @@ description: Exercícios e Resumos de Sistemas Computacionais
 [[SISCOMP-2.4-Resumo]]
 [[SISCOMP-EX-2.4]]
 
+[[QME 2 (Unidade 2) - SISCOMP]]
 ### Unidade 3
 [[SISCOMP-3.1-Resumo]]
 [[SISCOMP-EX-3.1]]
