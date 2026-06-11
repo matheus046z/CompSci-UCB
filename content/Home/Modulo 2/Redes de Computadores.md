@@ -4,7 +4,7 @@ title: RECOMP
 description: Exercícios e Resumos de Redes de Computadores
 ---
 ### Unidade 1
-[[RECOMP-1-Resumo]]
+[[RECOMP-1-Resumo-0]]
 [[RECOMP-EX-1]]
 
 ### Unidade 2
