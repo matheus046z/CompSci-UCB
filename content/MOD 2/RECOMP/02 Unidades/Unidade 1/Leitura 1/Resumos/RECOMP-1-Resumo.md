@@ -755,6 +755,8 @@ A variável **cwnd**, chamada janela de congestionamento, limita a quantidade de
 >[!info]- Aprofundando sobre controle de congestionamento
 >![[RECOMP-Congestionamento]]
 
+[[RECOMP-Congestionamento|Abrir em nova página]]
+
 ---
 
 ## 32. TCP versus UDP
