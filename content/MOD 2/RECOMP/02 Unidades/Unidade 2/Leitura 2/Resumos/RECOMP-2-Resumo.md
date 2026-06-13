@@ -480,7 +480,31 @@ Um roteador pode possuir interfaces em várias sub-redes. Cada interface utiliza
 
 ### Figura — Três sub-redes IPv4 conectadas a um roteador
 
-<svg viewBox="0 0 780 480"
+<div
+  class="svg-diagram"
+  style="
+    width: 100%;
+    max-width: 780px;
+    margin: 1.5rem auto;
+    overflow: hidden;
+  "
+>
+  <svg
+    width="780"
+    height="480"
+    viewBox="0 0 780 480"
+    xmlns="http://www.w3.org/2000/svg"
+    font-family="Arial, sans-serif"
+    preserveAspectRatio="xMidYMid meet"
+    class="network-diagram"
+    style="
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 780 / 480;
+    "
+  >
+    <svg viewBox="0 0 780 480"
   xmlns="http://www.w3.org/2000/svg"
   font-family="Arial, sans-serif"
   role="img"
@@ -830,7 +854,8 @@ Um roteador pode possuir interfaces em várias sub-redes. Cada interface utiliza
     223.1.3.27
   </text>
 </svg>
-
+  </svg>
+</div>
 ### 10.4 Exercício de redes privadas, gateways e hospedeiros
 
 O relatório anexado interpreta a solicitação de “quatro protocolos” como quatro redes IPv4, porque máscaras são atribuídas a endereços e sub-redes, e não a protocolos como TCP ou UDP. O primeiro endereço utilizável foi reservado ao gateway e os quatro seguintes aos hospedeiros.
