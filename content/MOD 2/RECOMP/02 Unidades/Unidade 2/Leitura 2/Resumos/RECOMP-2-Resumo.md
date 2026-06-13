@@ -480,9 +480,7 @@ Um roteador pode possuir interfaces em várias sub-redes. Cada interface utiliza
 
 ### Figura — Três sub-redes IPv4 conectadas a um roteador
 
-
-<svg
-  viewBox="0 0 780 480"
+<svg viewBox="0 0 780 480"
   xmlns="http://www.w3.org/2000/svg"
   font-family="Arial, sans-serif"
   role="img"
@@ -491,11 +489,9 @@ Um roteador pode possuir interfaces em várias sub-redes. Cada interface utiliza
   style="display:block; width:100%; max-width:800px; height:auto; margin:0 auto;">
   <!-- Fundo transparente -->
   <rect width="780" height="480" fill="transparent"/>
-
   <!-- ===================================================== -->
   <!-- ÁREAS DAS SUB-REDES                                   -->
   <!-- ===================================================== -->
-
   <!-- Rede 223.1.1.0 -->
   <path
     d="M62 18
@@ -518,7 +514,6 @@ Um roteador pode possuir interfaces em várias sub-redes. Cada interface utiliza
     stroke="#7FCFF0"
     stroke-opacity="0.25"
   />
-
   <!-- Rede 223.1.2.0 -->
   <path
     d="M521 47
@@ -541,7 +536,6 @@ Um roteador pode possuir interfaces em várias sub-redes. Cada interface utiliza
     stroke="#7FCFF0"
     stroke-opacity="0.25"
   />
-
   <!-- Rede 223.1.3.0 -->
   <path
     d="M292 305
@@ -560,47 +554,38 @@ Um roteador pode possuir interfaces em várias sub-redes. Cada interface utiliza
     stroke="#7FCFF0"
     stroke-opacity="0.25"
   />
-
   <!-- Títulos das redes -->
   <text x="135" y="28" text-anchor="middle" font-size="14" font-weight="600" fill="#D6F0FB">
     Rede 223.1.1.0
   </text>
-
   <text x="610" y="47" text-anchor="middle" font-size="14" font-weight="600" fill="#D6F0FB">
     Rede 223.1.2.0
   </text>
-
   <text x="390" y="296" text-anchor="middle" font-size="14" font-weight="600" fill="#D6F0FB">
     Rede 223.1.3.0
   </text>
-
   <!-- ===================================================== -->
   <!-- ENLACES                                               -->
   <!-- ===================================================== -->
-
   <!-- Rede esquerda -->
   <line x1="117" y1="70" x2="193" y2="70" stroke="#AAAAAA" stroke-width="2"/>
   <line x1="117" y1="190" x2="193" y2="190" stroke="#AAAAAA" stroke-width="2"/>
   <line x1="117" y1="310" x2="193" y2="310" stroke="#AAAAAA" stroke-width="2"/>
   <line x1="193" y1="70" x2="193" y2="310" stroke="#AAAAAA" stroke-width="2"/>
   <line x1="193" y1="170" x2="346" y2="170" stroke="#AAAAAA" stroke-width="2"/>
-
   <!-- Rede direita -->
   <line x1="434" y1="170" x2="573" y2="170" stroke="#AAAAAA" stroke-width="2"/>
   <line x1="573" y1="82" x2="573" y2="277" stroke="#AAAAAA" stroke-width="2"/>
   <line x1="573" y1="82" x2="622" y2="82" stroke="#AAAAAA" stroke-width="2"/>
   <line x1="573" y1="277" x2="622" y2="277" stroke="#AAAAAA" stroke-width="2"/>
-
   <!-- Rede inferior -->
   <line x1="390" y1="202" x2="390" y2="302" stroke="#AAAAAA" stroke-width="2"/>
   <line x1="306" y1="302" x2="475" y2="302" stroke="#AAAAAA" stroke-width="2"/>
   <line x1="306" y1="302" x2="306" y2="346" stroke="#AAAAAA" stroke-width="2"/>
   <line x1="475" y1="302" x2="475" y2="346" stroke="#AAAAAA" stroke-width="2"/>
-
   <!-- ===================================================== -->
   <!-- ROTEADOR CENTRAL                                      -->
   <!-- ===================================================== -->
-
   <g transform="translate(390 158)">
     <ellipse
       cx="0"
@@ -611,7 +596,6 @@ Um roteador pode possuir interfaces em várias sub-redes. Cada interface utiliza
       stroke="#7FCFF0"
       stroke-width="1.4"
     />
-
     <path
       d="M-30 8 V20
          C-30 29 -16 34 0 34
@@ -622,7 +606,6 @@ Um roteador pode possuir interfaces em várias sub-redes. Cada interface utiliza
       stroke="#7FCFF0"
       stroke-width="1.4"
     />
-
     <path
       d="M-13 3 L13 15
          M13 3 L-13 15"
@@ -631,7 +614,6 @@ Um roteador pode possuir interfaces em várias sub-redes. Cada interface utiliza
       stroke-width="4"
       stroke-linecap="round"
     />
-
     <path
       d="M-13 3 L-6 2
          M-13 3 L-9 9
@@ -647,15 +629,12 @@ Um roteador pode possuir interfaces em várias sub-redes. Cada interface utiliza
       stroke-linecap="round"
     />
   </g>
-
   <text x="390" y="218" text-anchor="middle" font-size="13" font-weight="600" fill="#EEEEEE">
     Roteador
   </text>
-
   <!-- ===================================================== -->
   <!-- COMPUTADOR 1                                          -->
   <!-- ===================================================== -->
-
   <g transform="translate(67 38) scale(0.9)">
     <rect
       x="4"
@@ -668,7 +647,6 @@ Um roteador pode possuir interfaces em várias sub-redes. Cada interface utiliza
       stroke="#7FCFF0"
       stroke-width="1.5"
     />
-
     <rect
       x="10"
       y="8"
@@ -679,10 +657,8 @@ Um roteador pode possuir interfaces em várias sub-redes. Cada interface utiliza
       stroke="#D6F0FB"
       stroke-width="1"
     />
-
     <line x1="30" y1="49" x2="30" y2="61" stroke="#A89CF5" stroke-width="2"/>
     <line x1="19" y1="62" x2="41" y2="62" stroke="#A89CF5" stroke-width="2"/>
-
     <path
       d="M8 66 L49 63 L58 72 L16 76 Z"
       fill="#1A4A5E"
@@ -691,190 +667,143 @@ Um roteador pode possuir interfaces em várias sub-redes. Cada interface utiliza
       stroke-width="1.2"
     />
   </g>
-
   <!-- ===================================================== -->
   <!-- COMPUTADOR 2                                          -->
   <!-- ===================================================== -->
-
   <g transform="translate(67 158) scale(0.9)">
     <rect x="4" y="2" width="52" height="47" rx="4"
           fill="#1A4A5E" fill-opacity="0.45"
           stroke="#7FCFF0" stroke-width="1.5"/>
-
     <rect x="10" y="8" width="40" height="32"
           fill="#1A4A5E" fill-opacity="0.75"
           stroke="#D6F0FB" stroke-width="1"/>
-
     <line x1="30" y1="49" x2="30" y2="61"
           stroke="#A89CF5" stroke-width="2"/>
-
     <line x1="19" y1="62" x2="41" y2="62"
           stroke="#A89CF5" stroke-width="2"/>
-
     <path d="M8 66 L49 63 L58 72 L16 76 Z"
           fill="#1A4A5E" fill-opacity="0.40"
           stroke="#7FCFF0" stroke-width="1.2"/>
   </g>
-
   <!-- ===================================================== -->
   <!-- COMPUTADOR 3                                          -->
   <!-- ===================================================== -->
-
   <g transform="translate(67 278) scale(0.9)">
     <rect x="4" y="2" width="52" height="47" rx="4"
           fill="#1A4A5E" fill-opacity="0.45"
           stroke="#7FCFF0" stroke-width="1.5"/>
-
     <rect x="10" y="8" width="40" height="32"
           fill="#1A4A5E" fill-opacity="0.75"
           stroke="#D6F0FB" stroke-width="1"/>
-
     <line x1="30" y1="49" x2="30" y2="61"
           stroke="#A89CF5" stroke-width="2"/>
-
     <line x1="19" y1="62" x2="41" y2="62"
           stroke="#A89CF5" stroke-width="2"/>
-
     <path d="M8 66 L49 63 L58 72 L16 76 Z"
           fill="#1A4A5E" fill-opacity="0.40"
           stroke="#7FCFF0" stroke-width="1.2"/>
   </g>
-
   <!-- ===================================================== -->
   <!-- COMPUTADOR 4                                          -->
   <!-- ===================================================== -->
-
   <g transform="translate(622 50) scale(0.9)">
     <rect x="4" y="2" width="52" height="47" rx="4"
           fill="#1A4A5E" fill-opacity="0.45"
           stroke="#7FCFF0" stroke-width="1.5"/>
-
     <rect x="10" y="8" width="40" height="32"
           fill="#1A4A5E" fill-opacity="0.75"
           stroke="#D6F0FB" stroke-width="1"/>
-
     <line x1="30" y1="49" x2="30" y2="61"
           stroke="#A89CF5" stroke-width="2"/>
-
     <line x1="19" y1="62" x2="41" y2="62"
           stroke="#A89CF5" stroke-width="2"/>
-
     <path d="M8 66 L49 63 L58 72 L16 76 Z"
           fill="#1A4A5E" fill-opacity="0.40"
           stroke="#7FCFF0" stroke-width="1.2"/>
   </g>
-
   <!-- ===================================================== -->
   <!-- COMPUTADOR 5                                          -->
   <!-- ===================================================== -->
-
   <g transform="translate(622 245) scale(0.9)">
     <rect x="4" y="2" width="52" height="47" rx="4"
           fill="#1A4A5E" fill-opacity="0.45"
           stroke="#7FCFF0" stroke-width="1.5"/>
-
     <rect x="10" y="8" width="40" height="32"
           fill="#1A4A5E" fill-opacity="0.75"
           stroke="#D6F0FB" stroke-width="1"/>
-
     <line x1="30" y1="49" x2="30" y2="61"
           stroke="#A89CF5" stroke-width="2"/>
-
     <line x1="19" y1="62" x2="41" y2="62"
           stroke="#A89CF5" stroke-width="2"/>
-
     <path d="M8 66 L49 63 L58 72 L16 76 Z"
           fill="#1A4A5E" fill-opacity="0.40"
           stroke="#7FCFF0" stroke-width="1.2"/>
   </g>
-
   <!-- ===================================================== -->
   <!-- COMPUTADOR 6                                          -->
   <!-- ===================================================== -->
-
   <g transform="translate(278 350) scale(0.9)">
     <rect x="4" y="2" width="52" height="47" rx="4"
           fill="#1A4A5E" fill-opacity="0.45"
           stroke="#7FCFF0" stroke-width="1.5"/>
-
     <rect x="10" y="8" width="40" height="32"
           fill="#1A4A5E" fill-opacity="0.75"
           stroke="#D6F0FB" stroke-width="1"/>
-
     <line x1="30" y1="49" x2="30" y2="61"
           stroke="#A89CF5" stroke-width="2"/>
-
     <line x1="19" y1="62" x2="41" y2="62"
           stroke="#A89CF5" stroke-width="2"/>
-
     <path d="M8 66 L49 63 L58 72 L16 76 Z"
           fill="#1A4A5E" fill-opacity="0.40"
           stroke="#7FCFF0" stroke-width="1.2"/>
   </g>
-
   <!-- ===================================================== -->
   <!-- COMPUTADOR 7                                          -->
   <!-- ===================================================== -->
-
   <g transform="translate(447 350) scale(0.9)">
     <rect x="4" y="2" width="52" height="47" rx="4"
           fill="#1A4A5E" fill-opacity="0.45"
           stroke="#7FCFF0" stroke-width="1.5"/>
-
     <rect x="10" y="8" width="40" height="32"
           fill="#1A4A5E" fill-opacity="0.75"
           stroke="#D6F0FB" stroke-width="1"/>
-
     <line x1="30" y1="49" x2="30" y2="61"
           stroke="#A89CF5" stroke-width="2"/>
-
     <line x1="19" y1="62" x2="41" y2="62"
           stroke="#A89CF5" stroke-width="2"/>
-
     <path d="M8 66 L49 63 L58 72 L16 76 Z"
           fill="#1A4A5E" fill-opacity="0.40"
           stroke="#7FCFF0" stroke-width="1.2"/>
   </g>
-
   <!-- ===================================================== -->
   <!-- ENDEREÇOS DOS COMPUTADORES                            -->
   <!-- ===================================================== -->
-
   <text x="98" y="126" text-anchor="middle" font-size="15" fill="#EEEEEE">
     223.1.1.1
   </text>
-
   <text x="98" y="246" text-anchor="middle" font-size="15" fill="#EEEEEE">
     223.1.1.2
   </text>
-
   <text x="98" y="366" text-anchor="middle" font-size="15" fill="#EEEEEE">
     223.1.1.3
   </text>
-
   <text x="653" y="140" text-anchor="middle" font-size="15" fill="#EEEEEE">
     223.1.2.1
   </text>
-
   <text x="653" y="335" text-anchor="middle" font-size="15" fill="#EEEEEE">
     223.1.2.2
   </text>
-
   <text x="309" y="454" text-anchor="middle" font-size="15" fill="#EEEEEE">
     223.1.3.1
   </text>
-
   <text x="478" y="454" text-anchor="middle" font-size="15" fill="#EEEEEE">
     223.1.3.2
   </text>
-
   <!-- ===================================================== -->
   <!-- ENDEREÇOS DAS INTERFACES DO ROTEADOR                  -->
   <!-- ===================================================== -->
-
   <line x1="336" y1="158" x2="309" y2="137"
         stroke="#888888" stroke-width="0.9"/>
-
   <text x="302" y="132"
         text-anchor="end"
         font-size="14"
@@ -882,10 +811,8 @@ Um roteador pode possuir interfaces em várias sub-redes. Cada interface utiliza
         fill="#EEEEEE">
     223.1.1.4
   </text>
-
   <line x1="431" y1="158" x2="452" y2="138"
         stroke="#888888" stroke-width="0.9"/>
-
   <text x="458" y="133"
         text-anchor="start"
         font-size="14"
@@ -893,10 +820,8 @@ Um roteador pode possuir interfaces em várias sub-redes. Cada interface utiliza
         fill="#EEEEEE">
     223.1.2.9
   </text>
-
   <line x1="398" y1="191" x2="425" y2="210"
         stroke="#888888" stroke-width="0.9"/>
-
   <text x="432" y="218"
         text-anchor="start"
         font-size="14"
@@ -904,7 +829,6 @@ Um roteador pode possuir interfaces em várias sub-redes. Cada interface utiliza
         fill="#EEEEEE">
     223.1.3.27
   </text>
-
 </svg>
 
 ### 10.4 Exercício de redes privadas, gateways e hospedeiros
