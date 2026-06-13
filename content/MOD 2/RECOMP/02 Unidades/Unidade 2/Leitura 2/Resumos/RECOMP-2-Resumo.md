@@ -142,14 +142,41 @@ A requisição contém uma linha inicial, linhas de cabeçalho, uma linha em bra
 
 ### Figura — Estrutura de uma requisição HTTP
 
+<div
+  class="svg-diagram"
+  style="
+    width: 100%;
+    max-width: 780px;
+    margin: 1.5rem auto;
+    overflow: hidden;
+  "
+>
+  <svg
+    width="780"
+    height="480"
+    viewBox="0 0 780 480"
+    xmlns="http://www.w3.org/2000/svg"
+    font-family="Arial, sans-serif"
+    preserveAspectRatio="xMidYMid meet"
+    class="network-diagram"
+    style="
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 780 / 480;
+    "
+  >
 <svg  
-viewBox="0 0 800 400"  
+viewBox="0 0 980 520"  
 xmlns="http://www.w3.org/2000/svg"  
 font-family="sans-serif"  
 preserveAspectRatio="xMidYMid meet"  
 style="display:block; width:100%; max-width:800px; height:auto; margin:0 auto;"  
 >
 <rect width="980" height="520" fill="transparent"/><rect x="265" y="45" width="135" height="60" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1"/><rect x="400" y="45" width="36" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="436" y="45" width="178" height="60" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1"/><rect x="614" y="45" width="36" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="650" y="45" width="143" height="60" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1"/><rect x="793" y="45" width="42" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="835" y="45" width="42" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><text x="332.5" y="81" text-anchor="middle" font-size="20" font-weight="600" fill="#D6F0FB">Método</text><text x="418" y="81" text-anchor="middle" font-size="17" fill="#dddddd">sp</text><text x="525" y="81" text-anchor="middle" font-size="20" font-weight="600" fill="#D6F0FB">URL</text><text x="632" y="81" text-anchor="middle" font-size="17" fill="#dddddd">sp</text><text x="721.5" y="81" text-anchor="middle" font-size="20" font-weight="600" fill="#D6F0FB">Versão</text><text x="814" y="81" text-anchor="middle" font-size="17" fill="#dddddd">cr</text><text x="856" y="81" text-anchor="middle" font-size="17" fill="#dddddd">lf</text><text x="165" y="66" text-anchor="end" font-size="18" font-weight="600" fill="#eeeeee">Linha de</text><text x="165" y="91" text-anchor="end" font-size="18" font-weight="600" fill="#eeeeee">requisição</text><line x1="197" y1="72" x2="263" y2="72" stroke="#888" stroke-width="0.8" opacity="0.6"/><rect x="265" y="105" width="247" height="60" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><rect x="512" y="105" width="38" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="550" y="105" width="112" height="60" fill="#1A4A5E" fill-opacity="0.18" stroke="#7FCFF0" stroke-width="1"/><rect x="662" y="105" width="42" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="704" y="105" width="42" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><text x="282" y="130" text-anchor="start" font-size="18" fill="#eeeeee">nome do campo</text><text x="282" y="153" text-anchor="start" font-size="18" fill="#eeeeee">de cabeçalho:</text><text x="531" y="141" text-anchor="middle" font-size="17" fill="#dddddd">sp</text><text x="606" y="141" text-anchor="middle" font-size="18" fill="#eeeeee">valor</text><text x="683" y="141" text-anchor="middle" font-size="17" fill="#dddddd">cr</text><text x="725" y="141" text-anchor="middle" font-size="17" fill="#dddddd">lf</text><rect x="265" y="165" width="481" height="75" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><path d="M258 194 L276 187" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M262 204 L280 197" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M732 194 L750 187" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M736 204 L754 197" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><rect x="265" y="240" width="247" height="60" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><rect x="512" y="240" width="38" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="550" y="240" width="112" height="60" fill="#1A4A5E" fill-opacity="0.18" stroke="#7FCFF0" stroke-width="1"/><rect x="662" y="240" width="42" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="704" y="240" width="42" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><text x="282" y="265" text-anchor="start" font-size="18" fill="#eeeeee">nome do campo</text><text x="282" y="288" text-anchor="start" font-size="18" fill="#eeeeee">de cabeçalho:</text><text x="531" y="276" text-anchor="middle" font-size="17" fill="#dddddd">sp</text><text x="606" y="276" text-anchor="middle" font-size="18" fill="#eeeeee">valor</text><text x="683" y="276" text-anchor="middle" font-size="17" fill="#dddddd">cr</text><text x="725" y="276" text-anchor="middle" font-size="17" fill="#dddddd">lf</text><path d="M257 105 L246 105 L246 300 L257 300" stroke="#999" stroke-width="0.9" fill="none" opacity="0.6"/><line x1="246" y1="202" x2="197" y2="202" stroke="#888" stroke-width="0.8" opacity="0.6"/><text x="165" y="194" text-anchor="end" font-size="18" font-weight="600" fill="#eeeeee">Linhas de</text><text x="165" y="219" text-anchor="end" font-size="18" font-weight="600" fill="#eeeeee">cabeçalho</text><rect x="265" y="300" width="44" height="58" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="309" y="300" width="44" height="58" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><text x="287" y="335" text-anchor="middle" font-size="17" fill="#dddddd">cr</text><text x="331" y="335" text-anchor="middle" font-size="17" fill="#dddddd">lf</text><text x="165" y="325" text-anchor="end" font-size="18" font-weight="600" fill="#eeeeee">Linha em</text><text x="165" y="350" text-anchor="end" font-size="18" font-weight="600" fill="#eeeeee">branco</text><line x1="170" y1="331" x2="263" y2="331" stroke="#888" stroke-width="0.8" opacity="0.6"/><rect x="265" y="358" width="680" height="125" fill="#3C3489" fill-opacity="0.3" stroke="#A89CF5" stroke-width="1"/><path d="M258 450 L277 442" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M262 460 L281 452" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M932 450 L951 442" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M936 460 L955 452" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><text x="165" y="420" text-anchor="end" font-size="18" font-weight="600" fill="#eeeeee">Corpo da</text><text x="165" y="445" text-anchor="end" font-size="18" font-weight="600" fill="#eeeeee">entidade</text><line x1="187" y1="426" x2="263" y2="426" stroke="#888" stroke-width="0.8" opacity="0.6"/></svg>
+  </svg>
+</div>
+
 
 ### 4.3 Mensagem de resposta HTTP
 
@@ -157,9 +184,37 @@ A resposta possui estrutura semelhante, mas começa com uma linha de estado, que
 
 ### Figura — Estrutura de uma resposta HTTP
 
+
+<div
+  class="svg-diagram"
+  style="
+    width: 100%;
+    max-width: 780px;
+    margin: 1.5rem auto;
+    overflow: hidden;
+  "
+>
+  <svg
+    width="780"
+    height="480"
+    viewBox="0 0 780 480"
+    xmlns="http://www.w3.org/2000/svg"
+    font-family="Arial, sans-serif"
+    preserveAspectRatio="xMidYMid meet"
+    class="network-diagram"
+    style="
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 780 / 480;
+    "
+  >
 <svg viewBox="0 0 980 520" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" preserveAspectRatio="xMidYMid meet"  
 style="display:block; width:100%; max-width:800px; height:auto; margin:0 auto;">
 <rect width="980" height="520" fill="transparent"/><rect x="250" y="30" width="135" height="60" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1"/><rect x="385" y="30" width="35" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="420" y="30" width="175" height="60" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1"/><rect x="595" y="30" width="35" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="630" y="30" width="145" height="60" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1"/><rect x="775" y="30" width="40" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="815" y="30" width="40" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><text x="317.5" y="66" text-anchor="middle" font-size="20" font-weight="600" fill="#D6F0FB">versão</text><text x="402.5" y="66" text-anchor="middle" font-size="16" fill="#dddddd">sp</text><text x="507.5" y="55" text-anchor="middle" font-size="18" font-weight="600" fill="#D6F0FB">código</text><text x="507.5" y="77" text-anchor="middle" font-size="18" font-weight="600" fill="#D6F0FB">de estado</text><text x="612.5" y="66" text-anchor="middle" font-size="16" fill="#dddddd">sp</text><text x="702.5" y="66" text-anchor="middle" font-size="20" font-weight="600" fill="#D6F0FB">frase</text><text x="795" y="66" text-anchor="middle" font-size="16" fill="#dddddd">cr</text><text x="835" y="66" text-anchor="middle" font-size="16" fill="#dddddd">lf</text><text x="180" y="48" text-anchor="end" font-size="17" font-weight="600" fill="#eeeeee">Linha de</text><text x="180" y="70" text-anchor="end" font-size="17" font-weight="600" fill="#eeeeee">estado</text><line x1="190" y1="58" x2="248" y2="58" stroke="#888" stroke-width="0.8" opacity="0.5"/><rect x="250" y="90" width="240" height="70" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><rect x="490" y="90" width="40" height="70" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="530" y="90" width="120" height="70" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="650" y="90" width="40" height="70" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="690" y="90" width="40" height="70" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><text x="370" y="124" text-anchor="middle" font-size="17" fill="#eeeeee">nome do campo</text><text x="370" y="146" text-anchor="middle" font-size="17" fill="#eeeeee">de cabeçalho:</text><text x="510" y="132" text-anchor="middle" font-size="16" fill="#dddddd">sp</text><text x="590" y="132" text-anchor="middle" font-size="18" fill="#eeeeee">valor</text><text x="670" y="132" text-anchor="middle" font-size="16" fill="#dddddd">cr</text><text x="710" y="132" text-anchor="middle" font-size="16" fill="#dddddd">lf</text><rect x="250" y="160" width="480" height="55" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><path d="M246 177 L262 170" stroke="#aaaaaa" stroke-width="1.5" fill="none"/><path d="M251 188 L267 181" stroke="#aaaaaa" stroke-width="1.5" fill="none"/><path d="M714 177 L730 170" stroke="#aaaaaa" stroke-width="1.5" fill="none"/><path d="M719 188 L735 181" stroke="#aaaaaa" stroke-width="1.5" fill="none"/><rect x="250" y="215" width="240" height="70" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><rect x="490" y="215" width="40" height="70" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="530" y="215" width="120" height="70" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="650" y="215" width="40" height="70" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="690" y="215" width="40" height="70" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><text x="370" y="249" text-anchor="middle" font-size="17" fill="#eeeeee">nome do campo</text><text x="370" y="271" text-anchor="middle" font-size="17" fill="#eeeeee">de cabeçalho:</text><text x="510" y="257" text-anchor="middle" font-size="16" fill="#dddddd">sp</text><text x="590" y="257" text-anchor="middle" font-size="18" fill="#eeeeee">valor</text><text x="670" y="257" text-anchor="middle" font-size="16" fill="#dddddd">cr</text><text x="710" y="257" text-anchor="middle" font-size="16" fill="#dddddd">lf</text><path d="M240 95 L228 95 L228 285 L240 285" stroke="#999" stroke-width="0.8" fill="none" opacity="0.5"/><line x1="228" y1="190" x2="210" y2="190" stroke="#999" stroke-width="0.8" opacity="0.5"/><text x="195" y="181" text-anchor="end" font-size="17" font-weight="600" fill="#eeeeee">Linhas de</text><text x="195" y="203" text-anchor="end" font-size="17" font-weight="600" fill="#eeeeee">cabeçalho</text><rect x="250" y="300" width="40" height="45" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="290" y="300" width="40" height="45" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><text x="270" y="328" text-anchor="middle" font-size="16" fill="#dddddd">cr</text><text x="310" y="328" text-anchor="middle" font-size="16" fill="#dddddd">lf</text><text x="180" y="314" text-anchor="end" font-size="17" font-weight="600" fill="#eeeeee">Linha em</text><text x="180" y="336" text-anchor="end" font-size="17" font-weight="600" fill="#eeeeee">branco</text><line x1="190" y1="322" x2="248" y2="322" stroke="#888" stroke-width="0.8" opacity="0.5"/><rect x="250" y="365" width="670" height="125" fill="#3C3489" fill-opacity="0.3" stroke="#A89CF5" stroke-width="1"/><path d="M246 412 L262 405" stroke="#aaaaaa" stroke-width="1.5" fill="none"/><path d="M251 423 L267 416" stroke="#aaaaaa" stroke-width="1.5" fill="none"/><path d="M904 412 L920 405" stroke="#aaaaaa" stroke-width="1.5" fill="none"/><path d="M909 423 L925 416" stroke="#aaaaaa" stroke-width="1.5" fill="none"/><text x="180" y="420" text-anchor="end" font-size="17" font-weight="600" fill="#eeeeee">Corpo da</text><text x="180" y="442" text-anchor="end" font-size="17" font-weight="600" fill="#eeeeee">entidade</text><line x1="190" y1="430" x2="248" y2="430" stroke="#888" stroke-width="0.8" opacity="0.5"/></svg>
+  </svg>
+</div>
+
 
 ```mermaid
 %%{init: {
@@ -455,9 +510,38 @@ Os principais campos apresentados são:
 
 ### Figura — Estrutura do cabeçalho IPv4
 
+
+<div
+  class="svg-diagram"
+  style="
+    width: 100%;
+    max-width: 780px;
+    margin: 1.5rem auto;
+    overflow: hidden;
+  "
+>
+  <svg
+    width="780"
+    height="480"
+    viewBox="0 0 780 480"
+    xmlns="http://www.w3.org/2000/svg"
+    font-family="Arial, sans-serif"
+    preserveAspectRatio="xMidYMid meet"
+    class="network-diagram"
+    style="
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 780 / 480;
+    "
+  >
 <svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" preserveAspectRatio="xMidYMid meet"  
 style="display:block; width:100%; max-width:800px; height:auto; margin:0 auto;" >
 <rect width="900" height="500" fill="transparent"/><line x1="105" y1="28" x2="795" y2="28" stroke="#aaaaaa" stroke-width="1.4"/><path d="M105 28 L116 23 L116 33 Z" fill="#aaaaaa"/><path d="M795 28 L784 23 L784 33 Z" fill="#aaaaaa"/><text x="450" y="33" text-anchor="middle" font-size="16" font-weight="600" fill="#eeeeee">32 Bits</text><line x1="105" y1="68" x2="795" y2="68" stroke="#888888" stroke-width="1"/><line x1="105" y1="48" x2="105" y2="68" stroke="#aaaaaa" stroke-width="1.4"/><line x1="277.5" y1="48" x2="277.5" y2="68" stroke="#aaaaaa" stroke-width="1.4"/><line x1="450" y1="48" x2="450" y2="68" stroke="#aaaaaa" stroke-width="1.4"/><line x1="622.5" y1="48" x2="622.5" y2="68" stroke="#aaaaaa" stroke-width="1.4"/><line x1="795" y1="48" x2="795" y2="68" stroke="#aaaaaa" stroke-width="1.4"/><path d="M126.56 58 V68 M148.12 58 V68 M169.68 58 V68 M191.25 58 V68 M212.81 58 V68 M234.37 58 V68 M255.93 58 V68 M299.06 58 V68 M320.62 58 V68 M342.18 58 V68 M363.75 58 V68 M385.31 58 V68 M406.87 58 V68 M428.43 58 V68 M471.56 58 V68 M493.12 58 V68 M514.68 58 V68 M536.25 58 V68 M557.81 58 V68 M579.37 58 V68 M600.93 58 V68 M644.06 58 V68 M665.62 58 V68 M687.18 58 V68 M708.75 58 V68 M730.31 58 V68 M751.87 58 V68 M773.43 58 V68" fill="none" stroke="#888888" stroke-width="1"/><rect x="105" y="85" width="86.25" height="42" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1"/><rect x="191.25" y="85" width="86.25" height="42" fill="#1A4A5E" fill-opacity="0.4" stroke="#7FCFF0" stroke-width="1"/><rect x="277.5" y="85" width="129.38" height="42" fill="#1A4A5E" fill-opacity="0.4" stroke="#7FCFF0" stroke-width="1"/><rect x="406.88" y="85" width="43.12" height="42" fill="#1A4A5E" fill-opacity="0.2" stroke="#7FCFF0" stroke-width="1"/><rect x="450" y="85" width="345" height="42" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><text x="148.13" y="111" text-anchor="middle" font-size="15" font-weight="600" fill="#D6F0FB">Version</text><text x="234.38" y="111" text-anchor="middle" font-size="15" font-weight="600" fill="#D6F0FB">IHL</text><text x="342.19" y="111" text-anchor="middle" font-size="15" font-weight="600" fill="#D6F0FB">Type of service</text><text x="622.5" y="111" text-anchor="middle" font-size="15" font-weight="600" fill="#D6F0FB">Total length</text><rect x="105" y="127" width="345" height="42" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><rect x="450" y="127" width="21.56" height="42" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="471.56" y="127" width="21.56" height="42" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="493.12" y="127" width="21.56" height="42" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="514.68" y="127" width="280.32" height="42" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><text x="277.5" y="153" text-anchor="middle" font-size="15" fill="#eeeeee">Identification</text><text x="460.78" y="153" text-anchor="middle" font-size="13" fill="#dddddd">0</text><text x="482.34" y="145" text-anchor="middle" font-size="12" fill="#dddddd">D</text><text x="482.34" y="160" text-anchor="middle" font-size="12" fill="#dddddd">F</text><text x="503.9" y="145" text-anchor="middle" font-size="12" fill="#dddddd">M</text><text x="503.9" y="160" text-anchor="middle" font-size="12" fill="#dddddd">F</text><text x="654.84" y="153" text-anchor="middle" font-size="15" fill="#eeeeee">Fragment offset</text><rect x="105" y="169" width="172.5" height="42" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><rect x="277.5" y="169" width="172.5" height="42" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><rect x="450" y="169" width="345" height="42" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><text x="191.25" y="195" text-anchor="middle" font-size="15" fill="#eeeeee">Time to live</text><text x="363.75" y="195" text-anchor="middle" font-size="15" fill="#eeeeee">Protocol</text><text x="622.5" y="195" text-anchor="middle" font-size="15" fill="#eeeeee">Header checksum</text><rect x="105" y="211" width="690" height="42" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><text x="450" y="237" text-anchor="middle" font-size="15" fill="#eeeeee">Source address</text><rect x="105" y="253" width="690" height="42" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><text x="450" y="279" text-anchor="middle" font-size="15" fill="#eeeeee">Destination address</text><rect x="105" y="295" width="690" height="78" fill="#1A4A5E" fill-opacity="0.18" stroke="#7FCFF0" stroke-width="1"/><text x="450" y="339" text-anchor="middle" font-size="16" fill="#eeeeee">Options (0 or more words)</text><rect x="105" y="373" width="690" height="100" fill="#3C3489" fill-opacity="0.3" stroke="#A89CF5" stroke-width="1"/><text x="450" y="428" text-anchor="middle" font-size="17" font-weight="600" fill="#eeeeee">Data</text><path d="M98 424 L112 418" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M102 434 L116 428" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M784 424 L798 418" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M788 434 L802 428" stroke="#aaaaaa" stroke-width="1.6" fill="none"/></svg>
+  </svg>
+</div>
+
+
 
 ### 10.2 Máscara e notação CIDR
 
@@ -911,8 +995,37 @@ O **cabeçalho básico tem tamanho fixo de 40 bytes**, equivalentes a **320 bits
 ### Figura — Estrutura do cabeçalho IPv6
 
 \* “32 bits” representa a largura padrão de cada linha, enquanto o cabeçalho IPv6 completo possui 320 bits (32 + 32 + 128 + 128).
+
+
+<div
+  class="svg-diagram"
+  style="
+    width: 100%;
+    max-width: 780px;
+    margin: 1.5rem auto;
+    overflow: hidden;
+  "
+>
+  <svg
+    width="780"
+    height="480"
+    viewBox="0 0 780 480"
+    xmlns="http://www.w3.org/2000/svg"
+    font-family="Arial, sans-serif"
+    preserveAspectRatio="xMidYMid meet"
+    class="network-diagram"
+    style="
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 780 / 480;
+    "
+  >
 <svg viewBox="0 0 920 460" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" preserveAspectRatio="xMidYMid meet"  
 style="display:block; width:100%; max-width:800px; height:auto; margin:0 auto;"><rect width="920" height="460" fill="transparent"/><path d="M80 72 V52 H840 V72" fill="none" stroke="#888888" stroke-width="1.2" opacity="0.8"/><line x1="460" y1="52" x2="460" y2="34" stroke="#888888" stroke-width="1.2" opacity="0.8"/><text x="460" y="27" text-anchor="middle" font-size="17" font-weight="600" fill="#eeeeee">32 bits</text><rect x="80" y="72" width="95" height="64" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1.2"/><rect x="175" y="72" width="190" height="64" fill="#1A4A5E" fill-opacity="0.45" stroke="#7FCFF0" stroke-width="1.2"/><rect x="365" y="72" width="475" height="64" fill="#1A4A5E" fill-opacity="0.35" stroke="#7FCFF0" stroke-width="1.2"/><text x="127.5" y="110" text-anchor="middle" font-size="18" font-weight="600" fill="#D6F0FB">Versão</text><text x="270" y="98" text-anchor="middle" font-size="18" font-weight="600" fill="#D6F0FB">Classe de</text><text x="270" y="121" text-anchor="middle" font-size="18" font-weight="600" fill="#D6F0FB">tráfego</text><text x="602.5" y="110" text-anchor="middle" font-size="18" font-weight="600" fill="#D6F0FB">Rótulo de fluxo</text><rect x="80" y="136" width="380" height="64" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1.2"/><rect x="460" y="136" width="190" height="64" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1.2"/><rect x="650" y="136" width="190" height="64" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1.2"/><text x="270" y="174" text-anchor="middle" font-size="18" fill="#eeeeee">Comprimento da carga útil</text><text x="555" y="161" text-anchor="middle" font-size="18" fill="#eeeeee">Próximo</text><text x="555" y="184" text-anchor="middle" font-size="18" fill="#eeeeee">cabeçalho (Hdr)</text><text x="745" y="174" text-anchor="middle" font-size="18" fill="#eeeeee">Limite de saltos</text><rect x="80" y="200" width="760" height="64" fill="#1A4A5E" fill-opacity="0.28" stroke="#7FCFF0" stroke-width="1.2"/><text x="460" y="226" text-anchor="middle" font-size="18" fill="#eeeeee">Endereço de origem</text><text x="460" y="249" text-anchor="middle" font-size="17" fill="#dddddd">(128 bits)</text><rect x="80" y="264" width="760" height="64" fill="#1A4A5E" fill-opacity="0.28" stroke="#7FCFF0" stroke-width="1.2"/><text x="460" y="290" text-anchor="middle" font-size="18" fill="#eeeeee">Endereço de destino</text><text x="460" y="313" text-anchor="middle" font-size="17" fill="#dddddd">(128 bits)</text><rect x="80" y="328" width="760" height="100" fill="#3C3489" fill-opacity="0.3" stroke="#A89CF5" stroke-width="1.2"/><text x="460" y="384" text-anchor="middle" font-size="19" font-weight="600" fill="#eeeeee">Dados</text><path d="M74 370 L88 364" fill="none" stroke="#aaaaaa" stroke-width="1.6"/><path d="M78 380 L92 374" fill="none" stroke="#aaaaaa" stroke-width="1.6"/><path d="M828 370 L842 364" fill="none" stroke="#aaaaaa" stroke-width="1.6"/><path d="M832 380 L846 374" fill="none" stroke="#aaaaaa" stroke-width="1.6"/></svg>
+  </svg>
+</div>
+
 
 
 > [!tip] Resumindo
