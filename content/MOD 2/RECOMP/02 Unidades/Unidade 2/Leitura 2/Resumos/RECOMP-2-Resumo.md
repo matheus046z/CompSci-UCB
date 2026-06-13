@@ -91,6 +91,30 @@ O endereço IP identifica o equipamento ou interface, enquanto a porta identific
 
 ### Figura — Socket entre o processo e a camada de transporte
 
+<div
+  class="svg-diagram"
+  style="
+    width: 100%;
+    max-width: 780px;
+    margin: 1.5rem auto;
+    overflow: hidden;
+  "
+>
+  <svg
+    width="780"
+    height="480"
+    viewBox="0 0 780 480"
+    xmlns="http://www.w3.org/2000/svg"
+    font-family="Arial, sans-serif"
+    preserveAspectRatio="xMidYMid meet"
+    class="network-diagram"
+    style="
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 780 / 480;
+    "
+  >
 <svg  
 viewBox="0 0 800 400"  
 xmlns="http://www.w3.org/2000/svg"  
@@ -99,6 +123,9 @@ preserveAspectRatio="xMidYMid meet"
 style="display:block; width:100%; max-width:800px; height:auto; margin:0 auto;"  
 >
 <defs><marker id="arrowS" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#7FE0C4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect width="800" height="400" fill="transparent"/><!-- ===== LADO ESQUERDO ===== --><text x="195" y="28" text-anchor="middle" font-size="14" font-weight="600" fill="#D8D3FF">Hospedeiro</text><text x="195" y="48" text-anchor="middle" font-size="14" font-weight="600" fill="#D8D3FF">ou servidor</text><ellipse cx="195" cy="135" rx="75" ry="35" fill="#3C3489" fill-opacity="0.35" stroke="#A89CF5" stroke-width="1.2"/><text x="195" y="140" text-anchor="middle" font-size="13" fill="#EDEBFF">Processo</text><rect x="155" y="180" width="80" height="32" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1.2"/><text x="195" y="200" text-anchor="middle" font-size="13" font-weight="600" fill="#D6F0FB">Socket</text><rect x="115" y="230" width="160" height="100" fill="transparent" stroke="#A89CF5" stroke-width="1.2"/><text x="195" y="272" text-anchor="middle" font-size="13" fill="#EDEBFF">TCP com</text><text x="195" y="294" text-anchor="middle" font-size="13" fill="#EDEBFF">buffers, variáveis</text><line x1="195" y1="170" x2="195" y2="180" stroke="#7FE0C4" stroke-width="2.2" marker-end="url(#arrowS)"/><line x1="195" y1="212" x2="195" y2="230" stroke="#7FE0C4" stroke-width="2.2" marker-end="url(#arrowS)"/><line x1="20" y1="196" x2="155" y2="196" stroke="#999" stroke-width="0.7" opacity="0.5"/><text x="15" y="180" font-size="12" fill="#cccccc">Controlado</text><text x="15" y="196" font-size="12" fill="#cccccc">pelo programador</text><text x="15" y="212" font-size="12" fill="#cccccc">da aplicação</text><line x1="20" y1="280" x2="115" y2="280" stroke="#999" stroke-width="0.7" opacity="0.5"/><text x="15" y="264" font-size="12" fill="#cccccc">Controlado</text><text x="15" y="280" font-size="12" fill="#cccccc">pelo sistema</text><text x="15" y="296" font-size="12" fill="#cccccc">operacional</text><!-- ===== LADO DIREITO ===== --><text x="605" y="28" text-anchor="middle" font-size="14" font-weight="600" fill="#D8D3FF">Hospedeiro</text><text x="605" y="48" text-anchor="middle" font-size="14" font-weight="600" fill="#D8D3FF">ou servidor</text><ellipse cx="605" cy="135" rx="75" ry="35" fill="#3C3489" fill-opacity="0.35" stroke="#A89CF5" stroke-width="1.2"/><text x="605" y="140" text-anchor="middle" font-size="13" fill="#EDEBFF">Processo</text><rect x="565" y="180" width="80" height="32" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1.2"/><text x="605" y="200" text-anchor="middle" font-size="13" font-weight="600" fill="#D6F0FB">Socket</text><rect x="525" y="230" width="160" height="100" fill="transparent" stroke="#A89CF5" stroke-width="1.2"/><text x="605" y="272" text-anchor="middle" font-size="13" fill="#EDEBFF">TCP com</text><text x="605" y="294" text-anchor="middle" font-size="13" fill="#EDEBFF">buffers, variáveis</text><line x1="605" y1="170" x2="605" y2="180" stroke="#7FE0C4" stroke-width="2.2" marker-end="url(#arrowS)"/><line x1="605" y1="212" x2="605" y2="230" stroke="#7FE0C4" stroke-width="2.2" marker-end="url(#arrowS)"/><line x1="645" y1="196" x2="780" y2="196" stroke="#999" stroke-width="0.7" opacity="0.5"/><text x="785" y="180" text-anchor="end" font-size="12" fill="#cccccc">Controlado</text><text x="785" y="196" text-anchor="end" font-size="12" fill="#cccccc">pelo programador</text><text x="785" y="212" text-anchor="end" font-size="12" fill="#cccccc">da aplicação</text><line x1="685" y1="280" x2="780" y2="280" stroke="#999" stroke-width="0.7" opacity="0.5"/><text x="785" y="264" text-anchor="end" font-size="12" fill="#cccccc">Controlado</text><text x="785" y="280" text-anchor="end" font-size="12" fill="#cccccc">pelo sistema</text><text x="785" y="296" text-anchor="end" font-size="12" fill="#cccccc">operacional</text><ellipse cx="400" cy="280" rx="80" ry="32" fill="#444444" fill-opacity="0.4" stroke="#999999" stroke-width="1"/><text x="400" y="285" text-anchor="middle" font-size="13" fill="#eeeeee">Internet</text><line x1="275" y1="280" x2="320" y2="280" stroke="#7FE0C4" stroke-width="3" marker-end="url(#arrowS)" marker-start="url(#arrowS)"/><line x1="480" y1="280" x2="525" y2="280" stroke="#7FE0C4" stroke-width="3" marker-end="url(#arrowS)" marker-start="url(#arrowS)"/></svg>
+  </svg>
+</div>
+
 
 Os serviços esperados em uma comunicação por sockets incluem:
 
@@ -440,9 +467,37 @@ A tabela de repasse associa informações do cabeçalho ou do destino a um enlac
 
 ### Figura — Funcionamento de uma tabela de repasse
 
+<div
+  class="svg-diagram"
+  style="
+    width: 100%;
+    max-width: 980px;
+    margin: 1.5rem auto;
+    overflow: hidden;
+  "
+>
+  <svg
+    width="980"
+    height="900"
+    viewBox="0 0 980 900"
+    xmlns="http://www.w3.org/2000/svg"
+    font-family="Arial, sans-serif"
+    preserveAspectRatio="xMidYMid meet"
+    class="network-diagram"
+    style="
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 980 / 900;
+    "
+  >
 <svg viewBox="0 0 980 900" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" preserveAspectRatio="xMidYMid meet"  
 style="display:block; width:100%; max-width:800px; height:auto; margin:0 auto;" >
 <defs><marker id="arrow-cyan" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#29B6E6"/></marker><marker id="arrow-gray" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#aaaaaa"/></marker><linearGradient id="router-gradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#D6F0FB" stop-opacity="0.95"/><stop offset="100%" stop-color="#1A4A5E" stop-opacity="0.75"/></linearGradient><g id="router"><ellipse cx="0" cy="9" rx="43" ry="18" fill="#D6F0FB" stroke="#7FCFF0" stroke-width="1.5"/><path d="M-43 9 V25 C-43 36 -24 44 0 44 C24 44 43 36 43 25 V9" fill="url(#router-gradient)" stroke="#7FCFF0" stroke-width="1.5"/><path d="M-17 2 L17 18 M17 2 L-17 18" stroke="#1A4A5E" stroke-width="5" stroke-linecap="round"/><path d="M-17 2 L-8 1 M-17 2 L-12 10 M17 2 L8 1 M17 2 L12 10 M-17 18 L-8 19 M-17 18 L-12 10 M17 18 L8 19 M17 18 L12 10" stroke="#1A4A5E" stroke-width="2" fill="none" stroke-linecap="round"/></g><g id="small-table"><rect x="0" y="0" width="108" height="112" fill="#1A4A5E" fill-opacity="0.28" stroke="#7FCFF0" stroke-width="1.2"/><ellipse cx="54" cy="17" rx="42" ry="11" fill="#3C3489" fill-opacity="0.28" stroke="#A89CF5" stroke-width="1.2"/><line x1="54" y1="29" x2="54" y2="42" stroke="#aaaaaa" stroke-width="1.2" marker-end="url(#arrow-gray)"/><rect x="10" y="42" width="88" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><line x1="10" y1="58" x2="98" y2="58" stroke="#7FCFF0" stroke-width="1"/><line x1="54" y1="42" x2="54" y2="102" stroke="#7FCFF0" stroke-width="1"/><line x1="10" y1="76" x2="98" y2="76" stroke="#7FCFF0" stroke-width="1"/></g></defs><rect width="980" height="900" fill="transparent"/><rect x="155" y="20" width="370" height="370" fill="#1A4A5E" fill-opacity="0.22" stroke="#7FCFF0" stroke-width="1.4"/><ellipse cx="340" cy="70" rx="157" ry="34" fill="#3C3489" fill-opacity="0.28" stroke="#A89CF5" stroke-width="1.4"/><text x="340" y="78" text-anchor="middle" font-size="21" font-weight="600" fill="#eeeeee">Algoritmo de roteamento</text><line x1="340" y1="105" x2="340" y2="135" stroke="#aaaaaa" stroke-width="1.5" marker-end="url(#arrow-gray)"/><rect x="173" y="140" width="334" height="225" fill="transparent" stroke="#7FCFF0" stroke-width="1.2"/><rect x="173" y="140" width="334" height="45" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1.2"/><text x="340" y="169" text-anchor="middle" font-size="20" font-weight="600" fill="#D6F0FB">Tabela de repasse local</text><rect x="173" y="185" width="178" height="73" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><rect x="351" y="185" width="156" height="73" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><text x="262" y="215" text-anchor="middle" font-size="18" fill="#eeeeee">valor do</text><text x="262" y="239" text-anchor="middle" font-size="18" fill="#eeeeee">cabeçalho</text><text x="429" y="215" text-anchor="middle" font-size="18" fill="#eeeeee">enlace</text><text x="429" y="239" text-anchor="middle" font-size="18" fill="#eeeeee">de saída</text><rect x="173" y="258" width="334" height="107" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><line x1="351" y1="258" x2="351" y2="365" stroke="#7FCFF0" stroke-width="1"/><text x="315" y="287" text-anchor="end" font-size="19" fill="#eeeeee">0100</text><text x="315" y="314" text-anchor="end" font-size="19" fill="#eeeeee">0101</text><text x="315" y="341" text-anchor="end" font-size="19" fill="#eeeeee">0111</text><text x="315" y="361" text-anchor="end" font-size="19" fill="#eeeeee">1001</text><text x="363" y="287" font-size="19" fill="#eeeeee">3</text><text x="363" y="314" font-size="19" fill="#eeeeee">2</text><text x="363" y="341" font-size="19" fill="#eeeeee">2</text><text x="363" y="361" font-size="19" fill="#eeeeee">1</text><path d="M190 390 L405 510 L330 600 Z" fill="#1A4A5E" fill-opacity="0.07"/><text x="48" y="460" font-size="19" font-weight="600" fill="#eeeeee">Valor no cabeçalho do</text><text x="48" y="485" font-size="19" font-weight="600" fill="#eeeeee">pacote que está chegando</text><line x1="235" y1="490" x2="250" y2="520" stroke="#aaaaaa" stroke-width="1.2"/><line x1="25" y1="545" x2="145" y2="545" stroke="#aaaaaa" stroke-width="2"/><rect x="145" y="528" width="126" height="34" fill="#1A4A5E" fill-opacity="0.6" stroke="#29B6E6" stroke-width="2"/><rect x="213" y="533" width="52" height="24" fill="transparent" stroke="#D6F0FB" stroke-width="1"/><text x="239" y="551" text-anchor="middle" font-size="16" font-weight="600" fill="#eeeeee">0111</text><line x1="271" y1="545" x2="315" y2="545" stroke="#29B6E6" stroke-width="4" marker-end="url(#arrow-cyan)"/><path d="M315 565 C350 505 430 495 480 520 C525 465 620 460 670 510 C750 490 835 535 840 610 C885 670 810 755 730 745 C680 790 575 785 535 752 C465 785 365 747 360 680 C310 650 295 605 315 565 Z" fill="#1A4A5E" fill-opacity="0.10"/><path d="M360 585 C425 540 500 555 535 595 C590 535 690 550 725 605 C785 625 785 690 735 718 C660 755 570 735 525 710 C465 750 390 710 395 655 C350 630 340 605 360 585 Z" fill="#3C3489" fill-opacity="0.08"/><line x1="365" y1="560" x2="535" y2="500" stroke="#aaaaaa" stroke-width="2"/><line x1="575" y1="500" x2="745" y2="560" stroke="#aaaaaa" stroke-width="2"/><line x1="370" y1="575" x2="535" y2="620" stroke="#aaaaaa" stroke-width="2"/><line x1="575" y1="620" x2="745" y2="575" stroke="#aaaaaa" stroke-width="2"/><line x1="355" y1="585" x2="430" y2="690" stroke="#aaaaaa" stroke-width="2"/><line x1="475" y1="710" x2="620" y2="710" stroke="#aaaaaa" stroke-width="2"/><line x1="660" y1="690" x2="755" y2="585" stroke="#aaaaaa" stroke-width="2"/><use href="#router" transform="translate(355 550)"/><use href="#router" transform="translate(555 485)"/><use href="#router" transform="translate(555 610)"/><use href="#router" transform="translate(770 550)"/><use href="#router" transform="translate(450 690)"/><use href="#router" transform="translate(645 690)"/><line x1="315" y1="545" x2="438" y2="575" stroke="#29B6E6" stroke-width="4" marker-end="url(#arrow-cyan)"/><text x="442" y="513" text-anchor="middle" font-size="20" font-weight="600" fill="#eeeeee">1</text><text x="455" y="594" text-anchor="middle" font-size="20" font-weight="600" fill="#eeeeee">2</text><text x="405" y="640" text-anchor="middle" font-size="20" font-weight="600" fill="#eeeeee">3</text><use href="#small-table" transform="translate(610 315)"/><use href="#small-table" transform="translate(845 420)"/><use href="#small-table" transform="translate(220 690)"/><use href="#small-table" transform="translate(510 775)"/><use href="#small-table" transform="translate(790 690)"/></svg>
+  </svg>
+</div>
+
+
 
 Os roteadores operam principalmente nas camadas de rede, enlace e física. Em geral, eles não executam as funções completas das camadas de aplicação e transporte dos terminais finais.
 
