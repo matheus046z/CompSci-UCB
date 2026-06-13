@@ -61,68 +61,75 @@ Na prática, o TCP começa com uma **cwnd pequena**. A cada ACK recebido, ele au
 
 A imagem abaixo representa esse crescimento:
 
-<svg width="680" height="540" viewBox="0 0 680 540" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif">
-<defs>
-<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-  <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-</marker>
-</defs>
+<svg viewBox="0 0 680 540" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" preserveAspectRatio="xMidYMid meet"  
+style="display:block; width:100%; max-width:800px; height:auto; margin:0 auto;">
+  <defs>
+    <marker id="arrowData" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#29B6E6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrowAck" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#aaaaaa" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+    <marker id="arrowTime" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="#888888" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
 
-<!-- Background -->
-<rect width="680" height="540" fill="#ffffff" rx="12"/>
+  <rect width="680" height="540" fill="transparent"/>
 
-<!-- Linhas do tempo -->
-<line x1="160" y1="50" x2="160" y2="490" stroke="#888" stroke-width="1" stroke-dasharray="4 4" opacity="0.4"/>
-<line x1="520" y1="50" x2="520" y2="490" stroke="#888" stroke-width="1" stroke-dasharray="4 4" opacity="0.4"/>
+  <!-- ===== Linhas do tempo ===== -->
+  <line x1="160" y1="50" x2="160" y2="490" stroke="#888888" stroke-width="1" stroke-dasharray="4 4" opacity="0.55"/>
+  <line x1="520" y1="50" x2="520" y2="490" stroke="#888888" stroke-width="1" stroke-dasharray="4 4" opacity="0.55"/>
 
-<!-- Hospedeiro A -->
-<rect x="100" y="18" width="120" height="38" rx="8" fill="#EEEDFE" stroke="#7F77DD" stroke-width="1"/>
-<text x="160" y="41" text-anchor="middle" font-size="13" font-weight="600" fill="#3C3489">Hospedeiro A</text>
+  <!-- ===== Cabeçalhos ===== -->
+  <rect x="100" y="18" width="120" height="38" rx="8" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1.2"/>
+  <text x="160" y="41" text-anchor="middle" font-size="13" font-weight="600" fill="#D6F0FB">Hospedeiro A</text>
 
-<!-- Hospedeiro B -->
-<rect x="460" y="18" width="120" height="38" rx="8" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1"/>
-<text x="520" y="41" text-anchor="middle" font-size="13" font-weight="600" fill="#085041">Hospedeiro B</text>
+  <rect x="460" y="18" width="120" height="38" rx="8" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1.2"/>
+  <text x="520" y="41" text-anchor="middle" font-size="13" font-weight="600" fill="#D6F0FB">Hospedeiro B</text>
 
-<!-- RTT brace -->
-<line x1="72" y1="80" x2="72" y2="160" stroke="#555" stroke-width="1" opacity="0.6"/>
-<line x1="68" y1="80" x2="76" y2="80" stroke="#555" stroke-width="1" opacity="0.6"/>
-<line x1="68" y1="160" x2="76" y2="160" stroke="#555" stroke-width="1" opacity="0.6"/>
-<text x="56" y="124" text-anchor="middle" font-size="12" fill="#555">RTT</text>
+  <!-- ===== Colchete RTT ===== -->
+  <line x1="72" y1="80" x2="72" y2="160" stroke="#aaaaaa" stroke-width="1.1" opacity="0.9"/>
+  <line x1="68" y1="80" x2="76" y2="80" stroke="#aaaaaa" stroke-width="1.1" opacity="0.9"/>
+  <line x1="68" y1="160" x2="76" y2="160" stroke="#aaaaaa" stroke-width="1.1" opacity="0.9"/>
+  <text x="56" y="124" text-anchor="middle" font-size="12" fill="#dddddd">RTT</text>
 
-<!-- === RODADA 1: 1 segmento === -->
-<line x1="160" y1="80" x2="520" y2="140" stroke="#7F77DD" stroke-width="1.8" marker-end="url(#arrow)"/>
-<line x1="520" y1="140" x2="160" y2="160" stroke="#1D9E75" stroke-width="1.2" stroke-dasharray="5 3" marker-end="url(#arrow)"/>
-<text x="350" y="97" text-anchor="middle" font-size="11" fill="#534AB7">1 segmento</text>
+  <!-- ===== Rodada 1 ===== -->
+  <line x1="160" y1="80" x2="520" y2="140" stroke="#29B6E6" stroke-width="1.8" marker-end="url(#arrowData)"/>
+  <line x1="520" y1="140" x2="160" y2="160" stroke="#aaaaaa" stroke-width="1.2" stroke-dasharray="5 3" marker-end="url(#arrowAck)"/>
+  <text x="350" y="97" text-anchor="middle" font-size="11" fill="#D6F0FB" font-weight="600">1 segmento</text>
 
-<!-- === RODADA 2: 2 segmentos === -->
-<line x1="160" y1="170" x2="520" y2="230" stroke="#7F77DD" stroke-width="1.8" marker-end="url(#arrow)"/>
-<line x1="160" y1="180" x2="520" y2="252" stroke="#7F77DD" stroke-width="1.8" marker-end="url(#arrow)"/>
-<line x1="520" y1="230" x2="160" y2="280" stroke="#1D9E75" stroke-width="1.2" stroke-dasharray="5 3" marker-end="url(#arrow)"/>
-<line x1="520" y1="252" x2="160" y2="292" stroke="#1D9E75" stroke-width="1.2" stroke-dasharray="5 3" marker-end="url(#arrow)"/>
-<text x="350" y="192" text-anchor="middle" font-size="11" fill="#534AB7">2 segmentos</text>
+  <!-- ===== Rodada 2 ===== -->
+  <line x1="160" y1="170" x2="520" y2="230" stroke="#29B6E6" stroke-width="1.8" marker-end="url(#arrowData)"/>
+  <line x1="160" y1="180" x2="520" y2="252" stroke="#29B6E6" stroke-width="1.8" marker-end="url(#arrowData)"/>
+  <line x1="520" y1="230" x2="160" y2="280" stroke="#aaaaaa" stroke-width="1.2" stroke-dasharray="5 3" marker-end="url(#arrowAck)"/>
+  <line x1="520" y1="252" x2="160" y2="292" stroke="#aaaaaa" stroke-width="1.2" stroke-dasharray="5 3" marker-end="url(#arrowAck)"/>
+  <text x="350" y="192" text-anchor="middle" font-size="11" fill="#D6F0FB" font-weight="600">2 segmentos</text>
 
-<!-- === RODADA 3: 4 segmentos === -->
-<line x1="160" y1="305" x2="520" y2="360" stroke="#7F77DD" stroke-width="1.8" marker-end="url(#arrow)"/>
-<line x1="160" y1="315" x2="520" y2="376" stroke="#7F77DD" stroke-width="1.8" marker-end="url(#arrow)"/>
-<line x1="160" y1="325" x2="520" y2="392" stroke="#7F77DD" stroke-width="1.8" marker-end="url(#arrow)"/>
-<line x1="160" y1="335" x2="520" y2="408" stroke="#7F77DD" stroke-width="1.8" marker-end="url(#arrow)"/>
-<line x1="520" y1="360" x2="160" y2="418" stroke="#1D9E75" stroke-width="1.2" stroke-dasharray="5 3" marker-end="url(#arrow)"/>
-<line x1="520" y1="376" x2="160" y2="430" stroke="#1D9E75" stroke-width="1.2" stroke-dasharray="5 3" marker-end="url(#arrow)"/>
-<line x1="520" y1="392" x2="160" y2="442" stroke="#1D9E75" stroke-width="1.2" stroke-dasharray="5 3" marker-end="url(#arrow)"/>
-<line x1="520" y1="408" x2="160" y2="454" stroke="#1D9E75" stroke-width="1.2" stroke-dasharray="5 3" marker-end="url(#arrow)"/>
-<text x="350" y="326" text-anchor="middle" font-size="11" fill="#534AB7">4 segmentos</text>
+  <!-- ===== Rodada 3 ===== -->
+  <line x1="160" y1="305" x2="520" y2="360" stroke="#29B6E6" stroke-width="1.8" marker-end="url(#arrowData)"/>
+  <line x1="160" y1="315" x2="520" y2="376" stroke="#29B6E6" stroke-width="1.8" marker-end="url(#arrowData)"/>
+  <line x1="160" y1="325" x2="520" y2="392" stroke="#29B6E6" stroke-width="1.8" marker-end="url(#arrowData)"/>
+  <line x1="160" y1="335" x2="520" y2="408" stroke="#29B6E6" stroke-width="1.8" marker-end="url(#arrowData)"/>
+  <line x1="520" y1="360" x2="160" y2="418" stroke="#aaaaaa" stroke-width="1.2" stroke-dasharray="5 3" marker-end="url(#arrowAck)"/>
+  <line x1="520" y1="376" x2="160" y2="430" stroke="#aaaaaa" stroke-width="1.2" stroke-dasharray="5 3" marker-end="url(#arrowAck)"/>
+  <line x1="520" y1="392" x2="160" y2="442" stroke="#aaaaaa" stroke-width="1.2" stroke-dasharray="5 3" marker-end="url(#arrowAck)"/>
+  <line x1="520" y1="408" x2="160" y2="454" stroke="#aaaaaa" stroke-width="1.2" stroke-dasharray="5 3" marker-end="url(#arrowAck)"/>
+  <text x="350" y="326" text-anchor="middle" font-size="11" fill="#D6F0FB" font-weight="600">4 segmentos</text>
 
-<!-- Setas de Tempo -->
-<line x1="160" y1="472" x2="160" y2="492" stroke="#888" stroke-width="1.4" marker-end="url(#arrow)"/>
-<text x="160" y="512" text-anchor="middle" font-size="12" fill="#666">Tempo</text>
-<line x1="520" y1="472" x2="520" y2="492" stroke="#888" stroke-width="1.4" marker-end="url(#arrow)"/>
-<text x="520" y="512" text-anchor="middle" font-size="12" fill="#666">Tempo</text>
+  <!-- ===== Setas de tempo ===== -->
+  <line x1="160" y1="472" x2="160" y2="492" stroke="#888888" stroke-width="1.4" marker-end="url(#arrowTime)"/>
+  <text x="160" y="512" text-anchor="middle" font-size="12" fill="#dddddd">Tempo</text>
 
-<!-- Legenda -->
-<line x1="230" y1="528" x2="265" y2="528" stroke="#7F77DD" stroke-width="2"/>
-<text x="272" y="532" font-size="11" fill="#534AB7">dados (A→B)</text>
-<line x1="360" y1="528" x2="395" y2="528" stroke="#1D9E75" stroke-width="1.4" stroke-dasharray="5 3"/>
-<text x="402" y="532" font-size="11" fill="#0F6E56">ACK (B→A)</text>
+  <line x1="520" y1="472" x2="520" y2="492" stroke="#888888" stroke-width="1.4" marker-end="url(#arrowTime)"/>
+  <text x="520" y="512" text-anchor="middle" font-size="12" fill="#dddddd">Tempo</text>
+
+  <!-- ===== Legenda ===== -->
+  <line x1="230" y1="528" x2="265" y2="528" stroke="#29B6E6" stroke-width="2"/>
+  <text x="272" y="532" font-size="11" fill="#eeeeee">dados (A→B)</text>
+
+  <line x1="360" y1="528" x2="395" y2="528" stroke="#aaaaaa" stroke-width="1.4" stroke-dasharray="5 3"/>
+  <text x="402" y="532" font-size="11" fill="#dddddd">ACK (B→A)</text>
 </svg>
 
 

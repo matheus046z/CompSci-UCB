@@ -91,7 +91,14 @@ O endereço IP identifica o equipamento ou interface, enquanto a porta identific
 
 ### Figura — Socket entre o processo e a camada de transporte
 
-<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif"><defs><marker id="arrowS" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#7FE0C4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect width="800" height="400" fill="transparent"/><!-- ===== LADO ESQUERDO ===== --><text x="195" y="28" text-anchor="middle" font-size="14" font-weight="600" fill="#D8D3FF">Hospedeiro</text><text x="195" y="48" text-anchor="middle" font-size="14" font-weight="600" fill="#D8D3FF">ou servidor</text><ellipse cx="195" cy="135" rx="75" ry="35" fill="#3C3489" fill-opacity="0.35" stroke="#A89CF5" stroke-width="1.2"/><text x="195" y="140" text-anchor="middle" font-size="13" fill="#EDEBFF">Processo</text><rect x="155" y="180" width="80" height="32" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1.2"/><text x="195" y="200" text-anchor="middle" font-size="13" font-weight="600" fill="#D6F0FB">Socket</text><rect x="115" y="230" width="160" height="100" fill="transparent" stroke="#A89CF5" stroke-width="1.2"/><text x="195" y="272" text-anchor="middle" font-size="13" fill="#EDEBFF">TCP com</text><text x="195" y="294" text-anchor="middle" font-size="13" fill="#EDEBFF">buffers, variáveis</text><line x1="195" y1="170" x2="195" y2="180" stroke="#7FE0C4" stroke-width="2.2" marker-end="url(#arrowS)"/><line x1="195" y1="212" x2="195" y2="230" stroke="#7FE0C4" stroke-width="2.2" marker-end="url(#arrowS)"/><line x1="20" y1="196" x2="155" y2="196" stroke="#999" stroke-width="0.7" opacity="0.5"/><text x="15" y="180" font-size="12" fill="#cccccc">Controlado</text><text x="15" y="196" font-size="12" fill="#cccccc">pelo programador</text><text x="15" y="212" font-size="12" fill="#cccccc">da aplicação</text><line x1="20" y1="280" x2="115" y2="280" stroke="#999" stroke-width="0.7" opacity="0.5"/><text x="15" y="264" font-size="12" fill="#cccccc">Controlado</text><text x="15" y="280" font-size="12" fill="#cccccc">pelo sistema</text><text x="15" y="296" font-size="12" fill="#cccccc">operacional</text><!-- ===== LADO DIREITO ===== --><text x="605" y="28" text-anchor="middle" font-size="14" font-weight="600" fill="#D8D3FF">Hospedeiro</text><text x="605" y="48" text-anchor="middle" font-size="14" font-weight="600" fill="#D8D3FF">ou servidor</text><ellipse cx="605" cy="135" rx="75" ry="35" fill="#3C3489" fill-opacity="0.35" stroke="#A89CF5" stroke-width="1.2"/><text x="605" y="140" text-anchor="middle" font-size="13" fill="#EDEBFF">Processo</text><rect x="565" y="180" width="80" height="32" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1.2"/><text x="605" y="200" text-anchor="middle" font-size="13" font-weight="600" fill="#D6F0FB">Socket</text><rect x="525" y="230" width="160" height="100" fill="transparent" stroke="#A89CF5" stroke-width="1.2"/><text x="605" y="272" text-anchor="middle" font-size="13" fill="#EDEBFF">TCP com</text><text x="605" y="294" text-anchor="middle" font-size="13" fill="#EDEBFF">buffers, variáveis</text><line x1="605" y1="170" x2="605" y2="180" stroke="#7FE0C4" stroke-width="2.2" marker-end="url(#arrowS)"/><line x1="605" y1="212" x2="605" y2="230" stroke="#7FE0C4" stroke-width="2.2" marker-end="url(#arrowS)"/><line x1="645" y1="196" x2="780" y2="196" stroke="#999" stroke-width="0.7" opacity="0.5"/><text x="785" y="180" text-anchor="end" font-size="12" fill="#cccccc">Controlado</text><text x="785" y="196" text-anchor="end" font-size="12" fill="#cccccc">pelo programador</text><text x="785" y="212" text-anchor="end" font-size="12" fill="#cccccc">da aplicação</text><line x1="685" y1="280" x2="780" y2="280" stroke="#999" stroke-width="0.7" opacity="0.5"/><text x="785" y="264" text-anchor="end" font-size="12" fill="#cccccc">Controlado</text><text x="785" y="280" text-anchor="end" font-size="12" fill="#cccccc">pelo sistema</text><text x="785" y="296" text-anchor="end" font-size="12" fill="#cccccc">operacional</text><ellipse cx="400" cy="280" rx="80" ry="32" fill="#444444" fill-opacity="0.4" stroke="#999999" stroke-width="1"/><text x="400" y="285" text-anchor="middle" font-size="13" fill="#eeeeee">Internet</text><line x1="275" y1="280" x2="320" y2="280" stroke="#7FE0C4" stroke-width="3" marker-end="url(#arrowS)" marker-start="url(#arrowS)"/><line x1="480" y1="280" x2="525" y2="280" stroke="#7FE0C4" stroke-width="3" marker-end="url(#arrowS)" marker-start="url(#arrowS)"/></svg>
+<svg  
+viewBox="0 0 800 400"  
+xmlns="http://www.w3.org/2000/svg"  
+font-family="sans-serif"  
+preserveAspectRatio="xMidYMid meet"  
+style="display:block; width:100%; max-width:800px; height:auto; margin:0 auto;"  
+>
+<defs><marker id="arrowS" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#7FE0C4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs><rect width="800" height="400" fill="transparent"/><!-- ===== LADO ESQUERDO ===== --><text x="195" y="28" text-anchor="middle" font-size="14" font-weight="600" fill="#D8D3FF">Hospedeiro</text><text x="195" y="48" text-anchor="middle" font-size="14" font-weight="600" fill="#D8D3FF">ou servidor</text><ellipse cx="195" cy="135" rx="75" ry="35" fill="#3C3489" fill-opacity="0.35" stroke="#A89CF5" stroke-width="1.2"/><text x="195" y="140" text-anchor="middle" font-size="13" fill="#EDEBFF">Processo</text><rect x="155" y="180" width="80" height="32" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1.2"/><text x="195" y="200" text-anchor="middle" font-size="13" font-weight="600" fill="#D6F0FB">Socket</text><rect x="115" y="230" width="160" height="100" fill="transparent" stroke="#A89CF5" stroke-width="1.2"/><text x="195" y="272" text-anchor="middle" font-size="13" fill="#EDEBFF">TCP com</text><text x="195" y="294" text-anchor="middle" font-size="13" fill="#EDEBFF">buffers, variáveis</text><line x1="195" y1="170" x2="195" y2="180" stroke="#7FE0C4" stroke-width="2.2" marker-end="url(#arrowS)"/><line x1="195" y1="212" x2="195" y2="230" stroke="#7FE0C4" stroke-width="2.2" marker-end="url(#arrowS)"/><line x1="20" y1="196" x2="155" y2="196" stroke="#999" stroke-width="0.7" opacity="0.5"/><text x="15" y="180" font-size="12" fill="#cccccc">Controlado</text><text x="15" y="196" font-size="12" fill="#cccccc">pelo programador</text><text x="15" y="212" font-size="12" fill="#cccccc">da aplicação</text><line x1="20" y1="280" x2="115" y2="280" stroke="#999" stroke-width="0.7" opacity="0.5"/><text x="15" y="264" font-size="12" fill="#cccccc">Controlado</text><text x="15" y="280" font-size="12" fill="#cccccc">pelo sistema</text><text x="15" y="296" font-size="12" fill="#cccccc">operacional</text><!-- ===== LADO DIREITO ===== --><text x="605" y="28" text-anchor="middle" font-size="14" font-weight="600" fill="#D8D3FF">Hospedeiro</text><text x="605" y="48" text-anchor="middle" font-size="14" font-weight="600" fill="#D8D3FF">ou servidor</text><ellipse cx="605" cy="135" rx="75" ry="35" fill="#3C3489" fill-opacity="0.35" stroke="#A89CF5" stroke-width="1.2"/><text x="605" y="140" text-anchor="middle" font-size="13" fill="#EDEBFF">Processo</text><rect x="565" y="180" width="80" height="32" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1.2"/><text x="605" y="200" text-anchor="middle" font-size="13" font-weight="600" fill="#D6F0FB">Socket</text><rect x="525" y="230" width="160" height="100" fill="transparent" stroke="#A89CF5" stroke-width="1.2"/><text x="605" y="272" text-anchor="middle" font-size="13" fill="#EDEBFF">TCP com</text><text x="605" y="294" text-anchor="middle" font-size="13" fill="#EDEBFF">buffers, variáveis</text><line x1="605" y1="170" x2="605" y2="180" stroke="#7FE0C4" stroke-width="2.2" marker-end="url(#arrowS)"/><line x1="605" y1="212" x2="605" y2="230" stroke="#7FE0C4" stroke-width="2.2" marker-end="url(#arrowS)"/><line x1="645" y1="196" x2="780" y2="196" stroke="#999" stroke-width="0.7" opacity="0.5"/><text x="785" y="180" text-anchor="end" font-size="12" fill="#cccccc">Controlado</text><text x="785" y="196" text-anchor="end" font-size="12" fill="#cccccc">pelo programador</text><text x="785" y="212" text-anchor="end" font-size="12" fill="#cccccc">da aplicação</text><line x1="685" y1="280" x2="780" y2="280" stroke="#999" stroke-width="0.7" opacity="0.5"/><text x="785" y="264" text-anchor="end" font-size="12" fill="#cccccc">Controlado</text><text x="785" y="280" text-anchor="end" font-size="12" fill="#cccccc">pelo sistema</text><text x="785" y="296" text-anchor="end" font-size="12" fill="#cccccc">operacional</text><ellipse cx="400" cy="280" rx="80" ry="32" fill="#444444" fill-opacity="0.4" stroke="#999999" stroke-width="1"/><text x="400" y="285" text-anchor="middle" font-size="13" fill="#eeeeee">Internet</text><line x1="275" y1="280" x2="320" y2="280" stroke="#7FE0C4" stroke-width="3" marker-end="url(#arrowS)" marker-start="url(#arrowS)"/><line x1="480" y1="280" x2="525" y2="280" stroke="#7FE0C4" stroke-width="3" marker-end="url(#arrowS)" marker-start="url(#arrowS)"/></svg>
 
 Os serviços esperados em uma comunicação por sockets incluem:
 
@@ -135,15 +142,35 @@ A requisição contém uma linha inicial, linhas de cabeçalho, uma linha em bra
 
 ### Figura — Estrutura de uma requisição HTTP
 
-<svg width="800" height="400" viewBox="0 0 980 520" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif"><rect width="980" height="520" fill="transparent"/><rect x="265" y="45" width="135" height="60" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1"/><rect x="400" y="45" width="36" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="436" y="45" width="178" height="60" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1"/><rect x="614" y="45" width="36" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="650" y="45" width="143" height="60" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1"/><rect x="793" y="45" width="42" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="835" y="45" width="42" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><text x="332.5" y="81" text-anchor="middle" font-size="20" font-weight="600" fill="#D6F0FB">Método</text><text x="418" y="81" text-anchor="middle" font-size="17" fill="#dddddd">sp</text><text x="525" y="81" text-anchor="middle" font-size="20" font-weight="600" fill="#D6F0FB">URL</text><text x="632" y="81" text-anchor="middle" font-size="17" fill="#dddddd">sp</text><text x="721.5" y="81" text-anchor="middle" font-size="20" font-weight="600" fill="#D6F0FB">Versão</text><text x="814" y="81" text-anchor="middle" font-size="17" fill="#dddddd">cr</text><text x="856" y="81" text-anchor="middle" font-size="17" fill="#dddddd">lf</text><text x="165" y="66" text-anchor="end" font-size="18" font-weight="600" fill="#eeeeee">Linha de</text><text x="165" y="91" text-anchor="end" font-size="18" font-weight="600" fill="#eeeeee">requisição</text><line x1="197" y1="72" x2="263" y2="72" stroke="#888" stroke-width="0.8" opacity="0.6"/><rect x="265" y="105" width="247" height="60" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><rect x="512" y="105" width="38" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="550" y="105" width="112" height="60" fill="#1A4A5E" fill-opacity="0.18" stroke="#7FCFF0" stroke-width="1"/><rect x="662" y="105" width="42" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="704" y="105" width="42" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><text x="282" y="130" text-anchor="start" font-size="18" fill="#eeeeee">nome do campo</text><text x="282" y="153" text-anchor="start" font-size="18" fill="#eeeeee">de cabeçalho:</text><text x="531" y="141" text-anchor="middle" font-size="17" fill="#dddddd">sp</text><text x="606" y="141" text-anchor="middle" font-size="18" fill="#eeeeee">valor</text><text x="683" y="141" text-anchor="middle" font-size="17" fill="#dddddd">cr</text><text x="725" y="141" text-anchor="middle" font-size="17" fill="#dddddd">lf</text><rect x="265" y="165" width="481" height="75" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><path d="M258 194 L276 187" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M262 204 L280 197" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M732 194 L750 187" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M736 204 L754 197" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><rect x="265" y="240" width="247" height="60" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><rect x="512" y="240" width="38" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="550" y="240" width="112" height="60" fill="#1A4A5E" fill-opacity="0.18" stroke="#7FCFF0" stroke-width="1"/><rect x="662" y="240" width="42" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="704" y="240" width="42" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><text x="282" y="265" text-anchor="start" font-size="18" fill="#eeeeee">nome do campo</text><text x="282" y="288" text-anchor="start" font-size="18" fill="#eeeeee">de cabeçalho:</text><text x="531" y="276" text-anchor="middle" font-size="17" fill="#dddddd">sp</text><text x="606" y="276" text-anchor="middle" font-size="18" fill="#eeeeee">valor</text><text x="683" y="276" text-anchor="middle" font-size="17" fill="#dddddd">cr</text><text x="725" y="276" text-anchor="middle" font-size="17" fill="#dddddd">lf</text><path d="M257 105 L246 105 L246 300 L257 300" stroke="#999" stroke-width="0.9" fill="none" opacity="0.6"/><line x1="246" y1="202" x2="197" y2="202" stroke="#888" stroke-width="0.8" opacity="0.6"/><text x="165" y="194" text-anchor="end" font-size="18" font-weight="600" fill="#eeeeee">Linhas de</text><text x="165" y="219" text-anchor="end" font-size="18" font-weight="600" fill="#eeeeee">cabeçalho</text><rect x="265" y="300" width="44" height="58" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="309" y="300" width="44" height="58" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><text x="287" y="335" text-anchor="middle" font-size="17" fill="#dddddd">cr</text><text x="331" y="335" text-anchor="middle" font-size="17" fill="#dddddd">lf</text><text x="165" y="325" text-anchor="end" font-size="18" font-weight="600" fill="#eeeeee">Linha em</text><text x="165" y="350" text-anchor="end" font-size="18" font-weight="600" fill="#eeeeee">branco</text><line x1="170" y1="331" x2="263" y2="331" stroke="#888" stroke-width="0.8" opacity="0.6"/><rect x="265" y="358" width="680" height="125" fill="#3C3489" fill-opacity="0.3" stroke="#A89CF5" stroke-width="1"/><path d="M258 450 L277 442" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M262 460 L281 452" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M932 450 L951 442" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M936 460 L955 452" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><text x="165" y="420" text-anchor="end" font-size="18" font-weight="600" fill="#eeeeee">Corpo da</text><text x="165" y="445" text-anchor="end" font-size="18" font-weight="600" fill="#eeeeee">entidade</text><line x1="187" y1="426" x2="263" y2="426" stroke="#888" stroke-width="0.8" opacity="0.6"/></svg>
+<svg  
+viewBox="0 0 800 400"  
+xmlns="http://www.w3.org/2000/svg"  
+font-family="sans-serif"  
+preserveAspectRatio="xMidYMid meet"  
+style="display:block; width:100%; max-width:800px; height:auto; margin:0 auto;"  
+>
+<rect width="980" height="520" fill="transparent"/><rect x="265" y="45" width="135" height="60" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1"/><rect x="400" y="45" width="36" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="436" y="45" width="178" height="60" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1"/><rect x="614" y="45" width="36" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="650" y="45" width="143" height="60" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1"/><rect x="793" y="45" width="42" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="835" y="45" width="42" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><text x="332.5" y="81" text-anchor="middle" font-size="20" font-weight="600" fill="#D6F0FB">Método</text><text x="418" y="81" text-anchor="middle" font-size="17" fill="#dddddd">sp</text><text x="525" y="81" text-anchor="middle" font-size="20" font-weight="600" fill="#D6F0FB">URL</text><text x="632" y="81" text-anchor="middle" font-size="17" fill="#dddddd">sp</text><text x="721.5" y="81" text-anchor="middle" font-size="20" font-weight="600" fill="#D6F0FB">Versão</text><text x="814" y="81" text-anchor="middle" font-size="17" fill="#dddddd">cr</text><text x="856" y="81" text-anchor="middle" font-size="17" fill="#dddddd">lf</text><text x="165" y="66" text-anchor="end" font-size="18" font-weight="600" fill="#eeeeee">Linha de</text><text x="165" y="91" text-anchor="end" font-size="18" font-weight="600" fill="#eeeeee">requisição</text><line x1="197" y1="72" x2="263" y2="72" stroke="#888" stroke-width="0.8" opacity="0.6"/><rect x="265" y="105" width="247" height="60" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><rect x="512" y="105" width="38" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="550" y="105" width="112" height="60" fill="#1A4A5E" fill-opacity="0.18" stroke="#7FCFF0" stroke-width="1"/><rect x="662" y="105" width="42" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="704" y="105" width="42" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><text x="282" y="130" text-anchor="start" font-size="18" fill="#eeeeee">nome do campo</text><text x="282" y="153" text-anchor="start" font-size="18" fill="#eeeeee">de cabeçalho:</text><text x="531" y="141" text-anchor="middle" font-size="17" fill="#dddddd">sp</text><text x="606" y="141" text-anchor="middle" font-size="18" fill="#eeeeee">valor</text><text x="683" y="141" text-anchor="middle" font-size="17" fill="#dddddd">cr</text><text x="725" y="141" text-anchor="middle" font-size="17" fill="#dddddd">lf</text><rect x="265" y="165" width="481" height="75" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><path d="M258 194 L276 187" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M262 204 L280 197" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M732 194 L750 187" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M736 204 L754 197" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><rect x="265" y="240" width="247" height="60" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><rect x="512" y="240" width="38" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="550" y="240" width="112" height="60" fill="#1A4A5E" fill-opacity="0.18" stroke="#7FCFF0" stroke-width="1"/><rect x="662" y="240" width="42" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="704" y="240" width="42" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><text x="282" y="265" text-anchor="start" font-size="18" fill="#eeeeee">nome do campo</text><text x="282" y="288" text-anchor="start" font-size="18" fill="#eeeeee">de cabeçalho:</text><text x="531" y="276" text-anchor="middle" font-size="17" fill="#dddddd">sp</text><text x="606" y="276" text-anchor="middle" font-size="18" fill="#eeeeee">valor</text><text x="683" y="276" text-anchor="middle" font-size="17" fill="#dddddd">cr</text><text x="725" y="276" text-anchor="middle" font-size="17" fill="#dddddd">lf</text><path d="M257 105 L246 105 L246 300 L257 300" stroke="#999" stroke-width="0.9" fill="none" opacity="0.6"/><line x1="246" y1="202" x2="197" y2="202" stroke="#888" stroke-width="0.8" opacity="0.6"/><text x="165" y="194" text-anchor="end" font-size="18" font-weight="600" fill="#eeeeee">Linhas de</text><text x="165" y="219" text-anchor="end" font-size="18" font-weight="600" fill="#eeeeee">cabeçalho</text><rect x="265" y="300" width="44" height="58" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="309" y="300" width="44" height="58" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><text x="287" y="335" text-anchor="middle" font-size="17" fill="#dddddd">cr</text><text x="331" y="335" text-anchor="middle" font-size="17" fill="#dddddd">lf</text><text x="165" y="325" text-anchor="end" font-size="18" font-weight="600" fill="#eeeeee">Linha em</text><text x="165" y="350" text-anchor="end" font-size="18" font-weight="600" fill="#eeeeee">branco</text><line x1="170" y1="331" x2="263" y2="331" stroke="#888" stroke-width="0.8" opacity="0.6"/><rect x="265" y="358" width="680" height="125" fill="#3C3489" fill-opacity="0.3" stroke="#A89CF5" stroke-width="1"/><path d="M258 450 L277 442" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M262 460 L281 452" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M932 450 L951 442" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M936 460 L955 452" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><text x="165" y="420" text-anchor="end" font-size="18" font-weight="600" fill="#eeeeee">Corpo da</text><text x="165" y="445" text-anchor="end" font-size="18" font-weight="600" fill="#eeeeee">entidade</text><line x1="187" y1="426" x2="263" y2="426" stroke="#888" stroke-width="0.8" opacity="0.6"/></svg>
 
 ### 4.3 Mensagem de resposta HTTP
 
 A resposta possui estrutura semelhante, mas começa com uma linha de estado, que contém a versão do HTTP, o código de estado e uma frase correspondente. Em seguida aparecem os cabeçalhos, a linha em branco e o corpo com os dados devolvidos ao cliente.
 
+```
+<svg  
+viewBox="0 0 800 400"  
+xmlns="http://www.w3.org/2000/svg"  
+font-family="sans-serif"  
+preserveAspectRatio="xMidYMid meet"  
+style="display:block; width:100%; max-width:800px; height:auto; margin:0 auto;"  
+>
+```
+
 ### Figura — Estrutura de uma resposta HTTP
 
-<svg width="800" height="400" viewBox="0 0 980 520" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif"><rect width="980" height="520" fill="transparent"/><rect x="250" y="30" width="135" height="60" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1"/><rect x="385" y="30" width="35" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="420" y="30" width="175" height="60" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1"/><rect x="595" y="30" width="35" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="630" y="30" width="145" height="60" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1"/><rect x="775" y="30" width="40" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="815" y="30" width="40" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><text x="317.5" y="66" text-anchor="middle" font-size="20" font-weight="600" fill="#D6F0FB">versão</text><text x="402.5" y="66" text-anchor="middle" font-size="16" fill="#dddddd">sp</text><text x="507.5" y="55" text-anchor="middle" font-size="18" font-weight="600" fill="#D6F0FB">código</text><text x="507.5" y="77" text-anchor="middle" font-size="18" font-weight="600" fill="#D6F0FB">de estado</text><text x="612.5" y="66" text-anchor="middle" font-size="16" fill="#dddddd">sp</text><text x="702.5" y="66" text-anchor="middle" font-size="20" font-weight="600" fill="#D6F0FB">frase</text><text x="795" y="66" text-anchor="middle" font-size="16" fill="#dddddd">cr</text><text x="835" y="66" text-anchor="middle" font-size="16" fill="#dddddd">lf</text><text x="180" y="48" text-anchor="end" font-size="17" font-weight="600" fill="#eeeeee">Linha de</text><text x="180" y="70" text-anchor="end" font-size="17" font-weight="600" fill="#eeeeee">estado</text><line x1="190" y1="58" x2="248" y2="58" stroke="#888" stroke-width="0.8" opacity="0.5"/><rect x="250" y="90" width="240" height="70" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><rect x="490" y="90" width="40" height="70" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="530" y="90" width="120" height="70" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="650" y="90" width="40" height="70" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="690" y="90" width="40" height="70" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><text x="370" y="124" text-anchor="middle" font-size="17" fill="#eeeeee">nome do campo</text><text x="370" y="146" text-anchor="middle" font-size="17" fill="#eeeeee">de cabeçalho:</text><text x="510" y="132" text-anchor="middle" font-size="16" fill="#dddddd">sp</text><text x="590" y="132" text-anchor="middle" font-size="18" fill="#eeeeee">valor</text><text x="670" y="132" text-anchor="middle" font-size="16" fill="#dddddd">cr</text><text x="710" y="132" text-anchor="middle" font-size="16" fill="#dddddd">lf</text><rect x="250" y="160" width="480" height="55" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><path d="M246 177 L262 170" stroke="#aaaaaa" stroke-width="1.5" fill="none"/><path d="M251 188 L267 181" stroke="#aaaaaa" stroke-width="1.5" fill="none"/><path d="M714 177 L730 170" stroke="#aaaaaa" stroke-width="1.5" fill="none"/><path d="M719 188 L735 181" stroke="#aaaaaa" stroke-width="1.5" fill="none"/><rect x="250" y="215" width="240" height="70" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><rect x="490" y="215" width="40" height="70" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="530" y="215" width="120" height="70" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="650" y="215" width="40" height="70" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="690" y="215" width="40" height="70" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><text x="370" y="249" text-anchor="middle" font-size="17" fill="#eeeeee">nome do campo</text><text x="370" y="271" text-anchor="middle" font-size="17" fill="#eeeeee">de cabeçalho:</text><text x="510" y="257" text-anchor="middle" font-size="16" fill="#dddddd">sp</text><text x="590" y="257" text-anchor="middle" font-size="18" fill="#eeeeee">valor</text><text x="670" y="257" text-anchor="middle" font-size="16" fill="#dddddd">cr</text><text x="710" y="257" text-anchor="middle" font-size="16" fill="#dddddd">lf</text><path d="M240 95 L228 95 L228 285 L240 285" stroke="#999" stroke-width="0.8" fill="none" opacity="0.5"/><line x1="228" y1="190" x2="210" y2="190" stroke="#999" stroke-width="0.8" opacity="0.5"/><text x="195" y="181" text-anchor="end" font-size="17" font-weight="600" fill="#eeeeee">Linhas de</text><text x="195" y="203" text-anchor="end" font-size="17" font-weight="600" fill="#eeeeee">cabeçalho</text><rect x="250" y="300" width="40" height="45" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="290" y="300" width="40" height="45" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><text x="270" y="328" text-anchor="middle" font-size="16" fill="#dddddd">cr</text><text x="310" y="328" text-anchor="middle" font-size="16" fill="#dddddd">lf</text><text x="180" y="314" text-anchor="end" font-size="17" font-weight="600" fill="#eeeeee">Linha em</text><text x="180" y="336" text-anchor="end" font-size="17" font-weight="600" fill="#eeeeee">branco</text><line x1="190" y1="322" x2="248" y2="322" stroke="#888" stroke-width="0.8" opacity="0.5"/><rect x="250" y="365" width="670" height="125" fill="#3C3489" fill-opacity="0.3" stroke="#A89CF5" stroke-width="1"/><path d="M246 412 L262 405" stroke="#aaaaaa" stroke-width="1.5" fill="none"/><path d="M251 423 L267 416" stroke="#aaaaaa" stroke-width="1.5" fill="none"/><path d="M904 412 L920 405" stroke="#aaaaaa" stroke-width="1.5" fill="none"/><path d="M909 423 L925 416" stroke="#aaaaaa" stroke-width="1.5" fill="none"/><text x="180" y="420" text-anchor="end" font-size="17" font-weight="600" fill="#eeeeee">Corpo da</text><text x="180" y="442" text-anchor="end" font-size="17" font-weight="600" fill="#eeeeee">entidade</text><line x1="190" y1="430" x2="248" y2="430" stroke="#888" stroke-width="0.8" opacity="0.5"/></svg>
+<svg viewBox="0 0 980 520" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" preserveAspectRatio="xMidYMid meet"  
+style="display:block; width:100%; max-width:800px; height:auto; margin:0 auto;" >
+
+<rect width="980" height="520" fill="transparent"/><rect x="250" y="30" width="135" height="60" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1"/><rect x="385" y="30" width="35" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="420" y="30" width="175" height="60" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1"/><rect x="595" y="30" width="35" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="630" y="30" width="145" height="60" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1"/><rect x="775" y="30" width="40" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="815" y="30" width="40" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><text x="317.5" y="66" text-anchor="middle" font-size="20" font-weight="600" fill="#D6F0FB">versão</text><text x="402.5" y="66" text-anchor="middle" font-size="16" fill="#dddddd">sp</text><text x="507.5" y="55" text-anchor="middle" font-size="18" font-weight="600" fill="#D6F0FB">código</text><text x="507.5" y="77" text-anchor="middle" font-size="18" font-weight="600" fill="#D6F0FB">de estado</text><text x="612.5" y="66" text-anchor="middle" font-size="16" fill="#dddddd">sp</text><text x="702.5" y="66" text-anchor="middle" font-size="20" font-weight="600" fill="#D6F0FB">frase</text><text x="795" y="66" text-anchor="middle" font-size="16" fill="#dddddd">cr</text><text x="835" y="66" text-anchor="middle" font-size="16" fill="#dddddd">lf</text><text x="180" y="48" text-anchor="end" font-size="17" font-weight="600" fill="#eeeeee">Linha de</text><text x="180" y="70" text-anchor="end" font-size="17" font-weight="600" fill="#eeeeee">estado</text><line x1="190" y1="58" x2="248" y2="58" stroke="#888" stroke-width="0.8" opacity="0.5"/><rect x="250" y="90" width="240" height="70" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><rect x="490" y="90" width="40" height="70" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="530" y="90" width="120" height="70" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="650" y="90" width="40" height="70" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="690" y="90" width="40" height="70" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><text x="370" y="124" text-anchor="middle" font-size="17" fill="#eeeeee">nome do campo</text><text x="370" y="146" text-anchor="middle" font-size="17" fill="#eeeeee">de cabeçalho:</text><text x="510" y="132" text-anchor="middle" font-size="16" fill="#dddddd">sp</text><text x="590" y="132" text-anchor="middle" font-size="18" fill="#eeeeee">valor</text><text x="670" y="132" text-anchor="middle" font-size="16" fill="#dddddd">cr</text><text x="710" y="132" text-anchor="middle" font-size="16" fill="#dddddd">lf</text><rect x="250" y="160" width="480" height="55" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><path d="M246 177 L262 170" stroke="#aaaaaa" stroke-width="1.5" fill="none"/><path d="M251 188 L267 181" stroke="#aaaaaa" stroke-width="1.5" fill="none"/><path d="M714 177 L730 170" stroke="#aaaaaa" stroke-width="1.5" fill="none"/><path d="M719 188 L735 181" stroke="#aaaaaa" stroke-width="1.5" fill="none"/><rect x="250" y="215" width="240" height="70" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><rect x="490" y="215" width="40" height="70" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="530" y="215" width="120" height="70" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="650" y="215" width="40" height="70" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="690" y="215" width="40" height="70" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><text x="370" y="249" text-anchor="middle" font-size="17" fill="#eeeeee">nome do campo</text><text x="370" y="271" text-anchor="middle" font-size="17" fill="#eeeeee">de cabeçalho:</text><text x="510" y="257" text-anchor="middle" font-size="16" fill="#dddddd">sp</text><text x="590" y="257" text-anchor="middle" font-size="18" fill="#eeeeee">valor</text><text x="670" y="257" text-anchor="middle" font-size="16" fill="#dddddd">cr</text><text x="710" y="257" text-anchor="middle" font-size="16" fill="#dddddd">lf</text><path d="M240 95 L228 95 L228 285 L240 285" stroke="#999" stroke-width="0.8" fill="none" opacity="0.5"/><line x1="228" y1="190" x2="210" y2="190" stroke="#999" stroke-width="0.8" opacity="0.5"/><text x="195" y="181" text-anchor="end" font-size="17" font-weight="600" fill="#eeeeee">Linhas de</text><text x="195" y="203" text-anchor="end" font-size="17" font-weight="600" fill="#eeeeee">cabeçalho</text><rect x="250" y="300" width="40" height="45" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="290" y="300" width="40" height="45" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><text x="270" y="328" text-anchor="middle" font-size="16" fill="#dddddd">cr</text><text x="310" y="328" text-anchor="middle" font-size="16" fill="#dddddd">lf</text><text x="180" y="314" text-anchor="end" font-size="17" font-weight="600" fill="#eeeeee">Linha em</text><text x="180" y="336" text-anchor="end" font-size="17" font-weight="600" fill="#eeeeee">branco</text><line x1="190" y1="322" x2="248" y2="322" stroke="#888" stroke-width="0.8" opacity="0.5"/><rect x="250" y="365" width="670" height="125" fill="#3C3489" fill-opacity="0.3" stroke="#A89CF5" stroke-width="1"/><path d="M246 412 L262 405" stroke="#aaaaaa" stroke-width="1.5" fill="none"/><path d="M251 423 L267 416" stroke="#aaaaaa" stroke-width="1.5" fill="none"/><path d="M904 412 L920 405" stroke="#aaaaaa" stroke-width="1.5" fill="none"/><path d="M909 423 L925 416" stroke="#aaaaaa" stroke-width="1.5" fill="none"/><text x="180" y="420" text-anchor="end" font-size="17" font-weight="600" fill="#eeeeee">Corpo da</text><text x="180" y="442" text-anchor="end" font-size="17" font-weight="600" fill="#eeeeee">entidade</text><line x1="190" y1="430" x2="248" y2="430" stroke="#888" stroke-width="0.8" opacity="0.5"/></svg>
 
 ```mermaid
 %%{init: {
@@ -369,7 +396,9 @@ A tabela de repasse associa informações do cabeçalho ou do destino a um enlac
 
 ### Figura — Funcionamento de uma tabela de repasse
 
-<svg width="800" height="800" viewBox="0 0 980 900" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif"><defs><marker id="arrow-cyan" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#29B6E6"/></marker><marker id="arrow-gray" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#aaaaaa"/></marker><linearGradient id="router-gradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#D6F0FB" stop-opacity="0.95"/><stop offset="100%" stop-color="#1A4A5E" stop-opacity="0.75"/></linearGradient><g id="router"><ellipse cx="0" cy="9" rx="43" ry="18" fill="#D6F0FB" stroke="#7FCFF0" stroke-width="1.5"/><path d="M-43 9 V25 C-43 36 -24 44 0 44 C24 44 43 36 43 25 V9" fill="url(#router-gradient)" stroke="#7FCFF0" stroke-width="1.5"/><path d="M-17 2 L17 18 M17 2 L-17 18" stroke="#1A4A5E" stroke-width="5" stroke-linecap="round"/><path d="M-17 2 L-8 1 M-17 2 L-12 10 M17 2 L8 1 M17 2 L12 10 M-17 18 L-8 19 M-17 18 L-12 10 M17 18 L8 19 M17 18 L12 10" stroke="#1A4A5E" stroke-width="2" fill="none" stroke-linecap="round"/></g><g id="small-table"><rect x="0" y="0" width="108" height="112" fill="#1A4A5E" fill-opacity="0.28" stroke="#7FCFF0" stroke-width="1.2"/><ellipse cx="54" cy="17" rx="42" ry="11" fill="#3C3489" fill-opacity="0.28" stroke="#A89CF5" stroke-width="1.2"/><line x1="54" y1="29" x2="54" y2="42" stroke="#aaaaaa" stroke-width="1.2" marker-end="url(#arrow-gray)"/><rect x="10" y="42" width="88" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><line x1="10" y1="58" x2="98" y2="58" stroke="#7FCFF0" stroke-width="1"/><line x1="54" y1="42" x2="54" y2="102" stroke="#7FCFF0" stroke-width="1"/><line x1="10" y1="76" x2="98" y2="76" stroke="#7FCFF0" stroke-width="1"/></g></defs><rect width="980" height="900" fill="transparent"/><rect x="155" y="20" width="370" height="370" fill="#1A4A5E" fill-opacity="0.22" stroke="#7FCFF0" stroke-width="1.4"/><ellipse cx="340" cy="70" rx="157" ry="34" fill="#3C3489" fill-opacity="0.28" stroke="#A89CF5" stroke-width="1.4"/><text x="340" y="78" text-anchor="middle" font-size="21" font-weight="600" fill="#eeeeee">Algoritmo de roteamento</text><line x1="340" y1="105" x2="340" y2="135" stroke="#aaaaaa" stroke-width="1.5" marker-end="url(#arrow-gray)"/><rect x="173" y="140" width="334" height="225" fill="transparent" stroke="#7FCFF0" stroke-width="1.2"/><rect x="173" y="140" width="334" height="45" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1.2"/><text x="340" y="169" text-anchor="middle" font-size="20" font-weight="600" fill="#D6F0FB">Tabela de repasse local</text><rect x="173" y="185" width="178" height="73" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><rect x="351" y="185" width="156" height="73" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><text x="262" y="215" text-anchor="middle" font-size="18" fill="#eeeeee">valor do</text><text x="262" y="239" text-anchor="middle" font-size="18" fill="#eeeeee">cabeçalho</text><text x="429" y="215" text-anchor="middle" font-size="18" fill="#eeeeee">enlace</text><text x="429" y="239" text-anchor="middle" font-size="18" fill="#eeeeee">de saída</text><rect x="173" y="258" width="334" height="107" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><line x1="351" y1="258" x2="351" y2="365" stroke="#7FCFF0" stroke-width="1"/><text x="315" y="287" text-anchor="end" font-size="19" fill="#eeeeee">0100</text><text x="315" y="314" text-anchor="end" font-size="19" fill="#eeeeee">0101</text><text x="315" y="341" text-anchor="end" font-size="19" fill="#eeeeee">0111</text><text x="315" y="361" text-anchor="end" font-size="19" fill="#eeeeee">1001</text><text x="363" y="287" font-size="19" fill="#eeeeee">3</text><text x="363" y="314" font-size="19" fill="#eeeeee">2</text><text x="363" y="341" font-size="19" fill="#eeeeee">2</text><text x="363" y="361" font-size="19" fill="#eeeeee">1</text><path d="M190 390 L405 510 L330 600 Z" fill="#1A4A5E" fill-opacity="0.07"/><text x="48" y="460" font-size="19" font-weight="600" fill="#eeeeee">Valor no cabeçalho do</text><text x="48" y="485" font-size="19" font-weight="600" fill="#eeeeee">pacote que está chegando</text><line x1="235" y1="490" x2="250" y2="520" stroke="#aaaaaa" stroke-width="1.2"/><line x1="25" y1="545" x2="145" y2="545" stroke="#aaaaaa" stroke-width="2"/><rect x="145" y="528" width="126" height="34" fill="#1A4A5E" fill-opacity="0.6" stroke="#29B6E6" stroke-width="2"/><rect x="213" y="533" width="52" height="24" fill="transparent" stroke="#D6F0FB" stroke-width="1"/><text x="239" y="551" text-anchor="middle" font-size="16" font-weight="600" fill="#eeeeee">0111</text><line x1="271" y1="545" x2="315" y2="545" stroke="#29B6E6" stroke-width="4" marker-end="url(#arrow-cyan)"/><path d="M315 565 C350 505 430 495 480 520 C525 465 620 460 670 510 C750 490 835 535 840 610 C885 670 810 755 730 745 C680 790 575 785 535 752 C465 785 365 747 360 680 C310 650 295 605 315 565 Z" fill="#1A4A5E" fill-opacity="0.10"/><path d="M360 585 C425 540 500 555 535 595 C590 535 690 550 725 605 C785 625 785 690 735 718 C660 755 570 735 525 710 C465 750 390 710 395 655 C350 630 340 605 360 585 Z" fill="#3C3489" fill-opacity="0.08"/><line x1="365" y1="560" x2="535" y2="500" stroke="#aaaaaa" stroke-width="2"/><line x1="575" y1="500" x2="745" y2="560" stroke="#aaaaaa" stroke-width="2"/><line x1="370" y1="575" x2="535" y2="620" stroke="#aaaaaa" stroke-width="2"/><line x1="575" y1="620" x2="745" y2="575" stroke="#aaaaaa" stroke-width="2"/><line x1="355" y1="585" x2="430" y2="690" stroke="#aaaaaa" stroke-width="2"/><line x1="475" y1="710" x2="620" y2="710" stroke="#aaaaaa" stroke-width="2"/><line x1="660" y1="690" x2="755" y2="585" stroke="#aaaaaa" stroke-width="2"/><use href="#router" transform="translate(355 550)"/><use href="#router" transform="translate(555 485)"/><use href="#router" transform="translate(555 610)"/><use href="#router" transform="translate(770 550)"/><use href="#router" transform="translate(450 690)"/><use href="#router" transform="translate(645 690)"/><line x1="315" y1="545" x2="438" y2="575" stroke="#29B6E6" stroke-width="4" marker-end="url(#arrow-cyan)"/><text x="442" y="513" text-anchor="middle" font-size="20" font-weight="600" fill="#eeeeee">1</text><text x="455" y="594" text-anchor="middle" font-size="20" font-weight="600" fill="#eeeeee">2</text><text x="405" y="640" text-anchor="middle" font-size="20" font-weight="600" fill="#eeeeee">3</text><use href="#small-table" transform="translate(610 315)"/><use href="#small-table" transform="translate(845 420)"/><use href="#small-table" transform="translate(220 690)"/><use href="#small-table" transform="translate(510 775)"/><use href="#small-table" transform="translate(790 690)"/></svg>
+<svg viewBox="0 0 980 900" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" preserveAspectRatio="xMidYMid meet"  
+style="display:block; width:100%; max-width:800px; height:auto; margin:0 auto;" >
+<defs><marker id="arrow-cyan" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#29B6E6"/></marker><marker id="arrow-gray" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 Z" fill="#aaaaaa"/></marker><linearGradient id="router-gradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#D6F0FB" stop-opacity="0.95"/><stop offset="100%" stop-color="#1A4A5E" stop-opacity="0.75"/></linearGradient><g id="router"><ellipse cx="0" cy="9" rx="43" ry="18" fill="#D6F0FB" stroke="#7FCFF0" stroke-width="1.5"/><path d="M-43 9 V25 C-43 36 -24 44 0 44 C24 44 43 36 43 25 V9" fill="url(#router-gradient)" stroke="#7FCFF0" stroke-width="1.5"/><path d="M-17 2 L17 18 M17 2 L-17 18" stroke="#1A4A5E" stroke-width="5" stroke-linecap="round"/><path d="M-17 2 L-8 1 M-17 2 L-12 10 M17 2 L8 1 M17 2 L12 10 M-17 18 L-8 19 M-17 18 L-12 10 M17 18 L8 19 M17 18 L12 10" stroke="#1A4A5E" stroke-width="2" fill="none" stroke-linecap="round"/></g><g id="small-table"><rect x="0" y="0" width="108" height="112" fill="#1A4A5E" fill-opacity="0.28" stroke="#7FCFF0" stroke-width="1.2"/><ellipse cx="54" cy="17" rx="42" ry="11" fill="#3C3489" fill-opacity="0.28" stroke="#A89CF5" stroke-width="1.2"/><line x1="54" y1="29" x2="54" y2="42" stroke="#aaaaaa" stroke-width="1.2" marker-end="url(#arrow-gray)"/><rect x="10" y="42" width="88" height="60" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><line x1="10" y1="58" x2="98" y2="58" stroke="#7FCFF0" stroke-width="1"/><line x1="54" y1="42" x2="54" y2="102" stroke="#7FCFF0" stroke-width="1"/><line x1="10" y1="76" x2="98" y2="76" stroke="#7FCFF0" stroke-width="1"/></g></defs><rect width="980" height="900" fill="transparent"/><rect x="155" y="20" width="370" height="370" fill="#1A4A5E" fill-opacity="0.22" stroke="#7FCFF0" stroke-width="1.4"/><ellipse cx="340" cy="70" rx="157" ry="34" fill="#3C3489" fill-opacity="0.28" stroke="#A89CF5" stroke-width="1.4"/><text x="340" y="78" text-anchor="middle" font-size="21" font-weight="600" fill="#eeeeee">Algoritmo de roteamento</text><line x1="340" y1="105" x2="340" y2="135" stroke="#aaaaaa" stroke-width="1.5" marker-end="url(#arrow-gray)"/><rect x="173" y="140" width="334" height="225" fill="transparent" stroke="#7FCFF0" stroke-width="1.2"/><rect x="173" y="140" width="334" height="45" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1.2"/><text x="340" y="169" text-anchor="middle" font-size="20" font-weight="600" fill="#D6F0FB">Tabela de repasse local</text><rect x="173" y="185" width="178" height="73" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><rect x="351" y="185" width="156" height="73" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><text x="262" y="215" text-anchor="middle" font-size="18" fill="#eeeeee">valor do</text><text x="262" y="239" text-anchor="middle" font-size="18" fill="#eeeeee">cabeçalho</text><text x="429" y="215" text-anchor="middle" font-size="18" fill="#eeeeee">enlace</text><text x="429" y="239" text-anchor="middle" font-size="18" fill="#eeeeee">de saída</text><rect x="173" y="258" width="334" height="107" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><line x1="351" y1="258" x2="351" y2="365" stroke="#7FCFF0" stroke-width="1"/><text x="315" y="287" text-anchor="end" font-size="19" fill="#eeeeee">0100</text><text x="315" y="314" text-anchor="end" font-size="19" fill="#eeeeee">0101</text><text x="315" y="341" text-anchor="end" font-size="19" fill="#eeeeee">0111</text><text x="315" y="361" text-anchor="end" font-size="19" fill="#eeeeee">1001</text><text x="363" y="287" font-size="19" fill="#eeeeee">3</text><text x="363" y="314" font-size="19" fill="#eeeeee">2</text><text x="363" y="341" font-size="19" fill="#eeeeee">2</text><text x="363" y="361" font-size="19" fill="#eeeeee">1</text><path d="M190 390 L405 510 L330 600 Z" fill="#1A4A5E" fill-opacity="0.07"/><text x="48" y="460" font-size="19" font-weight="600" fill="#eeeeee">Valor no cabeçalho do</text><text x="48" y="485" font-size="19" font-weight="600" fill="#eeeeee">pacote que está chegando</text><line x1="235" y1="490" x2="250" y2="520" stroke="#aaaaaa" stroke-width="1.2"/><line x1="25" y1="545" x2="145" y2="545" stroke="#aaaaaa" stroke-width="2"/><rect x="145" y="528" width="126" height="34" fill="#1A4A5E" fill-opacity="0.6" stroke="#29B6E6" stroke-width="2"/><rect x="213" y="533" width="52" height="24" fill="transparent" stroke="#D6F0FB" stroke-width="1"/><text x="239" y="551" text-anchor="middle" font-size="16" font-weight="600" fill="#eeeeee">0111</text><line x1="271" y1="545" x2="315" y2="545" stroke="#29B6E6" stroke-width="4" marker-end="url(#arrow-cyan)"/><path d="M315 565 C350 505 430 495 480 520 C525 465 620 460 670 510 C750 490 835 535 840 610 C885 670 810 755 730 745 C680 790 575 785 535 752 C465 785 365 747 360 680 C310 650 295 605 315 565 Z" fill="#1A4A5E" fill-opacity="0.10"/><path d="M360 585 C425 540 500 555 535 595 C590 535 690 550 725 605 C785 625 785 690 735 718 C660 755 570 735 525 710 C465 750 390 710 395 655 C350 630 340 605 360 585 Z" fill="#3C3489" fill-opacity="0.08"/><line x1="365" y1="560" x2="535" y2="500" stroke="#aaaaaa" stroke-width="2"/><line x1="575" y1="500" x2="745" y2="560" stroke="#aaaaaa" stroke-width="2"/><line x1="370" y1="575" x2="535" y2="620" stroke="#aaaaaa" stroke-width="2"/><line x1="575" y1="620" x2="745" y2="575" stroke="#aaaaaa" stroke-width="2"/><line x1="355" y1="585" x2="430" y2="690" stroke="#aaaaaa" stroke-width="2"/><line x1="475" y1="710" x2="620" y2="710" stroke="#aaaaaa" stroke-width="2"/><line x1="660" y1="690" x2="755" y2="585" stroke="#aaaaaa" stroke-width="2"/><use href="#router" transform="translate(355 550)"/><use href="#router" transform="translate(555 485)"/><use href="#router" transform="translate(555 610)"/><use href="#router" transform="translate(770 550)"/><use href="#router" transform="translate(450 690)"/><use href="#router" transform="translate(645 690)"/><line x1="315" y1="545" x2="438" y2="575" stroke="#29B6E6" stroke-width="4" marker-end="url(#arrow-cyan)"/><text x="442" y="513" text-anchor="middle" font-size="20" font-weight="600" fill="#eeeeee">1</text><text x="455" y="594" text-anchor="middle" font-size="20" font-weight="600" fill="#eeeeee">2</text><text x="405" y="640" text-anchor="middle" font-size="20" font-weight="600" fill="#eeeeee">3</text><use href="#small-table" transform="translate(610 315)"/><use href="#small-table" transform="translate(845 420)"/><use href="#small-table" transform="translate(220 690)"/><use href="#small-table" transform="translate(510 775)"/><use href="#small-table" transform="translate(790 690)"/></svg>
 
 Os roteadores operam principalmente nas camadas de rede, enlace e física. Em geral, eles não executam as funções completas das camadas de aplicação e transporte dos terminais finais.
 
@@ -437,7 +466,9 @@ Os principais campos apresentados são:
 
 ### Figura — Estrutura do cabeçalho IPv4
 
-<svg width="800" height="400" viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif"><rect width="900" height="500" fill="transparent"/><line x1="105" y1="28" x2="795" y2="28" stroke="#aaaaaa" stroke-width="1.4"/><path d="M105 28 L116 23 L116 33 Z" fill="#aaaaaa"/><path d="M795 28 L784 23 L784 33 Z" fill="#aaaaaa"/><text x="450" y="33" text-anchor="middle" font-size="16" font-weight="600" fill="#eeeeee">32 Bits</text><line x1="105" y1="68" x2="795" y2="68" stroke="#888888" stroke-width="1"/><line x1="105" y1="48" x2="105" y2="68" stroke="#aaaaaa" stroke-width="1.4"/><line x1="277.5" y1="48" x2="277.5" y2="68" stroke="#aaaaaa" stroke-width="1.4"/><line x1="450" y1="48" x2="450" y2="68" stroke="#aaaaaa" stroke-width="1.4"/><line x1="622.5" y1="48" x2="622.5" y2="68" stroke="#aaaaaa" stroke-width="1.4"/><line x1="795" y1="48" x2="795" y2="68" stroke="#aaaaaa" stroke-width="1.4"/><path d="M126.56 58 V68 M148.12 58 V68 M169.68 58 V68 M191.25 58 V68 M212.81 58 V68 M234.37 58 V68 M255.93 58 V68 M299.06 58 V68 M320.62 58 V68 M342.18 58 V68 M363.75 58 V68 M385.31 58 V68 M406.87 58 V68 M428.43 58 V68 M471.56 58 V68 M493.12 58 V68 M514.68 58 V68 M536.25 58 V68 M557.81 58 V68 M579.37 58 V68 M600.93 58 V68 M644.06 58 V68 M665.62 58 V68 M687.18 58 V68 M708.75 58 V68 M730.31 58 V68 M751.87 58 V68 M773.43 58 V68" fill="none" stroke="#888888" stroke-width="1"/><rect x="105" y="85" width="86.25" height="42" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1"/><rect x="191.25" y="85" width="86.25" height="42" fill="#1A4A5E" fill-opacity="0.4" stroke="#7FCFF0" stroke-width="1"/><rect x="277.5" y="85" width="129.38" height="42" fill="#1A4A5E" fill-opacity="0.4" stroke="#7FCFF0" stroke-width="1"/><rect x="406.88" y="85" width="43.12" height="42" fill="#1A4A5E" fill-opacity="0.2" stroke="#7FCFF0" stroke-width="1"/><rect x="450" y="85" width="345" height="42" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><text x="148.13" y="111" text-anchor="middle" font-size="15" font-weight="600" fill="#D6F0FB">Version</text><text x="234.38" y="111" text-anchor="middle" font-size="15" font-weight="600" fill="#D6F0FB">IHL</text><text x="342.19" y="111" text-anchor="middle" font-size="15" font-weight="600" fill="#D6F0FB">Type of service</text><text x="622.5" y="111" text-anchor="middle" font-size="15" font-weight="600" fill="#D6F0FB">Total length</text><rect x="105" y="127" width="345" height="42" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><rect x="450" y="127" width="21.56" height="42" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="471.56" y="127" width="21.56" height="42" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="493.12" y="127" width="21.56" height="42" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="514.68" y="127" width="280.32" height="42" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><text x="277.5" y="153" text-anchor="middle" font-size="15" fill="#eeeeee">Identification</text><text x="460.78" y="153" text-anchor="middle" font-size="13" fill="#dddddd">0</text><text x="482.34" y="145" text-anchor="middle" font-size="12" fill="#dddddd">D</text><text x="482.34" y="160" text-anchor="middle" font-size="12" fill="#dddddd">F</text><text x="503.9" y="145" text-anchor="middle" font-size="12" fill="#dddddd">M</text><text x="503.9" y="160" text-anchor="middle" font-size="12" fill="#dddddd">F</text><text x="654.84" y="153" text-anchor="middle" font-size="15" fill="#eeeeee">Fragment offset</text><rect x="105" y="169" width="172.5" height="42" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><rect x="277.5" y="169" width="172.5" height="42" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><rect x="450" y="169" width="345" height="42" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><text x="191.25" y="195" text-anchor="middle" font-size="15" fill="#eeeeee">Time to live</text><text x="363.75" y="195" text-anchor="middle" font-size="15" fill="#eeeeee">Protocol</text><text x="622.5" y="195" text-anchor="middle" font-size="15" fill="#eeeeee">Header checksum</text><rect x="105" y="211" width="690" height="42" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><text x="450" y="237" text-anchor="middle" font-size="15" fill="#eeeeee">Source address</text><rect x="105" y="253" width="690" height="42" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><text x="450" y="279" text-anchor="middle" font-size="15" fill="#eeeeee">Destination address</text><rect x="105" y="295" width="690" height="78" fill="#1A4A5E" fill-opacity="0.18" stroke="#7FCFF0" stroke-width="1"/><text x="450" y="339" text-anchor="middle" font-size="16" fill="#eeeeee">Options (0 or more words)</text><rect x="105" y="373" width="690" height="100" fill="#3C3489" fill-opacity="0.3" stroke="#A89CF5" stroke-width="1"/><text x="450" y="428" text-anchor="middle" font-size="17" font-weight="600" fill="#eeeeee">Data</text><path d="M98 424 L112 418" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M102 434 L116 428" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M784 424 L798 418" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M788 434 L802 428" stroke="#aaaaaa" stroke-width="1.6" fill="none"/></svg>
+<svg viewBox="0 0 900 500" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" preserveAspectRatio="xMidYMid meet"  
+style="display:block; width:100%; max-width:800px; height:auto; margin:0 auto;" >
+<rect width="900" height="500" fill="transparent"/><line x1="105" y1="28" x2="795" y2="28" stroke="#aaaaaa" stroke-width="1.4"/><path d="M105 28 L116 23 L116 33 Z" fill="#aaaaaa"/><path d="M795 28 L784 23 L784 33 Z" fill="#aaaaaa"/><text x="450" y="33" text-anchor="middle" font-size="16" font-weight="600" fill="#eeeeee">32 Bits</text><line x1="105" y1="68" x2="795" y2="68" stroke="#888888" stroke-width="1"/><line x1="105" y1="48" x2="105" y2="68" stroke="#aaaaaa" stroke-width="1.4"/><line x1="277.5" y1="48" x2="277.5" y2="68" stroke="#aaaaaa" stroke-width="1.4"/><line x1="450" y1="48" x2="450" y2="68" stroke="#aaaaaa" stroke-width="1.4"/><line x1="622.5" y1="48" x2="622.5" y2="68" stroke="#aaaaaa" stroke-width="1.4"/><line x1="795" y1="48" x2="795" y2="68" stroke="#aaaaaa" stroke-width="1.4"/><path d="M126.56 58 V68 M148.12 58 V68 M169.68 58 V68 M191.25 58 V68 M212.81 58 V68 M234.37 58 V68 M255.93 58 V68 M299.06 58 V68 M320.62 58 V68 M342.18 58 V68 M363.75 58 V68 M385.31 58 V68 M406.87 58 V68 M428.43 58 V68 M471.56 58 V68 M493.12 58 V68 M514.68 58 V68 M536.25 58 V68 M557.81 58 V68 M579.37 58 V68 M600.93 58 V68 M644.06 58 V68 M665.62 58 V68 M687.18 58 V68 M708.75 58 V68 M730.31 58 V68 M751.87 58 V68 M773.43 58 V68" fill="none" stroke="#888888" stroke-width="1"/><rect x="105" y="85" width="86.25" height="42" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1"/><rect x="191.25" y="85" width="86.25" height="42" fill="#1A4A5E" fill-opacity="0.4" stroke="#7FCFF0" stroke-width="1"/><rect x="277.5" y="85" width="129.38" height="42" fill="#1A4A5E" fill-opacity="0.4" stroke="#7FCFF0" stroke-width="1"/><rect x="406.88" y="85" width="43.12" height="42" fill="#1A4A5E" fill-opacity="0.2" stroke="#7FCFF0" stroke-width="1"/><rect x="450" y="85" width="345" height="42" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><text x="148.13" y="111" text-anchor="middle" font-size="15" font-weight="600" fill="#D6F0FB">Version</text><text x="234.38" y="111" text-anchor="middle" font-size="15" font-weight="600" fill="#D6F0FB">IHL</text><text x="342.19" y="111" text-anchor="middle" font-size="15" font-weight="600" fill="#D6F0FB">Type of service</text><text x="622.5" y="111" text-anchor="middle" font-size="15" font-weight="600" fill="#D6F0FB">Total length</text><rect x="105" y="127" width="345" height="42" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><rect x="450" y="127" width="21.56" height="42" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="471.56" y="127" width="21.56" height="42" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="493.12" y="127" width="21.56" height="42" fill="transparent" stroke="#7FCFF0" stroke-width="1"/><rect x="514.68" y="127" width="280.32" height="42" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><text x="277.5" y="153" text-anchor="middle" font-size="15" fill="#eeeeee">Identification</text><text x="460.78" y="153" text-anchor="middle" font-size="13" fill="#dddddd">0</text><text x="482.34" y="145" text-anchor="middle" font-size="12" fill="#dddddd">D</text><text x="482.34" y="160" text-anchor="middle" font-size="12" fill="#dddddd">F</text><text x="503.9" y="145" text-anchor="middle" font-size="12" fill="#dddddd">M</text><text x="503.9" y="160" text-anchor="middle" font-size="12" fill="#dddddd">F</text><text x="654.84" y="153" text-anchor="middle" font-size="15" fill="#eeeeee">Fragment offset</text><rect x="105" y="169" width="172.5" height="42" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><rect x="277.5" y="169" width="172.5" height="42" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><rect x="450" y="169" width="345" height="42" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><text x="191.25" y="195" text-anchor="middle" font-size="15" fill="#eeeeee">Time to live</text><text x="363.75" y="195" text-anchor="middle" font-size="15" fill="#eeeeee">Protocol</text><text x="622.5" y="195" text-anchor="middle" font-size="15" fill="#eeeeee">Header checksum</text><rect x="105" y="211" width="690" height="42" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><text x="450" y="237" text-anchor="middle" font-size="15" fill="#eeeeee">Source address</text><rect x="105" y="253" width="690" height="42" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/><text x="450" y="279" text-anchor="middle" font-size="15" fill="#eeeeee">Destination address</text><rect x="105" y="295" width="690" height="78" fill="#1A4A5E" fill-opacity="0.18" stroke="#7FCFF0" stroke-width="1"/><text x="450" y="339" text-anchor="middle" font-size="16" fill="#eeeeee">Options (0 or more words)</text><rect x="105" y="373" width="690" height="100" fill="#3C3489" fill-opacity="0.3" stroke="#A89CF5" stroke-width="1"/><text x="450" y="428" text-anchor="middle" font-size="17" font-weight="600" fill="#eeeeee">Data</text><path d="M98 424 L112 418" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M102 434 L116 428" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M784 424 L798 418" stroke="#aaaaaa" stroke-width="1.6" fill="none"/><path d="M788 434 L802 428" stroke="#aaaaaa" stroke-width="1.6" fill="none"/></svg>
 
 ### 10.2 Máscara e notação CIDR
 
@@ -460,7 +491,432 @@ Um roteador pode possuir interfaces em várias sub-redes. Cada interface utiliza
 
 ### Figura — Três sub-redes IPv4 conectadas a um roteador
 
-<svg width="780" height="480" viewBox="0 0 780 480" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif"><defs><linearGradient id="screen-gradient-1" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#D6F0FB" stop-opacity="0.95"/><stop offset="55%" stop-color="#1A4A5E" stop-opacity="0.7"/><stop offset="100%" stop-color="#3C3489" stop-opacity="0.55"/></linearGradient><linearGradient id="router-1-gradient" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#D6F0FB" stop-opacity="0.95"/><stop offset="100%" stop-color="#1A4A5E" stop-opacity="0.75"/></linearGradient><g id="computer-1-1"><path d="M5 2 L47 0 Q52 0 53 5 L56 43 Q57 48 51 49 L10 51 Q5 51 4 46 L0 8 Q0 3 5 2 Z" fill="#1A4A5E" fill-opacity="0.35" stroke="#7FCFF0" stroke-width="1.4"/><path d="M8 7 L45 5 L49 40 L12 43 Z" fill="url(#screen-gradient-1)" stroke="#D6F0FB" stroke-width="1"/><path d="M27 50 L30 62 M18 64 L43 63" fill="none" stroke="#A89CF5" stroke-width="2" stroke-linecap="round"/><path d="M9 64 L45 61 L57 72 L16 77 L4 70 Z" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1.2"/><line x1="13" y1="68" x2="46" y2="65" stroke="#D6F0FB" stroke-width="0.8"/><line x1="16" y1="72" x2="50" y2="69" stroke="#D6F0FB" stroke-width="0.8"/></g><g id="router-1"><ellipse cx="0" cy="8" rx="30" ry="13" fill="#D6F0FB" stroke="#7FCFF0" stroke-width="1.4"/><path d="M-30 8 V20 C-30 29 -16 34 0 34 C16 34 30 29 30 20 V8" fill="url(#router-1-gradient)" stroke="#7FCFF0" stroke-width="1.4"/><path d="M-13 3 L13 15 M13 3 L-13 15" stroke="#1A4A5E" stroke-width="4" stroke-linecap="round"/><path d="M-13 3 L-6 2 M-13 3 L-9 9 M13 3 L6 2 M13 3 L9 9 M-13 15 L-6 16 M-13 15 L-9 9 M13 15 L6 16 M13 15 L9 9" stroke="#1A4A5E" stroke-width="1.5" fill="none" stroke-linecap="round"/></g></defs><rect width="780" height="480" fill="transparent"/><path d="M62 18 C86 4 110 14 123 28 C142 46 166 18 188 32 C209 47 220 94 216 142 C214 188 224 246 194 296 C180 321 160 319 151 294 C142 265 148 230 137 213 C127 196 108 198 94 208 C78 220 60 207 57 187 C53 164 70 153 88 153 C106 153 124 162 137 151 C151 139 151 112 143 94 C133 72 111 66 95 77 C78 89 60 80 56 61 C52 43 52 28 62 18 Z" fill="#1A4A5E" fill-opacity="0.10"/><path d="M521 47 C535 31 553 42 563 58 C574 77 596 70 614 59 C635 46 665 48 682 65 C701 84 696 110 682 125 C670 138 665 162 678 181 C693 202 699 229 687 253 C675 279 642 292 622 274 C606 259 614 235 624 217 C634 198 628 178 612 167 C597 157 576 160 566 175 C553 196 552 226 542 250 C533 273 513 271 503 248 C491 221 495 179 500 143 C505 102 506 65 521 47 Z" fill="#1A4A5E" fill-opacity="0.10"/><path d="M292 305 C312 280 349 273 382 278 C414 282 437 277 463 289 C490 302 492 325 476 342 C458 362 456 392 468 417 C480 443 457 459 435 447 C414 435 402 406 380 404 C356 402 345 428 326 441 C306 455 282 444 280 421 C278 399 296 382 303 362 C310 342 279 324 292 305 Z" fill="#1A4A5E" fill-opacity="0.10"/><line x1="117" y1="70" x2="193" y2="70" stroke="#aaaaaa" stroke-width="2"/><line x1="117" y1="190" x2="193" y2="190" stroke="#aaaaaa" stroke-width="2"/><line x1="117" y1="310" x2="193" y2="310" stroke="#aaaaaa" stroke-width="2"/><line x1="193" y1="70" x2="193" y2="310" stroke="#aaaaaa" stroke-width="2"/><line x1="193" y1="170" x2="346" y2="170" stroke="#aaaaaa" stroke-width="2"/><line x1="434" y1="170" x2="573" y2="170" stroke="#aaaaaa" stroke-width="2"/><line x1="573" y1="82" x2="573" y2="277" stroke="#aaaaaa" stroke-width="2"/><line x1="573" y1="82" x2="622" y2="82" stroke="#aaaaaa" stroke-width="2"/><line x1="573" y1="277" x2="622" y2="277" stroke="#aaaaaa" stroke-width="2"/><line x1="390" y1="202" x2="390" y2="302" stroke="#aaaaaa" stroke-width="2"/><line x1="306" y1="302" x2="475" y2="302" stroke="#aaaaaa" stroke-width="2"/><line x1="306" y1="302" x2="306" y2="346" stroke="#aaaaaa" stroke-width="2"/><line x1="475" y1="302" x2="475" y2="346" stroke="#aaaaaa" stroke-width="2"/><use href="#router-1" transform="translate(390 158)"/><use href="#computer-1" transform="translate(67 31) scale(0.9)"/><use href="#computer-1" transform="translate(67 151) scale(0.9)"/><use href="#computer-1" transform="translate(67 271) scale(0.9)"/><use href="#computer-1" transform="translate(622 45) scale(0.9)"/><use href="#computer-1" transform="translate(622 240) scale(0.9)"/><use href="#computer-1" transform="translate(278 346) scale(0.9)"/><use href="#computer-1" transform="translate(447 346) scale(0.9)"/><text x="98" y="125" text-anchor="middle" font-size="16" fill="#eeeeee">223.1.1.1</text><text x="98" y="245" text-anchor="middle" font-size="16" fill="#eeeeee">223.1.1.2</text><text x="98" y="365" text-anchor="middle" font-size="16" fill="#eeeeee">223.1.1.3</text><text x="653" y="140" text-anchor="middle" font-size="16" fill="#eeeeee">223.1.2.1</text><text x="653" y="335" text-anchor="middle" font-size="16" fill="#eeeeee">223.1.2.2</text><text x="309" y="454" text-anchor="middle" font-size="16" fill="#eeeeee">223.1.3.1</text><text x="478" y="454" text-anchor="middle" font-size="16" fill="#eeeeee">223.1.3.2</text><line x1="336" y1="158" x2="309" y2="137" stroke="#888" stroke-width="0.9" opacity="0.7"/><text x="302" y="132" text-anchor="end" font-size="15" font-weight="600" fill="#eeeeee">223.1.1.4</text><line x1="431" y1="158" x2="452" y2="138" stroke="#888" stroke-width="0.9" opacity="0.7"/><text x="458" y="133" text-anchor="start" font-size="15" font-weight="600" fill="#eeeeee">223.1.2.9</text><line x1="398" y1="191" x2="425" y2="210" stroke="#888" stroke-width="0.9" opacity="0.7"/><text x="432" y="218" text-anchor="start" font-size="15" font-weight="600" fill="#eeeeee">223.1.3.27</text></svg>
+
+<svg
+  viewBox="0 0 780 480"
+  xmlns="http://www.w3.org/2000/svg"
+  font-family="Arial, sans-serif"
+  role="img"
+  aria-label="Exemplo de três sub-redes IPv4 conectadas por um roteador"
+  preserveAspectRatio="xMidYMid meet"
+  style="display:block; width:100%; max-width:800px; height:auto; margin:0 auto;">
+  <!-- Fundo transparente -->
+  <rect width="780" height="480" fill="transparent"/>
+
+  <!-- ===================================================== -->
+  <!-- ÁREAS DAS SUB-REDES                                   -->
+  <!-- ===================================================== -->
+
+  <!-- Rede 223.1.1.0 -->
+  <path
+    d="M62 18
+       C86 4 110 14 123 28
+       C142 46 166 18 188 32
+       C209 47 220 94 216 142
+       C214 188 224 246 194 296
+       C180 321 160 319 151 294
+       C142 265 148 230 137 213
+       C127 196 108 198 94 208
+       C78 220 60 207 57 187
+       C53 164 70 153 88 153
+       C106 153 124 162 137 151
+       C151 139 151 112 143 94
+       C133 72 111 66 95 77
+       C78 89 60 80 56 61
+       C52 43 52 28 62 18 Z"
+    fill="#1A4A5E"
+    fill-opacity="0.10"
+    stroke="#7FCFF0"
+    stroke-opacity="0.25"
+  />
+
+  <!-- Rede 223.1.2.0 -->
+  <path
+    d="M521 47
+       C535 31 553 42 563 58
+       C574 77 596 70 614 59
+       C635 46 665 48 682 65
+       C701 84 696 110 682 125
+       C670 138 665 162 678 181
+       C693 202 699 229 687 253
+       C675 279 642 292 622 274
+       C606 259 614 235 624 217
+       C634 198 628 178 612 167
+       C597 157 576 160 566 175
+       C553 196 552 226 542 250
+       C533 273 513 271 503 248
+       C491 221 495 179 500 143
+       C505 102 506 65 521 47 Z"
+    fill="#1A4A5E"
+    fill-opacity="0.10"
+    stroke="#7FCFF0"
+    stroke-opacity="0.25"
+  />
+
+  <!-- Rede 223.1.3.0 -->
+  <path
+    d="M292 305
+       C312 280 349 273 382 278
+       C414 282 437 277 463 289
+       C490 302 492 325 476 342
+       C458 362 456 392 468 417
+       C480 443 457 459 435 447
+       C414 435 402 406 380 404
+       C356 402 345 428 326 441
+       C306 455 282 444 280 421
+       C278 399 296 382 303 362
+       C310 342 279 324 292 305 Z"
+    fill="#1A4A5E"
+    fill-opacity="0.10"
+    stroke="#7FCFF0"
+    stroke-opacity="0.25"
+  />
+
+  <!-- Títulos das redes -->
+  <text x="135" y="28" text-anchor="middle" font-size="14" font-weight="600" fill="#D6F0FB">
+    Rede 223.1.1.0
+  </text>
+
+  <text x="610" y="47" text-anchor="middle" font-size="14" font-weight="600" fill="#D6F0FB">
+    Rede 223.1.2.0
+  </text>
+
+  <text x="390" y="296" text-anchor="middle" font-size="14" font-weight="600" fill="#D6F0FB">
+    Rede 223.1.3.0
+  </text>
+
+  <!-- ===================================================== -->
+  <!-- ENLACES                                               -->
+  <!-- ===================================================== -->
+
+  <!-- Rede esquerda -->
+  <line x1="117" y1="70" x2="193" y2="70" stroke="#AAAAAA" stroke-width="2"/>
+  <line x1="117" y1="190" x2="193" y2="190" stroke="#AAAAAA" stroke-width="2"/>
+  <line x1="117" y1="310" x2="193" y2="310" stroke="#AAAAAA" stroke-width="2"/>
+  <line x1="193" y1="70" x2="193" y2="310" stroke="#AAAAAA" stroke-width="2"/>
+  <line x1="193" y1="170" x2="346" y2="170" stroke="#AAAAAA" stroke-width="2"/>
+
+  <!-- Rede direita -->
+  <line x1="434" y1="170" x2="573" y2="170" stroke="#AAAAAA" stroke-width="2"/>
+  <line x1="573" y1="82" x2="573" y2="277" stroke="#AAAAAA" stroke-width="2"/>
+  <line x1="573" y1="82" x2="622" y2="82" stroke="#AAAAAA" stroke-width="2"/>
+  <line x1="573" y1="277" x2="622" y2="277" stroke="#AAAAAA" stroke-width="2"/>
+
+  <!-- Rede inferior -->
+  <line x1="390" y1="202" x2="390" y2="302" stroke="#AAAAAA" stroke-width="2"/>
+  <line x1="306" y1="302" x2="475" y2="302" stroke="#AAAAAA" stroke-width="2"/>
+  <line x1="306" y1="302" x2="306" y2="346" stroke="#AAAAAA" stroke-width="2"/>
+  <line x1="475" y1="302" x2="475" y2="346" stroke="#AAAAAA" stroke-width="2"/>
+
+  <!-- ===================================================== -->
+  <!-- ROTEADOR CENTRAL                                      -->
+  <!-- ===================================================== -->
+
+  <g transform="translate(390 158)">
+    <ellipse
+      cx="0"
+      cy="8"
+      rx="30"
+      ry="13"
+      fill="#D6F0FB"
+      stroke="#7FCFF0"
+      stroke-width="1.4"
+    />
+
+    <path
+      d="M-30 8 V20
+         C-30 29 -16 34 0 34
+         C16 34 30 29 30 20
+         V8"
+      fill="#1A4A5E"
+      fill-opacity="0.85"
+      stroke="#7FCFF0"
+      stroke-width="1.4"
+    />
+
+    <path
+      d="M-13 3 L13 15
+         M13 3 L-13 15"
+      fill="none"
+      stroke="#1A4A5E"
+      stroke-width="4"
+      stroke-linecap="round"
+    />
+
+    <path
+      d="M-13 3 L-6 2
+         M-13 3 L-9 9
+         M13 3 L6 2
+         M13 3 L9 9
+         M-13 15 L-6 16
+         M-13 15 L-9 9
+         M13 15 L6 16
+         M13 15 L9 9"
+      fill="none"
+      stroke="#1A4A5E"
+      stroke-width="1.5"
+      stroke-linecap="round"
+    />
+  </g>
+
+  <text x="390" y="218" text-anchor="middle" font-size="13" font-weight="600" fill="#EEEEEE">
+    Roteador
+  </text>
+
+  <!-- ===================================================== -->
+  <!-- COMPUTADOR 1                                          -->
+  <!-- ===================================================== -->
+
+  <g transform="translate(67 38) scale(0.9)">
+    <rect
+      x="4"
+      y="2"
+      width="52"
+      height="47"
+      rx="4"
+      fill="#1A4A5E"
+      fill-opacity="0.45"
+      stroke="#7FCFF0"
+      stroke-width="1.5"
+    />
+
+    <rect
+      x="10"
+      y="8"
+      width="40"
+      height="32"
+      fill="#1A4A5E"
+      fill-opacity="0.75"
+      stroke="#D6F0FB"
+      stroke-width="1"
+    />
+
+    <line x1="30" y1="49" x2="30" y2="61" stroke="#A89CF5" stroke-width="2"/>
+    <line x1="19" y1="62" x2="41" y2="62" stroke="#A89CF5" stroke-width="2"/>
+
+    <path
+      d="M8 66 L49 63 L58 72 L16 76 Z"
+      fill="#1A4A5E"
+      fill-opacity="0.40"
+      stroke="#7FCFF0"
+      stroke-width="1.2"
+    />
+  </g>
+
+  <!-- ===================================================== -->
+  <!-- COMPUTADOR 2                                          -->
+  <!-- ===================================================== -->
+
+  <g transform="translate(67 158) scale(0.9)">
+    <rect x="4" y="2" width="52" height="47" rx="4"
+          fill="#1A4A5E" fill-opacity="0.45"
+          stroke="#7FCFF0" stroke-width="1.5"/>
+
+    <rect x="10" y="8" width="40" height="32"
+          fill="#1A4A5E" fill-opacity="0.75"
+          stroke="#D6F0FB" stroke-width="1"/>
+
+    <line x1="30" y1="49" x2="30" y2="61"
+          stroke="#A89CF5" stroke-width="2"/>
+
+    <line x1="19" y1="62" x2="41" y2="62"
+          stroke="#A89CF5" stroke-width="2"/>
+
+    <path d="M8 66 L49 63 L58 72 L16 76 Z"
+          fill="#1A4A5E" fill-opacity="0.40"
+          stroke="#7FCFF0" stroke-width="1.2"/>
+  </g>
+
+  <!-- ===================================================== -->
+  <!-- COMPUTADOR 3                                          -->
+  <!-- ===================================================== -->
+
+  <g transform="translate(67 278) scale(0.9)">
+    <rect x="4" y="2" width="52" height="47" rx="4"
+          fill="#1A4A5E" fill-opacity="0.45"
+          stroke="#7FCFF0" stroke-width="1.5"/>
+
+    <rect x="10" y="8" width="40" height="32"
+          fill="#1A4A5E" fill-opacity="0.75"
+          stroke="#D6F0FB" stroke-width="1"/>
+
+    <line x1="30" y1="49" x2="30" y2="61"
+          stroke="#A89CF5" stroke-width="2"/>
+
+    <line x1="19" y1="62" x2="41" y2="62"
+          stroke="#A89CF5" stroke-width="2"/>
+
+    <path d="M8 66 L49 63 L58 72 L16 76 Z"
+          fill="#1A4A5E" fill-opacity="0.40"
+          stroke="#7FCFF0" stroke-width="1.2"/>
+  </g>
+
+  <!-- ===================================================== -->
+  <!-- COMPUTADOR 4                                          -->
+  <!-- ===================================================== -->
+
+  <g transform="translate(622 50) scale(0.9)">
+    <rect x="4" y="2" width="52" height="47" rx="4"
+          fill="#1A4A5E" fill-opacity="0.45"
+          stroke="#7FCFF0" stroke-width="1.5"/>
+
+    <rect x="10" y="8" width="40" height="32"
+          fill="#1A4A5E" fill-opacity="0.75"
+          stroke="#D6F0FB" stroke-width="1"/>
+
+    <line x1="30" y1="49" x2="30" y2="61"
+          stroke="#A89CF5" stroke-width="2"/>
+
+    <line x1="19" y1="62" x2="41" y2="62"
+          stroke="#A89CF5" stroke-width="2"/>
+
+    <path d="M8 66 L49 63 L58 72 L16 76 Z"
+          fill="#1A4A5E" fill-opacity="0.40"
+          stroke="#7FCFF0" stroke-width="1.2"/>
+  </g>
+
+  <!-- ===================================================== -->
+  <!-- COMPUTADOR 5                                          -->
+  <!-- ===================================================== -->
+
+  <g transform="translate(622 245) scale(0.9)">
+    <rect x="4" y="2" width="52" height="47" rx="4"
+          fill="#1A4A5E" fill-opacity="0.45"
+          stroke="#7FCFF0" stroke-width="1.5"/>
+
+    <rect x="10" y="8" width="40" height="32"
+          fill="#1A4A5E" fill-opacity="0.75"
+          stroke="#D6F0FB" stroke-width="1"/>
+
+    <line x1="30" y1="49" x2="30" y2="61"
+          stroke="#A89CF5" stroke-width="2"/>
+
+    <line x1="19" y1="62" x2="41" y2="62"
+          stroke="#A89CF5" stroke-width="2"/>
+
+    <path d="M8 66 L49 63 L58 72 L16 76 Z"
+          fill="#1A4A5E" fill-opacity="0.40"
+          stroke="#7FCFF0" stroke-width="1.2"/>
+  </g>
+
+  <!-- ===================================================== -->
+  <!-- COMPUTADOR 6                                          -->
+  <!-- ===================================================== -->
+
+  <g transform="translate(278 350) scale(0.9)">
+    <rect x="4" y="2" width="52" height="47" rx="4"
+          fill="#1A4A5E" fill-opacity="0.45"
+          stroke="#7FCFF0" stroke-width="1.5"/>
+
+    <rect x="10" y="8" width="40" height="32"
+          fill="#1A4A5E" fill-opacity="0.75"
+          stroke="#D6F0FB" stroke-width="1"/>
+
+    <line x1="30" y1="49" x2="30" y2="61"
+          stroke="#A89CF5" stroke-width="2"/>
+
+    <line x1="19" y1="62" x2="41" y2="62"
+          stroke="#A89CF5" stroke-width="2"/>
+
+    <path d="M8 66 L49 63 L58 72 L16 76 Z"
+          fill="#1A4A5E" fill-opacity="0.40"
+          stroke="#7FCFF0" stroke-width="1.2"/>
+  </g>
+
+  <!-- ===================================================== -->
+  <!-- COMPUTADOR 7                                          -->
+  <!-- ===================================================== -->
+
+  <g transform="translate(447 350) scale(0.9)">
+    <rect x="4" y="2" width="52" height="47" rx="4"
+          fill="#1A4A5E" fill-opacity="0.45"
+          stroke="#7FCFF0" stroke-width="1.5"/>
+
+    <rect x="10" y="8" width="40" height="32"
+          fill="#1A4A5E" fill-opacity="0.75"
+          stroke="#D6F0FB" stroke-width="1"/>
+
+    <line x1="30" y1="49" x2="30" y2="61"
+          stroke="#A89CF5" stroke-width="2"/>
+
+    <line x1="19" y1="62" x2="41" y2="62"
+          stroke="#A89CF5" stroke-width="2"/>
+
+    <path d="M8 66 L49 63 L58 72 L16 76 Z"
+          fill="#1A4A5E" fill-opacity="0.40"
+          stroke="#7FCFF0" stroke-width="1.2"/>
+  </g>
+
+  <!-- ===================================================== -->
+  <!-- ENDEREÇOS DOS COMPUTADORES                            -->
+  <!-- ===================================================== -->
+
+  <text x="98" y="126" text-anchor="middle" font-size="15" fill="#EEEEEE">
+    223.1.1.1
+  </text>
+
+  <text x="98" y="246" text-anchor="middle" font-size="15" fill="#EEEEEE">
+    223.1.1.2
+  </text>
+
+  <text x="98" y="366" text-anchor="middle" font-size="15" fill="#EEEEEE">
+    223.1.1.3
+  </text>
+
+  <text x="653" y="140" text-anchor="middle" font-size="15" fill="#EEEEEE">
+    223.1.2.1
+  </text>
+
+  <text x="653" y="335" text-anchor="middle" font-size="15" fill="#EEEEEE">
+    223.1.2.2
+  </text>
+
+  <text x="309" y="454" text-anchor="middle" font-size="15" fill="#EEEEEE">
+    223.1.3.1
+  </text>
+
+  <text x="478" y="454" text-anchor="middle" font-size="15" fill="#EEEEEE">
+    223.1.3.2
+  </text>
+
+  <!-- ===================================================== -->
+  <!-- ENDEREÇOS DAS INTERFACES DO ROTEADOR                  -->
+  <!-- ===================================================== -->
+
+  <line x1="336" y1="158" x2="309" y2="137"
+        stroke="#888888" stroke-width="0.9"/>
+
+  <text x="302" y="132"
+        text-anchor="end"
+        font-size="14"
+        font-weight="600"
+        fill="#EEEEEE">
+    223.1.1.4
+  </text>
+
+  <line x1="431" y1="158" x2="452" y2="138"
+        stroke="#888888" stroke-width="0.9"/>
+
+  <text x="458" y="133"
+        text-anchor="start"
+        font-size="14"
+        font-weight="600"
+        fill="#EEEEEE">
+    223.1.2.9
+  </text>
+
+  <line x1="398" y1="191" x2="425" y2="210"
+        stroke="#888888" stroke-width="0.9"/>
+
+  <text x="432" y="218"
+        text-anchor="start"
+        font-size="14"
+        font-weight="600"
+        fill="#EEEEEE">
+    223.1.3.27
+  </text>
+
+</svg>
 
 ### 10.4 Exercício de redes privadas, gateways e hospedeiros
 
@@ -497,22 +953,29 @@ Assim como no IPv4, um prefixo após a barra indica quantos bits identificam a r
 
 ### 11.1 Cabeçalho IPv6
 
-O cabeçalho apresentado contém:
+O cabeçalho IPv6 é colocado no início de cada pacote para fornecer aos dispositivos da rede as informações necessárias para encaminhá-lo da origem ao destino.
 
-| Campo | Função |
-|---|---|
-| Versão | Identifica o IPv6 |
-| Classe de tráfego | Auxilia na classificação do tráfego |
-| Rótulo de fluxo | Identifica pacotes pertencentes a um fluxo |
-| Comprimento da carga útil | Informa o tamanho dos dados transportados |
-| Próximo cabeçalho | Indica o protocolo ou cabeçalho seguinte |
-| Limite de saltos | Limita a quantidade de roteadores percorridos |
-| Origem e destino | Endereços IPv6 de 128 bits |
-| Dados | Conteúdo transportado |
+O **cabeçalho básico tem tamanho fixo de 40 bytes**, equivalentes a **320 bits**. No desenho, a indicação de **32 bits** representa apenas a largura de cada linha da tabela. Como cada endereço IPv6 possui 128 bits, os campos de origem e destino ocupam, cada um, quatro linhas lógicas de 32 bits.
+
+| Campo                     |  Tamanho | Função                                                                                                                                                                                                    |
+| ------------------------- | -------: | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Versão                    |   4 bits | Identifica o IPv6                                                                                                                                                                                         |
+| Classe de tráfego         |   8 bits | Auxilia na classificação do tráfego                                                                                                                                                                       |
+| Rótulo de fluxo           |  20 bits | Identifica pacotes pertencentes a um fluxo                                                                                                                                                                |
+| Comprimento da carga útil |  16 bits | Informa o tamanho dos dados transportados                                                                                                                                                                 |
+| Próximo cabeçalho         |   8 bits | Indica o protocolo ou cabeçalho seguinte                                                                                                                                                                  |
+| Limite de saltos          |   8 bits | Limita a quantidade de roteadores percorridos                                                                                                                                                             |
+| Endereço de origem        | 128 bits | Endereços IPv6 de 128 bits                                                                                                                                                                                |
+| Endereço de destino       | 128 bits | Endereços IPv6 de 128 bits                                                                                                                                                                                |
+| Dados                     |        - | **Dados** não fazem parte dos 40 bytes (320 bits) do cabeçalho base. O tamanho dos dados é variável, e o campo **Comprimento da carga útil** informa o tamanho do conteúdo que vem após o cabeçalho IPv6. |
+
 
 ### Figura — Estrutura do cabeçalho IPv6
 
-<svg width="800" height="400" viewBox="0 0 920 460" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif"><rect width="920" height="460" fill="transparent"/><path d="M80 72 V52 H840 V72" fill="none" stroke="#888888" stroke-width="1.2" opacity="0.8"/><line x1="460" y1="52" x2="460" y2="34" stroke="#888888" stroke-width="1.2" opacity="0.8"/><text x="460" y="27" text-anchor="middle" font-size="17" font-weight="600" fill="#eeeeee">32 bits</text><rect x="80" y="72" width="95" height="64" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1.2"/><rect x="175" y="72" width="190" height="64" fill="#1A4A5E" fill-opacity="0.45" stroke="#7FCFF0" stroke-width="1.2"/><rect x="365" y="72" width="475" height="64" fill="#1A4A5E" fill-opacity="0.35" stroke="#7FCFF0" stroke-width="1.2"/><text x="127.5" y="110" text-anchor="middle" font-size="18" font-weight="600" fill="#D6F0FB">Versão</text><text x="270" y="98" text-anchor="middle" font-size="18" font-weight="600" fill="#D6F0FB">Classe de</text><text x="270" y="121" text-anchor="middle" font-size="18" font-weight="600" fill="#D6F0FB">tráfego</text><text x="602.5" y="110" text-anchor="middle" font-size="18" font-weight="600" fill="#D6F0FB">Rótulo de fluxo</text><rect x="80" y="136" width="380" height="64" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1.2"/><rect x="460" y="136" width="190" height="64" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1.2"/><rect x="650" y="136" width="190" height="64" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1.2"/><text x="270" y="174" text-anchor="middle" font-size="18" fill="#eeeeee">Comprimento da carga útil</text><text x="555" y="161" text-anchor="middle" font-size="18" fill="#eeeeee">Próximo</text><text x="555" y="184" text-anchor="middle" font-size="18" fill="#eeeeee">cabeçalho (Hdr)</text><text x="745" y="174" text-anchor="middle" font-size="18" fill="#eeeeee">Limite de saltos</text><rect x="80" y="200" width="760" height="64" fill="#1A4A5E" fill-opacity="0.28" stroke="#7FCFF0" stroke-width="1.2"/><text x="460" y="226" text-anchor="middle" font-size="18" fill="#eeeeee">Endereço de origem</text><text x="460" y="249" text-anchor="middle" font-size="17" fill="#dddddd">(128 bits)</text><rect x="80" y="264" width="760" height="64" fill="#1A4A5E" fill-opacity="0.28" stroke="#7FCFF0" stroke-width="1.2"/><text x="460" y="290" text-anchor="middle" font-size="18" fill="#eeeeee">Endereço de destino</text><text x="460" y="313" text-anchor="middle" font-size="17" fill="#dddddd">(128 bits)</text><rect x="80" y="328" width="760" height="100" fill="#3C3489" fill-opacity="0.3" stroke="#A89CF5" stroke-width="1.2"/><text x="460" y="384" text-anchor="middle" font-size="19" font-weight="600" fill="#eeeeee">Dados</text><path d="M74 370 L88 364" fill="none" stroke="#aaaaaa" stroke-width="1.6"/><path d="M78 380 L92 374" fill="none" stroke="#aaaaaa" stroke-width="1.6"/><path d="M828 370 L842 364" fill="none" stroke="#aaaaaa" stroke-width="1.6"/><path d="M832 380 L846 374" fill="none" stroke="#aaaaaa" stroke-width="1.6"/></svg>
+\* “32 bits” representa a largura padrão de cada linha, enquanto o cabeçalho IPv6 completo possui 320 bits (32 + 32 + 128 + 128).
+<svg viewBox="0 0 920 460" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" preserveAspectRatio="xMidYMid meet"  
+style="display:block; width:100%; max-width:800px; height:auto; margin:0 auto;"><rect width="920" height="460" fill="transparent"/><path d="M80 72 V52 H840 V72" fill="none" stroke="#888888" stroke-width="1.2" opacity="0.8"/><line x1="460" y1="52" x2="460" y2="34" stroke="#888888" stroke-width="1.2" opacity="0.8"/><text x="460" y="27" text-anchor="middle" font-size="17" font-weight="600" fill="#eeeeee">32 bits</text><rect x="80" y="72" width="95" height="64" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1.2"/><rect x="175" y="72" width="190" height="64" fill="#1A4A5E" fill-opacity="0.45" stroke="#7FCFF0" stroke-width="1.2"/><rect x="365" y="72" width="475" height="64" fill="#1A4A5E" fill-opacity="0.35" stroke="#7FCFF0" stroke-width="1.2"/><text x="127.5" y="110" text-anchor="middle" font-size="18" font-weight="600" fill="#D6F0FB">Versão</text><text x="270" y="98" text-anchor="middle" font-size="18" font-weight="600" fill="#D6F0FB">Classe de</text><text x="270" y="121" text-anchor="middle" font-size="18" font-weight="600" fill="#D6F0FB">tráfego</text><text x="602.5" y="110" text-anchor="middle" font-size="18" font-weight="600" fill="#D6F0FB">Rótulo de fluxo</text><rect x="80" y="136" width="380" height="64" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1.2"/><rect x="460" y="136" width="190" height="64" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1.2"/><rect x="650" y="136" width="190" height="64" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1.2"/><text x="270" y="174" text-anchor="middle" font-size="18" fill="#eeeeee">Comprimento da carga útil</text><text x="555" y="161" text-anchor="middle" font-size="18" fill="#eeeeee">Próximo</text><text x="555" y="184" text-anchor="middle" font-size="18" fill="#eeeeee">cabeçalho (Hdr)</text><text x="745" y="174" text-anchor="middle" font-size="18" fill="#eeeeee">Limite de saltos</text><rect x="80" y="200" width="760" height="64" fill="#1A4A5E" fill-opacity="0.28" stroke="#7FCFF0" stroke-width="1.2"/><text x="460" y="226" text-anchor="middle" font-size="18" fill="#eeeeee">Endereço de origem</text><text x="460" y="249" text-anchor="middle" font-size="17" fill="#dddddd">(128 bits)</text><rect x="80" y="264" width="760" height="64" fill="#1A4A5E" fill-opacity="0.28" stroke="#7FCFF0" stroke-width="1.2"/><text x="460" y="290" text-anchor="middle" font-size="18" fill="#eeeeee">Endereço de destino</text><text x="460" y="313" text-anchor="middle" font-size="17" fill="#dddddd">(128 bits)</text><rect x="80" y="328" width="760" height="100" fill="#3C3489" fill-opacity="0.3" stroke="#A89CF5" stroke-width="1.2"/><text x="460" y="384" text-anchor="middle" font-size="19" font-weight="600" fill="#eeeeee">Dados</text><path d="M74 370 L88 364" fill="none" stroke="#aaaaaa" stroke-width="1.6"/><path d="M78 380 L92 374" fill="none" stroke="#aaaaaa" stroke-width="1.6"/><path d="M828 370 L842 364" fill="none" stroke="#aaaaaa" stroke-width="1.6"/><path d="M832 380 L846 374" fill="none" stroke="#aaaaaa" stroke-width="1.6"/></svg>
+
 
 > [!tip] Resumindo
 > O IPv6 amplia o espaço de endereçamento e utiliza uma representação hexadecimal mais extensa que a do IPv4.
