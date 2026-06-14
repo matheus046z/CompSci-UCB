@@ -995,21 +995,16 @@ Um roteador pode possuir interfaces em várias sub-redes. Cada interface utiliza
 </svg>
   </svg>
 </div>
-### 10.4 Exercício de redes privadas, gateways e hospedeiros
 
-O relatório anexado interpreta a solicitação de “quatro protocolos” como quatro redes IPv4, porque máscaras são atribuídas a endereços e sub-redes, e não a protocolos como TCP ou UDP. O primeiro endereço utilizável foi reservado ao gateway e os quatro seguintes aos hospedeiros.
-
-| Rede | Prefixo e máscara | Broadcast | Gateway | Quatro hospedeiros |
-|---|---|---|---|---|
-| `10.0.0.0` | `/8` — `255.0.0.0` | `10.255.255.255` | `10.0.0.1` | `10.0.0.2` a `10.0.0.5` |
-| `172.16.0.0` | `/16` — `255.255.0.0` | `172.16.255.255` | `172.16.0.1` | `172.16.0.2` a `172.16.0.5` |
-| `172.20.0.0` | `/16` — `255.255.0.0` | `172.20.255.255` | `172.20.0.1` | `172.20.0.2` a `172.20.0.5` |
-| `192.168.10.0` | `/24` — `255.255.255.0` | `192.168.10.255` | `192.168.10.1` | `192.168.10.2` a `192.168.10.5` |
-
-Esses endereços pertencem a faixas privadas e são adequados a redes internas. Para alcançar a Internet, normalmente utilizam um roteador com NAT.
 
 > [!tip] Resumindo
 > O prefixo define o tamanho da rede; o gateway conecta a sub-rede às demais; cada hospedeiro recebe um endereço único dentro da faixa utilizável.
+
+
+> [!tip]- Aprofundando sobre alocação de ips
+> [[Alocacao-ipv4|Abrir em nova pagina]]
+
+
 
 ---
 
