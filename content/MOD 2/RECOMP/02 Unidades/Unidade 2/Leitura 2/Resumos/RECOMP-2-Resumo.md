@@ -1023,6 +1023,10 @@ Cada grupo representa 16 bits e pode variar de `0000` a `FFFF`. O símbolo `::` 
 
 Assim como no IPv4, um prefixo após a barra indica quantos bits identificam a rede. Os demais bits podem ser usados para identificar interfaces dentro do segmento.
 
+
+> [!tip]- Aprofundando sobre IPv6
+> [[IPv6|Abrir em nova pagina]]
+
 ### 11.1 Cabeçalho IPv6
 
 O cabeçalho IPv6 é colocado no início de cada pacote para fornecer aos dispositivos da rede as informações necessárias para encaminhá-lo da origem ao destino.
@@ -1178,17 +1182,18 @@ sequenceDiagram
 
 Nesse fluxo, cada componente resolve uma parte do problema:
 
-| Componente | Responsabilidade |
-|---|---|
-| Aplicação e HTTP | Criar e interpretar requisições e respostas |
-| Socket e porta | Identificar os processos comunicantes |
-| TCP ou UDP | Transportar os dados entre aplicações |
-| IP | Identificar origem e destino |
-| Máscara | Determinar os limites da rede local |
-| Gateway e roteador | Encaminhar para outras redes |
-| Firewall | Controlar o tráfego permitido |
-| NAT | Traduzir endereços privados e públicos |
-| DNS | Converter nomes em endereços IP |
+| Componente         | Responsabilidade                            |
+| ------------------ | ------------------------------------------- |
+| Aplicação e HTTP   | Criar e interpretar requisições e respostas |
+| Socket e porta     | Identificar os processos comunicantes       |
+| TCP ou UDP         | Transportar os dados entre aplicações       |
+| IP                 | Identificar origem e destino                |
+| Máscara            | Determinar os limites da rede local         |
+| Gateway e roteador | Encaminhar para outras redes                |
+| Firewall           | Controlar o tráfego permitido               |
+| NAT                | Traduzir endereços privados e públicos      |
+| DNS                | Converter nomes em endereços IP             |
+
 
 ---
 
