@@ -119,6 +119,12 @@ As redes podem variar de poucos metros até alcance global. A escala influencia 
 > [!tip] Resumindo
 > Quanto maior a rede, maior tende a ser a complexidade de roteamento, segurança, desempenho e administração.
 
+
+> [!tip]- Aprofundando sobre padrões (IEEE)
+> ![[Padroes-IEEE]]
+
+[[Padroes-IEEE|Abrir em nova pagina]]
+
 ---
 
 ## 6. Tecnologias de transmissão: broadcast e ponto a ponto
@@ -149,17 +155,17 @@ Uma **LAN** é uma rede local usada para conectar dispositivos em uma área limi
 
 Equipamentos como **switches**, **roteadores**, **gateways** e **firewalls** ajudam a organizar o tráfego, interligar redes e controlar o acesso.
 
-| Componente | Função |
-|---|---|
-| **Host** | Dispositivo final que envia ou recebe dados. |
-| **Servidor** | Disponibiliza recursos ou serviços. |
-| **Cliente** | Solicita recursos ou serviços. |
-| **Placa de rede** | Interface de comunicação com a rede. |
-| **Hub** | Repassa dados para todas as portas. |
-| **Switch** | Encaminha dados para a porta correta. |
-| **Roteador** | Encaminha pacotes entre redes. |
-| **Gateway** | Interliga redes ou sistemas diferentes. |
-| **Firewall** | Filtra o tráfego e ajuda na segurança. |
+| Componente        | Função                                       |
+| ----------------- | -------------------------------------------- |
+| **Host**          | Dispositivo final que envia ou recebe dados. |
+| **Servidor**      | Disponibiliza recursos ou serviços.          |
+| **Cliente**       | Solicita recursos ou serviços.               |
+| **Placa de rede** | Interface de comunicação com a rede.         |
+| **Hub**           | Repassa dados para todas as portas.          |
+| **Switch**        | Encaminha dados para a porta correta.        |
+| **Roteador**      | Encaminha pacotes entre redes.               |
+| **Gateway**       | Interliga redes ou sistemas diferentes.      |
+| **Firewall**      | Filtra o tráfego e ajuda na segurança.       |
 
 > [!tip] Resumindo
 > Hosts produzem e consomem dados; switches organizam a rede local; roteadores interligam redes.
@@ -278,6 +284,13 @@ Esses quatro conceitos são frequentemente confundidos, mas atuam em níveis dif
 > [!warning] Atenção
 > IP identifica o host na rede. Porta identifica o processo dentro do host. MAC é usado na comunicação local.
 
+
+> [!tip]- Aprofundando nas camadas 2 e 3
+> ![[Camadas-2-3]]
+
+[[Camadas-2-3|Abrir em nova pagina]]
+
+
 ---
 
 ## 13. Encapsulamento dos dados
@@ -353,15 +366,15 @@ flowchart TD
     A --> B --> C --> D --> E --> F --> G
 ```
 
-| Camada OSI | Função resumida |
-|---|---|
-| **7. Aplicação** | Protocolos usados por aplicações, como Web e e-mail. |
-| **6. Apresentação** | Representação, tradução, compressão e criptografia dos dados. |
-| **5. Sessão** | Estabelecimento, gerenciamento e encerramento de sessões. |
-| **4. Transporte** | Comunicação fim a fim entre processos. |
-| **3. Rede** | Endereçamento lógico e roteamento. |
-| **2. Enlace de dados** | Organização dos bits em quadros e comunicação local. |
-| **1. Física** | Transmissão de bits pelo meio físico. |
+| Camada OSI             | Função resumida                                               |
+| ---------------------- | ------------------------------------------------------------- |
+| **7. Aplicação**       | Protocolos usados por aplicações, como Web e e-mail.          |
+| **6. Apresentação**    | Representação, tradução, compressão e criptografia dos dados. |
+| **5. Sessão**          | Estabelecimento, gerenciamento e encerramento de sessões.     |
+| **4. Transporte**      | Comunicação fim a fim entre processos.                        |
+| **3. Rede**            | Endereçamento lógico e roteamento.                            |
+| **2. Enlace de dados** | Organização dos bits em quadros e comunicação local.          |
+| **1. Física**          | Transmissão de bits pelo meio físico.                         |
 
 > [!note]- Nota complementar
 > O OSI é muito útil para estudar redes porque separa responsabilidades. Porém, seus protocolos não se tornaram dominantes na prática. O modelo é mais usado como referência didática e conceitual.
@@ -382,11 +395,11 @@ A **camada de enlace de dados** organiza os bits em quadros, trata a comunicaç�
 
 A **camada de rede** encaminha pacotes entre origem e destino, mesmo quando eles precisam passar por várias redes intermediárias. Ela envolve endereçamento lógico, roteamento, interconexão de redes e controle de congestionamento em nível de rede.
 
-| Camada | Ideia-chave |
-|---|---|
-| **Física** | Move bits. |
-| **Enlace** | Move quadros na rede local. |
-| **Rede** | Move pacotes entre redes. |
+| Camada         | Ideia-chave                 |
+| -------------- | --------------------------- |
+| **Física** (1) | Move bits.                  |
+| **Enlace** (2) | Move quadros na rede local. |
+| **Rede** (3)   | Move pacotes entre redes.   |
 
 > [!warning] Atenção
 > A camada de rede entrega pacotes ao host de destino. A entrega ao processo correto é responsabilidade da camada de transporte.
@@ -402,16 +415,16 @@ A **camada de transporte** oferece comunicação fim a fim entre processos. Ela 
 
 A **camada de sessão** organiza sessões de comunicação, podendo controlar diálogo, sincronização e retomada após falhas.
 
-A **camada de apresentação** trata da forma dos dados, permitindo que sistemas com representações internas diferentes consigam trocar informações.
+A **camada de apresentação** trata da forma dos dados, permitindo que sistemas com representações internas diferentes consigam trocar informações. Atua como um "tradutor" dos dados, sendo responsável por aspectos como a sintaxe, a semântica, a criptografia e a compactação das informações antes que sejam enviadas às camadas inferiores.
 
 A **camada de aplicação** contém protocolos usados pelas aplicações, como HTTP, FTP, SMTP e DNS.
 
-| Camada | Ideia-chave |
-|---|---|
-| **Transporte** | Comunicação entre processos. |
-| **Sessão** | Organização da sessão de comunicação. |
-| **Apresentação** | Formato e significado dos dados. |
-| **Aplicação** | Serviços usados pelas aplicações. |
+| Camada               | Ideia-chave                           |
+| -------------------- | ------------------------------------- |
+| **Transporte** (4)   | Comunicação entre processos.          |
+| **Sessão** (5)       | Organização da sessão de comunicação. |
+| **Apresentação** (6) | Formato e significado dos dados.      |
+| **Aplicação** (7)    | Serviços usados pelas aplicações.     |
 
 > [!tip] Resumindo
 > As camadas superiores cuidam da comunicação do ponto de vista dos processos e aplicações.
@@ -437,15 +450,15 @@ flowchart TD
     A --> B --> C --> D
 ```
 
-| Camada TCP/IP | Função |
-|---|---|
-| **Aplicação** | Protocolos de alto nível, como HTTP, DNS, SMTP e FTP. |
-| **Transporte** | Comunicação entre processos, usando TCP ou UDP. |
-| **Internet** | Entrega de pacotes IP entre redes. |
-| **Acesso à rede** | Comunicação física e de enlace com a rede local. |
+| Camada TCP/IP           | Função                                                |
+| ----------------------- | ----------------------------------------------------- |
+| **Aplicação** (5)       | Protocolos de alto nível, como HTTP, DNS, SMTP e FTP. |
+| **Transporte** (4)      | Comunicação entre processos, usando TCP ou UDP.       |
+| **Internet** (3)        | Entrega de pacotes IP entre redes.                    |
+| **Acesso à rede** (1/2) | Comunicação ==física e de enlace== com a rede local.  |
 
 > [!warning] Atenção
-> Alguns materiais apresentam o TCP/IP com quatro camadas; outros separam acesso à rede em enlace e física, formando cinco camadas. A diferença está no agrupamento das camadas inferiores.
+> Alguns materiais apresentam o TCP/IP com quatro camadas; ==outros separam acesso à rede em enlace e física, formando cinco camadas.== A diferença está no agrupamento das camadas inferiores.
 
 ---
 
@@ -510,7 +523,7 @@ O **OSI** foi criado antes da consolidação de seus protocolos, tornando-se um 
 
 A camada de rede é responsável pelo **endereçamento lógico** e pelo **roteamento**. O principal protocolo dessa camada na Internet é o **IP**, que permite encaminhar pacotes entre redes diferentes.
 
-O IP é um serviço não orientado à conexão. Isso significa que cada pacote pode ser tratado de forma independente. Pacotes de uma mesma comunicação podem seguir caminhos diferentes e chegar fora de ordem.
+O IP é um serviço **não orientado à conexão**. Isso significa que cada pacote pode ser tratado de forma independente. Pacotes de uma mesma comunicação podem seguir caminhos diferentes e chegar fora de ordem.
 
 ```mermaid
 flowchart LR
@@ -528,6 +541,7 @@ flowchart LR
 
 > [!tip] Resumindo
 > O IP leva pacotes até o host de destino; os roteadores escolhem os caminhos.
+
 
 ---
 
@@ -561,18 +575,43 @@ A **camada de rede** entrega ==pacotes== entre hosts. A camada de transporte vai
 
 Para isso, a **camada de transporte** usa ==portas e sockets==. Ela transforma mensagens da aplicação em segmentos e os entrega à camada de rede. No destino, recebe os segmentos e encaminha os dados à aplicação correta.
 
-```mermaid
-flowchart TD
-    A[Aplicação remetente]
-    B[Camada de transporte]
-    C[Segmentos]
-    D[Camada de rede]
-    E[Rede]
-    F[Transporte no destino]
-    G[Aplicação correta]
 
-    A --> B --> C --> D --> E --> F --> G
+```mermaid
+flowchart LR
+    subgraph ORIGEM["Dispositivo de origem"]
+        direction TB
+        A["Aplicação<br/>Dados"]
+        B["Transporte<br/>Segmento TCP ou datagrama UDP"]
+        C["Rede<br/>Pacote IP"]
+        D["Enlace<br/>Quadro"]
+        E["Física<br/>Bits"]
+
+        A -->|"Encapsulamento"| B
+        B --> C
+        C --> D
+        D --> E
+    end
+
+    N["Meio de transmissão<br/>Rede cabeada ou sem fio"]
+
+    subgraph DESTINO["Dispositivo de destino"]
+        direction BT
+        F["Física<br/>Bits"]
+        G["Enlace<br/>Quadro"]
+        H["Rede<br/>Pacote IP"]
+        I["Transporte<br/>Segmento TCP ou datagrama UDP"]
+        J["Aplicação de destino<br/>Dados recebidos"]
+
+        F -->|"Desencapsulamento"| G
+        G --> H
+        H --> I
+        I --> J
+    end
+
+    E -->|"Transmissão dos sinais"| N
+    N --> F
 ```
+
 
 > [!tip] Resumindo
 > A camada de transporte transforma entrega host a host em entrega processo a processo.
@@ -590,23 +629,64 @@ No destino, a **demultiplexação** ocorre quando a camada de transporte analisa
 
 ```mermaid
 flowchart LR
-    A[Aplicação 1]
-    B[Aplicação 2]
-    C[Portas e sockets]
-    D[Segmentos]
-    E[Rede]
-    F[Socket correto]
-    G[Aplicação destino]
+    subgraph ORIGEM["Origem — Multiplexação"]
+        direction TB
 
-    A --> C
-    B --> C
-    C --> D --> E --> F --> G
+        A1["Aplicação 1<br/>Processo A"]
+        A2["Aplicação 2<br/>Processo B"]
+        A3["Aplicação 3<br/>Processo C"]
+
+        S1["Socket A<br/>Porta de origem"]
+        S2["Socket B<br/>Porta de origem"]
+        S3["Socket C<br/>Porta de origem"]
+
+        M["Camada de transporte<br/>Multiplexação"]
+
+        A1 --> S1
+        A2 --> S2
+        A3 --> S3
+
+        S1 --> M
+        S2 --> M
+        S3 --> M
+    end
+
+    SEG["Segmentos TCP ou datagramas UDP<br/>Porta de origem + porta de destino"]
+
+    NET["Camada de rede<br/>Pacotes IP"]
+
+    subgraph DESTINO["Dispositivo de destino — Demultiplexação"]
+        direction TB
+
+        D["Camada de transporte<br/>Analisa protocolo, IPs e portas"]
+
+        Q{"Qual socket deve<br/>receber os dados?"}
+
+        DS1["Socket 1<br/>Porta de destino"]
+        DS2["Socket 2<br/>Porta de destino"]
+        DS3["Socket 3<br/>Porta de destino"]
+
+        B1["Aplicação de destino 1"]
+        B2["Aplicação de destino 2"]
+        B3["Aplicação de destino 3"]
+
+        D --> Q
+
+        Q -->|"Socket correspondente"| DS1 --> B1
+        Q -->|"Socket correspondente"| DS2 --> B2
+        Q -->|"Socket correspondente"| DS3 --> B3
+    end
+
+    M -->|"Cria unidades de transporte"| SEG
+    SEG -->|"Encapsulamento"| NET
+    NET -->|"Transmissão pela rede"| D
 ```
 
-| Protocolo | Como identifica a entrega |
-|---|---|
-| **UDP** | Usa principalmente porta de destino e informações do datagrama. |
-| **TCP** | Usa IP origem, porta origem, IP destino e porta destino. |
+
+| Protocolo | Como identifica a entrega                                       |
+| --------- | --------------------------------------------------------------- |
+| **UDP**   | Usa principalmente porta de destino e informações do datagrama. |
+| **TCP**   | Usa IP origem, porta origem, IP destino e porta destino.        |
 
 > [!warning] Atenção
 > Porta não identifica o computador. Porta identifica o processo ou serviço dentro do computador.
