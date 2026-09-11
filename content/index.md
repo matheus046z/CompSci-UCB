@@ -24,3 +24,7 @@ aliases:
 
 
 # Módulo 3
+
+### [[Engenharia e Requisitos de Software]]
+
+### [[Estrutura DevOps, Hiperautomatizacao e IoT]]
