@@ -51,11 +51,11 @@ Uma chave eletrônica funciona de modo semelhante a um interruptor. Ela pode blo
 
 O transistor é um exemplo de chave eletrônica. Ele substituiu tecnologias anteriores e foi essencial para a popularização da eletrônica digital. Com o avanço tecnológico, os circuitos integrados passaram a reunir muitos transistores em uma única placa de silício, permitindo a criação de equipamentos menores e mais poderosos.
 
-| Período | Tecnologia predominante |
-|---|---|
-| Década de 1930 | Relés |
-| Década de 1940 | Válvulas termiônicas |
-| Década de 1950 | Transistores discretos |
+| Período                  | Tecnologia predominante               |
+| ------------------------ | ------------------------------------- |
+| Década de 1930           | Relés                                 |
+| Década de 1940           | Válvulas termiônicas                  |
+| Década de 1950           | Transistores discretos                |
 | Década de 1960 em diante | Circuitos integrados com transistores |
 
 ```mermaid
@@ -133,9 +133,9 @@ Um exemplo simples é uma porta automática de garagem. Ao pressionar o controle
 
 Os circuitos sequenciais podem ser analisados como **máquinas de estados**. Dois modelos principais são utilizados: **Moore** e **Mealy**.
 
-No **modelo de Moore**, as saídas dependem somente do estado atual do circuito. Assim, a saída está diretamente associada ao estado em que a máquina se encontra.
+No **modelo de Moore**, as saídas ==dependem somente do estado atual do circuito==. Assim, a saída está diretamente associada ao estado em que a máquina se encontra.
 
-No **modelo de Mealy**, as saídas dependem do estado atual e também das entradas externas atuais. Isso significa que uma mudança nas entradas pode alterar a saída antes mesmo da próxima troca de estado.
+No **modelo de Mealy**, as saídas dependem do ==estado atual== e também das ==entradas externas atuais==. Isso significa que uma mudança nas entradas pode alterar a saída antes mesmo da próxima troca de estado.
 
 | Modelo | Saída depende do estado atual? | Saída depende das entradas atuais? |
 |---|---:|---:|
@@ -150,9 +150,9 @@ No **modelo de Mealy**, as saídas dependem do estado atual e também das entrad
 > [!info] Conceito
 > Circuitos sequenciais podem mudar de estado com ou sem sincronização por clock.
 
-Um **circuito sequencial assíncrono** pode ter seu estado alterado a qualquer momento, conforme a ordem de mudança das entradas. Por depender diretamente dessas mudanças, pode se tornar instável e é mais difícil de utilizar.
+Um **circuito sequencial assíncrono** pode ter seu ==estado alterado a qualquer momento==, conforme a ordem de mudança das entradas. Por depender diretamente dessas mudanças, pode se tornar instável e é mais difícil de utilizar.
 
-Um **circuito sequencial síncrono** usa um sinal de temporização chamado **clock**. O clock gera pulsos periódicos que definem os instantes em que a memória deve amostrar os valores de entrada e atualizar o estado do circuito.
+Um **circuito sequencial síncrono** usa um ==sinal de temporização chamado **clock**==. O clock gera pulsos periódicos que definem os instantes em que a memória deve amostrar os valores de entrada e atualizar o estado do circuito.
 
 O clock possui bordas, níveis e período. A **borda ascendente** ocorre quando o sinal sobe do nível baixo para o nível alto. A **borda descendente** ocorre quando o sinal desce do nível alto para o nível baixo. O **período**, representado por `T`, é o intervalo em que o ciclo do clock se repete.
 
@@ -195,75 +195,532 @@ T ≈ 0,42 ns
 > [!warning] Atenção
 > Frequência alta significa período menor. Ou seja, quanto mais ciclos por segundo, menor o tempo disponível para cada ciclo.
 
+
+
 ## 10. Flip-flops
 
-> [!info] Conceito
-> Flip-flops são elementos de memória usados em circuitos sequenciais síncronos para armazenar um bit.
+> [!info] Conceito  
+> Flip-flops são elementos de memória usados em circuitos sequenciais síncronos para armazenar **1 bit** de informação.
 
-Um **flip-flop** é um circuito digital capaz de armazenar um bit de informação. Ele possui entrada de dados, entrada de clock e saídas que representam o dado armazenado e seu complemento.
+Um **flip-flop** é um circuito digital capaz de guardar um valor binário, ou seja, `0` ou `1`. Diferentemente de um circuito combinacional, cuja saída depende apenas das entradas atuais, o flip-flop possui **memória**. Isso significa que sua saída também depende do estado que estava armazenado anteriormente.
 
-Nos circuitos síncronos, o flip-flop atualiza seu estado conforme a borda ativa do clock. Enquanto uma nova borda ativa não ocorre, o estado armazenado permanece. Dessa forma, o circuito conserva o valor atual até que sinais de entrada e clock provoquem uma atualização.
+Em geral, um flip-flop possui uma entrada de dados, uma entrada de clock e duas saídas. A saída `Q` representa o bit armazenado, enquanto a saída `Q̅` representa o complemento desse bit. Se `Q = 1`, então `Q̅ = 0`. Se `Q = 0`, então `Q̅ = 1`.
 
-> [!tip] Resumindo
-> O flip-flop funciona como uma pequena memória de 1 bit controlada pelo clock.
+A principal característica do flip-flop é que ele não atualiza sua saída a qualquer momento. Em circuitos síncronos, a atualização ocorre somente em um instante específico do sinal de clock, normalmente na **borda de subida** ou na **borda de descida**.
+
+A borda de subida ocorre quando o clock muda de `0` para `1`. A borda de descida ocorre quando o clock muda de `1` para `0`. Fora desse instante de transição, o flip-flop mantém o valor armazenado.
+
+
+<div
+  class="svg-diagram"
+  style="
+    width: 100%;
+    max-width: 900px;
+    margin: 1.5rem auto;
+    overflow: hidden;
+  "
+>
+  <svg
+    width="900"
+    height="420"
+    viewBox="0 0 900 420"
+    xmlns="http://www.w3.org/2000/svg"
+    font-family="Arial, sans-serif"
+    preserveAspectRatio="xMidYMid meet"
+    class="logic-diagram"
+    role="img"
+    aria-label="Diagrama didático de um flip-flop D acionado por borda de clock"
+    style="
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 900 / 420;
+    "
+  >
+    <defs>
+      <marker id="ff-d-arrow-58273" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+        <path d="M1 1 L9 5 L1 9 Z" fill="#29B6E6"/>
+      </marker>
+      <marker id="ff-d-gray-arrow-58273" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+        <path d="M1 1 L9 5 L1 9 Z" fill="#aaaaaa"/>
+      </marker>
+    </defs>
+    <rect width="900" height="420" fill="transparent"/>
+    <!-- ===== Título ===== -->
+    <text x="450" y="36" text-anchor="middle" fill="#D6F0FB" font-size="24" font-weight="700">Flip-flop D</text>
+    <text x="450" y="62" text-anchor="middle" fill="#dddddd" font-size="14">Armazena 1 bit e atualiza a saída somente na borda ativa do clock</text>
+    <!-- ===== Entradas ===== -->
+    <rect x="40" y="110" width="185" height="210" rx="16" fill="#1A4A5E" fill-opacity="0.10" stroke="#7FCFF0" stroke-width="1.2"/>
+    <text x="132" y="140" text-anchor="middle" fill="#D6F0FB" font-size="17" font-weight="700">Entradas</text>
+    <circle cx="90" cy="205" r="7" fill="#29B6E6"/>
+    <text x="115" y="211" fill="#eeeeee" font-size="18" font-weight="600">D</text>
+    <text x="140" y="211" fill="#dddddd" font-size="13">dado</text>
+    <circle cx="90" cy="270" r="7" fill="#29B6E6"/>
+    <text x="115" y="276" fill="#eeeeee" font-size="18" font-weight="600">CLK</text>
+    <text x="155" y="276" fill="#dddddd" font-size="13">clock</text>
+    <!-- ===== Bloco do flip-flop ===== -->
+    <rect x="350" y="120" width="220" height="190" rx="18" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1.5"/>
+    <text x="460" y="153" text-anchor="middle" fill="#D6F0FB" font-size="20" font-weight="700">Flip-flop D</text>
+    <line x1="380" y1="172" x2="540" y2="172" stroke="#7FCFF0" stroke-width="1" opacity="0.7"/>
+    <text x="460" y="205" text-anchor="middle" fill="#eeeeee" font-size="15">Na borda ativa:</text>
+    <text x="460" y="232" text-anchor="middle" fill="#D6F0FB" font-size="18" font-weight="700">Q recebe D</text>
+    <text x="460" y="265" text-anchor="middle" fill="#dddddd" font-size="13">Entre bordas, Q permanece</text>
+    <!-- ===== Saídas ===== -->
+    <rect x="675" y="110" width="185" height="210" rx="16" fill="#3C3489" fill-opacity="0.3" stroke="#A89CF5" stroke-width="1.2"/>
+    <text x="767" y="140" text-anchor="middle" fill="#D6F0FB" font-size="17" font-weight="700">Saídas</text>
+    <circle cx="815" cy="200" r="7" fill="#29B6E6"/>
+    <text x="730" y="195" fill="#eeeeee" font-size="18" font-weight="700">Q</text>
+    <text x="730" y="218" fill="#dddddd" font-size="13">bit armazenado</text>
+    <circle cx="815" cy="275" r="7" fill="#29B6E6"/>
+    <text x="730" y="270" fill="#eeeeee" font-size="18" font-weight="700">Q̅</text>
+    <text x="730" y="293" fill="#dddddd" font-size="13">complemento</text>
+    <!-- ===== Conexões ===== -->
+    <path d="M97 205 H350" fill="none" stroke="#aaaaaa" stroke-width="1.7" vector-effect="non-scaling-stroke" marker-end="url(#ff-d-gray-arrow-58273)"/>
+    <text x="250" y="193" text-anchor="middle" fill="#dddddd" font-size="13">valor que será armazenado</text>
+    <path d="M97 270 H300 V275 H350" fill="none" stroke="#29B6E6" stroke-width="2" vector-effect="non-scaling-stroke" marker-end="url(#ff-d-arrow-58273)"/>
+    <text x="250" y="292" text-anchor="middle" fill="#D6F0FB" font-size="13" font-weight="600">borda ativa controla a atualização</text>
+    <path d="M570 200 H815" fill="none" stroke="#29B6E6" stroke-width="2.2" vector-effect="non-scaling-stroke" marker-end="url(#ff-d-arrow-58273)"/>
+    <path d="M570 275 H815" fill="none" stroke="#888888" stroke-width="1.7" vector-effect="non-scaling-stroke" marker-end="url(#ff-d-gray-arrow-58273)"/>
+    <!-- ===== Resumo ===== -->
+    <rect x="100" y="350" width="700" height="48" rx="14" fill="#1A4A5E" fill-opacity="0.10" stroke="#7FCFF0" stroke-width="1"/>
+    <text x="450" y="380" text-anchor="middle" fill="#eeeeee" font-size="14">Ideia central: o flip-flop guarda o valor de D no instante do clock e mantém esse valor depois.</text>
+  </svg>
+</div>
+
+
+> [!tip] Resumindo  
+> O flip-flop funciona como uma pequena memória de **1 bit** controlada pelo clock. Ele só muda de estado no momento correto do sinal de clock.
+
+---
 
 ## 11. Latches
 
-> [!info] Conceito
-> Latches são circuitos de memória sensíveis ao nível dos sinais de entrada e podem ser usados na construção de flip-flops.
+> [!info] Conceito  
+> Latches são circuitos de memória sensíveis ao **nível** do sinal de controle.
 
-Os **latches** são elementos de memória mais simples. Eles armazenam informações e podem manter seu estado anterior dependendo das entradas recebidas.
+Um **latch** também armazena informação, mas seu comportamento é diferente do flip-flop. O latch é sensível ao nível do sinal de controle. Isso significa que, enquanto o controle estiver habilitado, a saída pode acompanhar as mudanças das entradas.
+
+Por isso, costuma-se dizer que o latch é **transparente** quando está habilitado. Nesse estado, a informação passa da entrada para a saída. Quando o controle é desabilitado, o latch deixa de acompanhar a entrada e mantém o último valor armazenado.
+
+A diferença principal é:
+
+- **Latch:** responde enquanto o sinal de controle está ativo.
+- **Flip-flop:** responde somente na borda ativa do clock.
 
 ### Latch RS
 
-O **latch RS** possui duas entradas principais: `R`, de reset, e `S`, de set. Ele pode manter o estado anterior, definir a saída como `1`, definir a saída como `0` ou entrar em uma condição proibida.
+O **latch RS** é um dos latches mais básicos. Ele possui duas entradas principais:
 
-| R | S | Próximo estado | Comentário |
-|---|---|---|---|
-| 0 | 0 | `Qt` | Mantém o estado anterior |
-| 0 | 1 | `1` | Estado set |
-| 1 | 0 | `0` | Estado reset |
-| 1 | 1 | `-` | Estado proibido |
+- `S`, de **set**, usada para colocar a saída `Q` em `1`;
+- `R`, de **reset**, usada para colocar a saída `Q` em `0`.
 
-> [!warning] Atenção
-> A condição `R = 1` e `S = 1` é proibida no latch RS, pois gera um comportamento inadequado para o armazenamento binário.
+Quando `R = 0` e `S = 0`, o latch mantém o estado anterior. Quando `S = 1`, ele armazena `1`. Quando `R = 1`, ele armazena `0`. A combinação `R = 1` e `S = 1` é considerada proibida, porque tenta ativar set e reset ao mesmo tempo.
+
+|R|S|Próximo estado|Comentário|
+|--:|--:|---|---|
+|0|0|`Qt`|Mantém o estado anterior|
+|0|1|`1`|Estado set|
+|1|0|`0`|Estado reset|
+|1|1|`-`|Estado proibido|
+
+
+<div
+  class="svg-diagram"
+  style="
+    width: 100%;
+    max-width: 950px;
+    margin: 1.5rem auto;
+    overflow: hidden;
+  "
+>
+  <svg
+    width="950"
+    height="430"
+    viewBox="0 0 950 430"
+    xmlns="http://www.w3.org/2000/svg"
+    font-family="Arial, sans-serif"
+    preserveAspectRatio="xMidYMid meet"
+    class="logic-diagram"
+    role="img"
+    aria-label="Diagrama didático de um latch RS com entradas R e S e saídas Q e complemento de Q"
+    style="
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 950 / 430;
+    "
+  >
+    <defs>
+      <marker id="latch-rs-arrow-58273" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+        <path d="M1 1 L9 5 L1 9 Z" fill="#29B6E6"/>
+      </marker>
+      <marker id="latch-rs-gray-arrow-58273" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+        <path d="M1 1 L9 5 L1 9 Z" fill="#aaaaaa"/>
+      </marker>
+    </defs>
+    <rect width="950" height="430" fill="transparent"/>
+    <!-- ===== Título ===== -->
+    <text x="475" y="36" text-anchor="middle" fill="#D6F0FB" font-size="24" font-weight="700">Latch RS</text>
+    <text x="475" y="62" text-anchor="middle" fill="#dddddd" font-size="14">Armazena 1 bit usando entradas de set e reset</text>
+    <!-- ===== Entradas ===== -->
+    <rect x="40" y="105" width="180" height="190" rx="16" fill="#1A4A5E" fill-opacity="0.10" stroke="#7FCFF0" stroke-width="1.2"/>
+    <text x="130" y="135" text-anchor="middle" fill="#D6F0FB" font-size="17" font-weight="700">Entradas</text>
+    <circle cx="90" cy="190" r="7" fill="#29B6E6"/>
+    <text x="115" y="196" fill="#eeeeee" font-size="18" font-weight="700">S</text>
+    <text x="145" y="196" fill="#dddddd" font-size="13">set</text>
+    <circle cx="90" cy="245" r="7" fill="#29B6E6"/>
+    <text x="115" y="251" fill="#eeeeee" font-size="18" font-weight="700">R</text>
+    <text x="145" y="251" fill="#dddddd" font-size="13">reset</text>
+    <!-- ===== Bloco central ===== -->
+    <rect x="345" y="115" width="250" height="170" rx="18" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1.5"/>
+    <text x="470" y="150" text-anchor="middle" fill="#D6F0FB" font-size="21" font-weight="700">Latch RS</text>
+    <line x1="380" y1="170" x2="560" y2="170" stroke="#7FCFF0" stroke-width="1" opacity="0.7"/>
+    <text x="470" y="202" text-anchor="middle" fill="#eeeeee" font-size="15">Guarda o estado atual</text>
+    <text x="470" y="228" text-anchor="middle" fill="#D6F0FB" font-size="16" font-weight="600">Q(t)</text>
+    <text x="470" y="255" text-anchor="middle" fill="#dddddd" font-size="13">Pode manter, setar ou resetar</text>
+    <!-- ===== Saídas ===== -->
+    <rect x="735" y="105" width="180" height="190" rx="16" fill="#3C3489" fill-opacity="0.3" stroke="#A89CF5" stroke-width="1.2"/>
+    <text x="825" y="135" text-anchor="middle" fill="#D6F0FB" font-size="17" font-weight="700">Saídas</text>
+    <circle cx="865" cy="190" r="7" fill="#29B6E6"/>
+    <text x="775" y="185" fill="#eeeeee" font-size="18" font-weight="700">Q</text>
+    <text x="775" y="208" fill="#dddddd" font-size="13">estado</text>
+    <circle cx="865" cy="245" r="7" fill="#29B6E6"/>
+    <text x="775" y="240" fill="#eeeeee" font-size="18" font-weight="700">Q̅</text>
+    <text x="775" y="263" fill="#dddddd" font-size="13">complemento</text>
+    <!-- ===== Conexões ===== -->
+    <path d="M97 190 H345" fill="none" stroke="#aaaaaa" stroke-width="1.7" vector-effect="non-scaling-stroke" marker-end="url(#latch-rs-gray-arrow-58273)"/>
+    <path d="M97 245 H345" fill="none" stroke="#aaaaaa" stroke-width="1.7" vector-effect="non-scaling-stroke" marker-end="url(#latch-rs-gray-arrow-58273)"/>
+    <path d="M595 190 H865" fill="none" stroke="#29B6E6" stroke-width="2.2" vector-effect="non-scaling-stroke" marker-end="url(#latch-rs-arrow-58273)"/>
+    <path d="M595 245 H865" fill="none" stroke="#888888" stroke-width="1.7" vector-effect="non-scaling-stroke" marker-end="url(#latch-rs-gray-arrow-58273)"/>
+    <!-- ===== Estados ===== -->
+    <rect x="95" y="330" width="175" height="55" rx="12" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/>
+    <text x="182" y="352" text-anchor="middle" fill="#D6F0FB" font-size="14" font-weight="700">R=0, S=0</text>
+    <text x="182" y="374" text-anchor="middle" fill="#eeeeee" font-size="13">mantém Q</text>
+    <rect x="295" y="330" width="175" height="55" rx="12" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/>
+    <text x="382" y="352" text-anchor="middle" fill="#D6F0FB" font-size="14" font-weight="700">R=0, S=1</text>
+    <text x="382" y="374" text-anchor="middle" fill="#eeeeee" font-size="13">set: Q=1</text>
+    <rect x="495" y="330" width="175" height="55" rx="12" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1"/>
+    <text x="582" y="352" text-anchor="middle" fill="#D6F0FB" font-size="14" font-weight="700">R=1, S=0</text>
+    <text x="582" y="374" text-anchor="middle" fill="#eeeeee" font-size="13">reset: Q=0</text>
+    <rect x="695" y="330" width="175" height="55" rx="12" fill="#3C3489" fill-opacity="0.3" stroke="#A89CF5" stroke-width="1"/>
+    <text x="782" y="352" text-anchor="middle" fill="#D6F0FB" font-size="14" font-weight="700">R=1, S=1</text>
+    <text x="782" y="374" text-anchor="middle" fill="#eeeeee" font-size="13">proibido</text>
+  </svg>
+</div>
+
+
+> [!warning] Atenção  
+> No latch RS, a combinação `R = 1` e `S = 1` deve ser evitada, pois aciona reset e set ao mesmo tempo.
 
 ### Latch RS controlado
 
-O **latch RS controlado** acrescenta uma entrada de controle `C`. Quando `C = 0`, o latch mantém o estado anterior, independentemente dos valores de `R` e `S`. Quando `C = 1`, o latch responde às entradas `R` e `S`.
+O **latch RS controlado** acrescenta uma entrada de controle `C`. Essa entrada funciona como uma autorização para o latch responder a `R` e `S`.
 
-| C | R | S | Próximo estado | Comentário |
-|---|---|---|---|---|
-| 0 | X | X | `Qt` | Mantém o estado anterior |
-| 1 | 0 | 0 | `Qt` | Mantém o estado anterior |
-| 1 | 0 | 1 | `1` | Estado set |
-| 1 | 1 | 0 | `0` | Estado reset |
-| 1 | 1 | 1 | `-` | Proibido |
+Quando `C = 0`, o latch fica bloqueado e mantém o estado anterior, mesmo que `R` e `S` mudem. Quando `C = 1`, o latch passa a responder às entradas `R` e `S`.
+
+|C|R|S|Próximo estado|Comentário|
+|--:|--:|--:|---|---|
+|0|X|X|`Qt`|Mantém o estado anterior|
+|1|0|0|`Qt`|Mantém o estado anterior|
+|1|0|1|`1`|Estado set|
+|1|1|0|`0`|Estado reset|
+|1|1|1|`-`|Proibido|
+
+O símbolo `X` significa “tanto faz”. Quando `C = 0`, os valores de `R` e `S` não alteram a saída.
 
 ### Latch D
 
-O **latch D** foi desenvolvido para evitar o estado proibido do latch RS. Ele usa uma entrada de dados `D` e uma entrada de controle `C`. Quando o controle permite a atualização, a saída acompanha o valor de `D`.
+O **latch D** foi criado para simplificar o uso do latch RS e evitar sua combinação proibida. Em vez de usar duas entradas independentes, ele usa apenas uma entrada de dados `D`.
 
-| C | D | Próximo estado |
-|---|---|---|
-| 0 | X | `Qt` |
-| 1 | 0 | `0` |
-| 1 | 1 | `1` |
+A ideia é simples:
 
-> [!tip] Resumindo
-> O latch D simplifica o controle do estado porque usa uma única entrada de dado e evita a combinação proibida do latch RS.
+- se `D = 1`, o latch deve armazenar `1`;
+- se `D = 0`, o latch deve armazenar `0`.
+
+Para isso, internamente, o circuito gera sinais equivalentes a set e reset de forma controlada. Assim, o usuário não precisa se preocupar em acionar `R` e `S` ao mesmo tempo.
+
+Quando `C = 1`, o latch D fica transparente e a saída `Q` acompanha `D`. Quando `C = 0`, ele mantém o último valor armazenado.
+
+|C|D|Próximo estado|
+|--:|--:|---|
+|0|X|`Qt`|
+|1|0|`0`|
+|1|1|`1`|
+
+
+<div
+  class="svg-diagram"
+  style="
+    width: 100%;
+    max-width: 950px;
+    margin: 1.5rem auto;
+    overflow: hidden;
+  "
+>
+  <svg
+    width="950"
+    height="390"
+    viewBox="0 0 950 390"
+    xmlns="http://www.w3.org/2000/svg"
+    font-family="Arial, sans-serif"
+    preserveAspectRatio="xMidYMid meet"
+    class="logic-diagram"
+    role="img"
+    aria-label="Diagrama didático de um latch D com entrada D, controle C e saída Q"
+    style="
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 950 / 390;
+    "
+  >
+    <defs>
+      <marker id="latch-d-arrow-58273" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+        <path d="M1 1 L9 5 L1 9 Z" fill="#29B6E6"/>
+      </marker>
+      <marker id="latch-d-gray-arrow-58273" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+        <path d="M1 1 L9 5 L1 9 Z" fill="#aaaaaa"/>
+      </marker>
+    </defs>
+    <rect width="950" height="390" fill="transparent"/>
+    <!-- ===== Título ===== -->
+    <text x="475" y="36" text-anchor="middle" fill="#D6F0FB" font-size="24" font-weight="700">Latch D</text>
+    <text x="475" y="62" text-anchor="middle" fill="#dddddd" font-size="14">Usa uma única entrada de dado e evita a condição proibida do latch RS</text>
+    <!-- ===== Entradas ===== -->
+    <rect x="45" y="110" width="180" height="175" rx="16" fill="#1A4A5E" fill-opacity="0.10" stroke="#7FCFF0" stroke-width="1.2"/>
+    <text x="135" y="140" text-anchor="middle" fill="#D6F0FB" font-size="17" font-weight="700">Entradas</text>
+    <circle cx="90" cy="195" r="7" fill="#29B6E6"/>
+    <text x="115" y="201" fill="#eeeeee" font-size="18" font-weight="700">D</text>
+    <text x="145" y="201" fill="#dddddd" font-size="13">dado</text>
+    <circle cx="90" cy="250" r="7" fill="#29B6E6"/>
+    <text x="115" y="256" fill="#eeeeee" font-size="18" font-weight="700">C</text>
+    <text x="145" y="256" fill="#dddddd" font-size="13">controle</text>
+    <!-- ===== Controle ===== -->
+    <rect x="310" y="130" width="180" height="135" rx="16" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1.4"/>
+    <text x="400" y="162" text-anchor="middle" fill="#D6F0FB" font-size="18" font-weight="700">Controle</text>
+    <text x="400" y="193" text-anchor="middle" fill="#eeeeee" font-size="14">C = 1: passa D</text>
+    <text x="400" y="220" text-anchor="middle" fill="#eeeeee" font-size="14">C = 0: mantém Q</text>
+    <text x="400" y="245" text-anchor="middle" fill="#dddddd" font-size="13">funciona como uma porta</text>
+    <!-- ===== Latch ===== -->
+    <rect x="590" y="130" width="180" height="135" rx="16" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1.4"/>
+    <text x="680" y="162" text-anchor="middle" fill="#D6F0FB" font-size="18" font-weight="700">Memória</text>
+    <text x="680" y="193" text-anchor="middle" fill="#eeeeee" font-size="14">armazena 1 bit</text>
+    <text x="680" y="220" text-anchor="middle" fill="#D6F0FB" font-size="16" font-weight="700">Q</text>
+    <text x="680" y="245" text-anchor="middle" fill="#dddddd" font-size="13">último valor aceito</text>
+    <!-- ===== Saída ===== -->
+    <circle cx="855" cy="197" r="7" fill="#29B6E6"/>
+    <text x="805" y="192" fill="#eeeeee" font-size="18" font-weight="700">Q</text>
+    <text x="805" y="215" fill="#dddddd" font-size="13">saída</text>
+    <!-- ===== Conexões ===== -->
+    <path d="M97 195 H310" fill="none" stroke="#aaaaaa" stroke-width="1.7" vector-effect="non-scaling-stroke" marker-end="url(#latch-d-gray-arrow-58273)"/>
+    <path d="M97 250 H260 V235 H310" fill="none" stroke="#29B6E6" stroke-width="2" vector-effect="non-scaling-stroke" marker-end="url(#latch-d-arrow-58273)"/>
+    <path d="M490 197 H590" fill="none" stroke="#29B6E6" stroke-width="2.2" vector-effect="non-scaling-stroke" marker-end="url(#latch-d-arrow-58273)"/>
+    <path d="M770 197 H855" fill="none" stroke="#29B6E6" stroke-width="2.2" vector-effect="non-scaling-stroke" marker-end="url(#latch-d-arrow-58273)"/>
+    <!-- ===== Resumo ===== -->
+    <rect x="130" y="315" width="690" height="45" rx="14" fill="#1A4A5E" fill-opacity="0.10" stroke="#7FCFF0" stroke-width="1"/>
+    <text x="475" y="343" text-anchor="middle" fill="#eeeeee" font-size="14">Quando C=1, Q acompanha D. Quando C=0, Q mantém o valor anterior.</text>
+  </svg>
+</div>
+
+
+> [!tip] Resumindo  
+> O latch D simplifica o armazenamento porque usa apenas uma entrada de dado. Ele evita a combinação proibida do latch RS.
+
+---
 
 ## 12. Flip-flop D mestre-escravo e flip-flop JK
 
-> [!info] Conceito
+> [!info] Conceito  
 > Flip-flops mais complexos podem ser construídos a partir de latches.
 
-O **flip-flop D mestre-escravo** é formado por dois latches D ligados em cascata. O primeiro é chamado de mestre, e o segundo, de escravo. Enquanto um latch está habilitado, o outro mantém o estado anterior. Esse arranjo permite que a saída seja atualizada em momento controlado, de acordo com a transição do sinal de controle.
+### Flip-flop D mestre-escravo
 
-O **flip-flop JK** tem comportamento semelhante ao latch RS, mas resolve o problema do estado proibido. Quando `J = 1` e `K = 1`, em vez de entrar em condição inválida, o flip-flop JK complementa o estado anterior, isto é, alterna o valor armazenado.
+O **flip-flop D mestre-escravo** é formado por dois latches D ligados em sequência. O primeiro latch é chamado de **mestre**, e o segundo é chamado de **escravo**.
 
-> [!tip] Resumindo
-> O flip-flop JK melhora o comportamento do RS ao substituir a condição proibida por uma alternância de estado.
+A ideia desse arranjo é impedir que a entrada `D` atravesse diretamente até a saída final `Q` durante todo o tempo em que o clock está ativo. Em vez disso, o circuito divide o processo em duas etapas:
+
+1. o latch mestre captura a informação de entrada;
+2. o latch escravo transfere essa informação para a saída em outro momento do clock.
+
+
+Enquanto um latch está habilitado, o outro fica bloqueado. Isso permite que o flip-flop funcione de forma mais controlada, aproximando seu comportamento de uma atualização por borda.
+
+
+<div
+  class="svg-diagram"
+  style="
+    width: 100%;
+    max-width: 950px;
+    margin: 1.5rem auto;
+    overflow: hidden;
+  "
+>
+  <svg
+    width="950"
+    height="390"
+    viewBox="0 0 950 390"
+    xmlns="http://www.w3.org/2000/svg"
+    font-family="Arial, sans-serif"
+    preserveAspectRatio="xMidYMid meet"
+    class="logic-diagram"
+    role="img"
+    aria-label="Diagrama didático de um flip-flop D mestre-escravo formado por dois latches D"
+    style="
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 950 / 390;
+    "
+  >
+    <defs>
+      <marker id="ms-d-arrow-58273" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+        <path d="M1 1 L9 5 L1 9 Z" fill="#29B6E6"/>
+      </marker>
+      <marker id="ms-d-gray-arrow-58273" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+        <path d="M1 1 L9 5 L1 9 Z" fill="#aaaaaa"/>
+      </marker>
+    </defs>
+    <rect width="950" height="390" fill="transparent"/>
+    <!-- ===== Título ===== -->
+    <text x="475" y="36" text-anchor="middle" fill="#D6F0FB" font-size="24" font-weight="700">Flip-flop D mestre-escravo</text>
+    <text x="475" y="62" text-anchor="middle" fill="#dddddd" font-size="14">Dois latches D em cascata controlam quando a informação chega à saída</text>
+    <!-- ===== Entrada ===== -->
+    <circle cx="75" cy="180" r="7" fill="#29B6E6"/>
+    <text x="45" y="175" fill="#eeeeee" font-size="18" font-weight="700">D</text>
+    <text x="35" y="202" fill="#dddddd" font-size="13">entrada</text>
+    <!-- ===== Mestre ===== -->
+    <rect x="180" y="120" width="220" height="130" rx="17" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1.4"/>
+    <text x="290" y="153" text-anchor="middle" fill="#D6F0FB" font-size="20" font-weight="700">Latch mestre</text>
+    <text x="290" y="184" text-anchor="middle" fill="#eeeeee" font-size="14">captura D</text>
+    <text x="290" y="211" text-anchor="middle" fill="#dddddd" font-size="13">habilitado em uma fase</text>
+    <!-- ===== Escravo ===== -->
+    <rect x="550" y="120" width="220" height="130" rx="17" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1.4"/>
+    <text x="660" y="153" text-anchor="middle" fill="#D6F0FB" font-size="20" font-weight="700">Latch escravo</text>
+    <text x="660" y="184" text-anchor="middle" fill="#eeeeee" font-size="14">atualiza Q</text>
+    <text x="660" y="211" text-anchor="middle" fill="#dddddd" font-size="13">habilitado na fase oposta</text>
+    <!-- ===== Saída ===== -->
+    <circle cx="865" cy="180" r="7" fill="#29B6E6"/>
+    <text x="830" y="175" fill="#eeeeee" font-size="18" font-weight="700">Q</text>
+    <text x="815" y="202" fill="#dddddd" font-size="13">saída</text>
+    <!-- ===== Clock ===== -->
+    <circle cx="290" cy="310" r="7" fill="#29B6E6"/>
+    <text x="240" y="316" fill="#eeeeee" font-size="17" font-weight="700">CLK</text>
+    <circle cx="660" cy="310" r="7" fill="#29B6E6"/>
+    <text x="610" y="316" fill="#eeeeee" font-size="17" font-weight="700">CLK̅</text>
+    <!-- ===== Conexões ===== -->
+    <path d="M82 180 H180" fill="none" stroke="#aaaaaa" stroke-width="1.7" vector-effect="non-scaling-stroke" marker-end="url(#ms-d-gray-arrow-58273)"/>
+    <path d="M400 180 H550" fill="none" stroke="#29B6E6" stroke-width="2.2" vector-effect="non-scaling-stroke" marker-end="url(#ms-d-arrow-58273)"/>
+    <text x="475" y="168" text-anchor="middle" fill="#D6F0FB" font-size="14" font-weight="600">valor intermediário</text>
+    <path d="M770 180 H865" fill="none" stroke="#29B6E6" stroke-width="2.2" vector-effect="non-scaling-stroke" marker-end="url(#ms-d-arrow-58273)"/>
+    <path d="M290 303 V250" fill="none" stroke="#29B6E6" stroke-width="2" vector-effect="non-scaling-stroke" marker-end="url(#ms-d-arrow-58273)"/>
+    <path d="M660 303 V250" fill="none" stroke="#29B6E6" stroke-width="2" vector-effect="non-scaling-stroke" marker-end="url(#ms-d-arrow-58273)"/>
+    <!-- ===== Explicação ===== -->
+    <rect x="120" y="335" width="710" height="35" rx="12" fill="#1A4A5E" fill-opacity="0.10" stroke="#7FCFF0" stroke-width="1"/>
+    <text x="475" y="358" text-anchor="middle" fill="#eeeeee" font-size="14">Quando um latch está aberto, o outro está fechado, evitando passagem direta de D para Q.</text>
+  </svg>
+</div>
+
+
+### Flip-flop JK
+
+O **flip-flop JK** é uma evolução do comportamento RS. Ele possui duas entradas principais:
+
+- `J`, que funciona de forma parecida com o set;
+- `K`, que funciona de forma parecida com o reset.
+
+
+A diferença importante é que, no JK, a combinação `J = 1` e `K = 1` não é proibida. Em vez disso, ela faz o flip-flop alternar seu estado. Se `Q` era `0`, passa a ser `1`. Se `Q` era `1`, passa a ser `0`.
+
+Esse comportamento é chamado de **toggle**, ou alternância.
+
+|J|K|Próximo estado|Comentário|
+|--:|--:|---|---|
+|0|0|`Qt`|Mantém o estado anterior|
+|0|1|`0`|Reset|
+|1|0|`1`|Set|
+|1|1|`Q̅t`|Alterna o estado|
+
+<div
+  class="svg-diagram"
+  style="
+    width: 100%;
+    max-width: 950px;
+    margin: 1.5rem auto;
+    overflow: hidden;
+  "
+>
+  <svg
+    width="950"
+    height="420"
+    viewBox="0 0 950 420"
+    xmlns="http://www.w3.org/2000/svg"
+    font-family="Arial, sans-serif"
+    preserveAspectRatio="xMidYMid meet"
+    class="logic-diagram"
+    role="img"
+    aria-label="Diagrama didático de um flip-flop JK com estados de manter, resetar, setar e alternar"
+    style="
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 950 / 420;
+    "
+  >
+    <defs>
+      <marker id="jk-arrow-58273" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+        <path d="M1 1 L9 5 L1 9 Z" fill="#29B6E6"/>
+      </marker>
+      <marker id="jk-gray-arrow-58273" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+        <path d="M1 1 L9 5 L1 9 Z" fill="#aaaaaa"/>
+      </marker>
+    </defs>
+    <rect width="950" height="420" fill="transparent"/>
+    <!-- ===== Título ===== -->
+    <text x="475" y="36" text-anchor="middle" fill="#D6F0FB" font-size="24" font-weight="700">Flip-flop JK</text>
+    <text x="475" y="62" text-anchor="middle" fill="#dddddd" font-size="14">Resolve o estado proibido do RS usando alternância quando J=1 e K=1</text>
+    <!-- ===== Entradas ===== -->
+    <rect x="45" y="100" width="180" height="215" rx="16" fill="#1A4A5E" fill-opacity="0.10" stroke="#7FCFF0" stroke-width="1.2"/>
+    <text x="135" y="130" text-anchor="middle" fill="#D6F0FB" font-size="17" font-weight="700">Entradas</text>
+    <circle cx="90" cy="185" r="7" fill="#29B6E6"/>
+    <text x="115" y="191" fill="#eeeeee" font-size="18" font-weight="700">J</text>
+    <text x="145" y="191" fill="#dddddd" font-size="13">set</text>
+    <circle cx="90" cy="240" r="7" fill="#29B6E6"/>
+    <text x="115" y="246" fill="#eeeeee" font-size="18" font-weight="700">K</text>
+    <text x="145" y="246" fill="#dddddd" font-size="13">reset</text>
+    <circle cx="90" cy="290" r="7" fill="#29B6E6"/>
+    <text x="115" y="296" fill="#eeeeee" font-size="18" font-weight="700">CLK</text>
+    <!-- ===== Bloco JK ===== -->
+    <rect x="350" y="120" width="245" height="170" rx="18" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1.5"/>
+    <text x="472" y="153" text-anchor="middle" fill="#D6F0FB" font-size="21" font-weight="700">Flip-flop JK</text>
+    <line x1="385" y1="173" x2="560" y2="173" stroke="#7FCFF0" stroke-width="1" opacity="0.7"/>
+    <text x="472" y="204" text-anchor="middle" fill="#eeeeee" font-size="14">J=0, K=0: mantém</text>
+    <text x="472" y="228" text-anchor="middle" fill="#eeeeee" font-size="14">J=1, K=0: seta</text>
+    <text x="472" y="252" text-anchor="middle" fill="#eeeeee" font-size="14">J=0, K=1: reseta</text>
+    <text x="472" y="276" text-anchor="middle" fill="#D6F0FB" font-size="14" font-weight="700">J=1, K=1: alterna</text>
+    <!-- ===== Saída ===== -->
+    <rect x="725" y="100" width="180" height="215" rx="16" fill="#3C3489" fill-opacity="0.3" stroke="#A89CF5" stroke-width="1.2"/>
+    <text x="815" y="130" text-anchor="middle" fill="#D6F0FB" font-size="17" font-weight="700">Saída</text>
+    <circle cx="855" cy="200" r="7" fill="#29B6E6"/>
+    <text x="770" y="195" fill="#eeeeee" font-size="18" font-weight="700">Q</text>
+    <text x="770" y="218" fill="#dddddd" font-size="13">estado atual</text>
+    <circle cx="855" cy="260" r="7" fill="#29B6E6"/>
+    <text x="770" y="255" fill="#eeeeee" font-size="18" font-weight="700">Q̅</text>
+    <text x="770" y="278" fill="#dddddd" font-size="13">complemento</text>
+    <!-- ===== Conexões ===== -->
+    <path d="M97 185 H350" fill="none" stroke="#aaaaaa" stroke-width="1.7" vector-effect="non-scaling-stroke" marker-end="url(#jk-gray-arrow-58273)"/>
+    <path d="M97 240 H350" fill="none" stroke="#aaaaaa" stroke-width="1.7" vector-effect="non-scaling-stroke" marker-end="url(#jk-gray-arrow-58273)"/>
+    <path d="M97 290 H300 V270 H350" fill="none" stroke="#29B6E6" stroke-width="2" vector-effect="non-scaling-stroke" marker-end="url(#jk-arrow-58273)"/>
+    <path d="M595 200 H855" fill="none" stroke="#29B6E6" stroke-width="2.2" vector-effect="non-scaling-stroke" marker-end="url(#jk-arrow-58273)"/>
+    <path d="M595 260 H855" fill="none" stroke="#888888" stroke-width="1.7" vector-effect="non-scaling-stroke" marker-end="url(#jk-gray-arrow-58273)"/>
+    <!-- ===== Resumo ===== -->
+    <rect x="105" y="350" width="740" height="45" rx="14" fill="#1A4A5E" fill-opacity="0.10" stroke="#7FCFF0" stroke-width="1"/>
+    <text x="475" y="378" text-anchor="middle" fill="#eeeeee" font-size="14">A principal vantagem do JK é transformar o estado proibido do RS em alternância controlada.</text>
+  </svg>
+</div>
+
+
+> [!tip] Resumindo  
+> O flip-flop JK melhora o comportamento do RS porque a combinação `J = 1` e `K = 1` não é inválida. Ela faz o circuito alternar o valor armazenado.
 
 ## 13. Portas lógicas básicas
 
@@ -309,12 +766,12 @@ A porta **NOT**, ou inversora, inverte o valor recebido.
 
 As portas **NAND**, **NOR**, **XOR** e **XNOR** são derivadas das portas básicas. Em muitos casos, a diferença está na inversão da saída ou na comparação entre entradas.
 
-| Porta | Funcionamento |
-|---|---|
-| NAND | É a porta AND com saída invertida |
-| NOR | É a porta OR com saída invertida |
-| XOR | Gera `1` quando as entradas são diferentes |
-| XNOR | Gera `1` quando as entradas são iguais |
+| Porta | Funcionamento                              |
+| ----- | ------------------------------------------ |
+| NAND  | É a porta AND com saída invertida          |
+| NOR   | É a porta OR com saída invertida           |
+| XOR   | Gera `1` quando as entradas são diferentes |
+| XNOR  | Gera `1` quando as entradas são iguais     |
 
 ### NAND
 

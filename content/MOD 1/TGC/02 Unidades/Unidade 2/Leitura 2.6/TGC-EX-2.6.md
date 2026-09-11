@@ -186,7 +186,7 @@ publish: true
 >   Taxa_dia <- (Taxa_Mes/100)/30
 >   Valor_juro <- Valor * Taxa_dia * Dias
 >   Total <- Valor_juro + Valor
->   ESCREVA "Valor do juro em R$: ", Valor_juro
+>   ESCREVA "Valor do juro em R\$: ", Valor_juro
 >   ESCREVA "Valor da parcela: ", Total
 > FIM
 > ```

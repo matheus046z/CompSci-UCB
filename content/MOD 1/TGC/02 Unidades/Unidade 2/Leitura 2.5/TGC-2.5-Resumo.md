@@ -219,7 +219,7 @@ Esse caso é importante porque ensina a separar o problema em duas partes: prime
 > [!info] Conceito
 > O desafio da unidade usa comandos condicionais simples para calcular a comissão de vendedores conforme faixas de venda.
 
-O problema apresenta três regras: se o vendedor vender entre R$ 55.000,00 e R$ 100.000,00, recebe 2% sobre a venda; se vender menos de R$ 55.000,00, recebe comissão fixa de R$ 100,00; se vender mais de R$ 100.000,00, recebe comissão fixa de R$ 5.000,00. Depois disso, o algoritmo deve calcular o salário final somando salário-base e comissão.
+O problema apresenta três regras: se o vendedor vender entre R\$ 55.000,00 e R\$ 100.000,00, recebe 2% sobre a venda; se vender menos de R\$ 55.000,00, recebe comissão fixa de R\$ 100,00; se vender mais de R\$ 100.000,00, recebe comissão fixa de R\$ 5.000,00. Depois disso, o algoritmo deve calcular o salário final somando salário-base e comissão.
 
 Esse exemplo é importante porque mostra que as condicionais simples conseguem representar regras de negócio reais. Ele também evidencia o uso de várias verificações para tratar diferentes faixas de valores, sempre controlando a atribuição da comissão conforme a condição adequada.
 
@@ -236,7 +236,7 @@ Esse exemplo é importante porque mostra que as condicionais simples conseguem r
 > [!info] Conceito
 > O caso do financiamento bancário mostra a aplicação de seleção simples com regras sucessivas e encadeadas.
 
-Nesse problema, o financiamento só pode ser concedido se o valor solicitado não ultrapassar quatro vezes o salário líquido. Apenas se essa condição for verdadeira o algoritmo continua calculando juros, total a pagar, número de parcelas e valor de cada parcela. Dentro desse processo, ainda há novas condições: se o cliente tiver mais de três anos na empresa, recebe desconto nos juros; se o valor financiado for maior que R$ 5.000,00, o parcelamento passa a ser em seis vezes.
+Nesse problema, o financiamento só pode ser concedido se o valor solicitado não ultrapassar quatro vezes o salário líquido. Apenas se essa condição for verdadeira o algoritmo continua calculando juros, total a pagar, número de parcelas e valor de cada parcela. Dentro desse processo, ainda há novas condições: se o cliente tiver mais de três anos na empresa, recebe desconto nos juros; se o valor financiado for maior que R\$ 5.000,00, o parcelamento passa a ser em seis vezes.
 
 Esse exemplo mostra que a seleção simples pode ser usada em etapas sucessivas, criando uma lógica de decisões condicionadas. O programa primeiro verifica se o financiamento é permitido; depois, apenas se for permitido, executa outros cálculos que também dependem de condições.
 

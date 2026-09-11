@@ -47,7 +47,7 @@ publish: true
 >
 > Graças sobretudo ao iPhone, a Apple — há não muito tempo uma fabricante de desktops e laptops de nicho — hoje vale mais do que qualquer outra companhia do mundo e acabou de ter o trimestre mais lucrativo da história. Benedict Evans afirma que suas receitas são hoje maiores do que as de todo o ramo de computadores pessoais (PC). A Xiaomi, uma fabricante chinesa de smartphones em rápido crescimento, tornou-se a startup mais valiosa do mundo.
 >
-> O smartphone tornou-se um produto-chave da tecnologia da informação. Ele gera a maioria dos lucros, atrai a maior parte do capital e os cérebros mais brilhantes. A App Store, da Apple, e o Google Play, o equivalente para o sistema operacional Android — que está presente em 82% dos smartphones mundiais, ante 15% da Apple — agora oferecem mais de 3 milhões de aplicativos aos usuários. A Apple sozinha vendeu apps num valor acima de US$ 14 bilhões em 2014.
+> O smartphone tornou-se um produto-chave da tecnologia da informação. Ele gera a maioria dos lucros, atrai a maior parte do capital e os cérebros mais brilhantes. A App Store, da Apple, e o Google Play, o equivalente para o sistema operacional Android — que está presente em 82% dos smartphones mundiais, ante 15% da Apple — agora oferecem mais de 3 milhões de aplicativos aos usuários. A Apple sozinha vendeu apps num valor acima de US\$ 14 bilhões em 2014.
 >
 > Quanto aos smartphones e aos sistemas operacionais (S.O), é correto afirmar que:
 >

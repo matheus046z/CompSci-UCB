@@ -174,11 +174,11 @@ Além dessa classificação, o material apresenta barramentos **ponto a ponto** 
 
 Também aparecem terminologias associadas aos computadores pessoais:
 
-| Terminologia | Função |
-|---|---|
-| Barramento do sistema | Conecta processador, memória e componentes internos. |
-| Barramento de expansão | Conecta dispositivos externos ao computador. |
-| Barramento local | Conecta um dispositivo periférico diretamente ao processador. |
+| Terminologia           | Função                                                        |
+| ---------------------- | ------------------------------------------------------------- |
+| Barramento do sistema  | Conecta processador, memória e componentes internos.          |
+| Barramento de expansão | Conecta dispositivos externos ao computador.                  |
+| Barramento local       | Conecta um dispositivo periférico diretamente ao processador. |
 
 > [!warning] Atenção
 > O barramento de dados transporta dados; quem trabalha com posições de memória é o barramento de endereços.

@@ -254,16 +254,96 @@ Em um somador paralelo de 5 bits, por exemplo, existem entradas `A0` a `A4`, ent
 > [!info] Conceito
 > O meio somador soma dois bits e gera duas saídas: o bit da soma e o carry.
 
+
+<div
+  class="svg-diagram"
+  style="
+    width: 100%;
+    max-width: 900px;
+    margin: 1.5rem auto;
+    overflow: hidden;
+  "
+>
+  <svg
+    width="900"
+    height="460"
+    viewBox="0 0 900 460"
+    xmlns="http://www.w3.org/2000/svg"
+    font-family="Arial, sans-serif"
+    preserveAspectRatio="xMidYMid meet"
+    class="logic-diagram"
+    role="img"
+    aria-label="Diagrama didático de um meio somador com portas XOR e AND"
+    style="
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 900 / 460;
+    "
+  >
+    <defs>
+      <marker id="half-adder-arrow-31742" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+        <path d="M1 1 L9 5 L1 9 Z" fill="#29B6E6"/>
+      </marker>
+    </defs>
+    <rect width="900" height="460" fill="transparent"/>
+    <!-- ===== Título ===== -->
+    <text x="450" y="35" text-anchor="middle" fill="#D6F0FB" font-size="24" font-weight="700">Meio Somador</text>
+    <text x="450" y="60" text-anchor="middle" fill="#dddddd" font-size="14">Soma dois bits e produz um bit de soma e um bit de transporte</text>
+    <!-- ===== Entradas ===== -->
+    <rect x="30" y="105" width="170" height="215" rx="16" fill="#1A4A5E" fill-opacity="0.10" stroke="#7FCFF0" stroke-width="1.2"/>
+    <text x="115" y="135" text-anchor="middle" fill="#D6F0FB" font-size="17" font-weight="600">Entradas</text>
+    <circle cx="90" cy="190" r="7" fill="#29B6E6"/>
+    <text x="112" y="196" fill="#eeeeee" font-size="20" font-weight="600">A</text>
+    <circle cx="90" cy="255" r="7" fill="#29B6E6"/>
+    <text x="112" y="261" fill="#eeeeee" font-size="20" font-weight="600">B</text>
+    <text x="115" y="295" text-anchor="middle" fill="#dddddd" font-size="13">Cada entrada vale 0 ou 1</text>
+    <!-- ===== Portas lógicas ===== -->
+    <rect x="330" y="120" width="190" height="80" rx="16" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1.4"/>
+    <text x="425" y="151" text-anchor="middle" fill="#D6F0FB" font-size="20" font-weight="700">XOR</text>
+    <text x="425" y="177" text-anchor="middle" fill="#dddddd" font-size="14">Soma sem transporte</text>
+    <rect x="330" y="235" width="190" height="80" rx="16" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1.4"/>
+    <text x="425" y="266" text-anchor="middle" fill="#D6F0FB" font-size="20" font-weight="700">AND</text>
+    <text x="425" y="292" text-anchor="middle" fill="#dddddd" font-size="14">Detecta 1 + 1</text>
+    <!-- ===== Saídas ===== -->
+    <rect x="690" y="105" width="180" height="215" rx="16" fill="#3C3489" fill-opacity="0.3" stroke="#A89CF5" stroke-width="1.2"/>
+    <text x="780" y="135" text-anchor="middle" fill="#D6F0FB" font-size="17" font-weight="600">Saídas</text>
+    <circle cx="815" cy="160" r="7" fill="#29B6E6"/>
+    <text x="730" y="157" fill="#eeeeee" font-size="19" font-weight="600">S</text>
+    <text x="730" y="181" fill="#dddddd" font-size="13">Soma</text>
+    <circle cx="815" cy="275" r="7" fill="#29B6E6"/>
+    <text x="730" y="272" fill="#eeeeee" font-size="19" font-weight="600">C</text>
+    <text x="730" y="296" fill="#dddddd" font-size="13">Carry</text>
+    <!-- ===== Conexões das entradas ===== -->
+    <path d="M97 190 H240 V145 H330" fill="none" stroke="#aaaaaa" stroke-width="1.6" vector-effect="non-scaling-stroke" marker-end="url(#half-adder-arrow-31742)"/>
+    <path d="M240 190 V260 H330" fill="none" stroke="#aaaaaa" stroke-width="1.6" vector-effect="non-scaling-stroke" marker-end="url(#half-adder-arrow-31742)"/>
+    <circle cx="240" cy="190" r="4" fill="#29B6E6"/>
+    <path d="M97 255 H275 V175 H330" fill="none" stroke="#888888" stroke-width="1.6" vector-effect="non-scaling-stroke" marker-end="url(#half-adder-arrow-31742)"/>
+    <path d="M275 255 V290 H330" fill="none" stroke="#888888" stroke-width="1.6" vector-effect="non-scaling-stroke" marker-end="url(#half-adder-arrow-31742)"/>
+    <circle cx="275" cy="255" r="4" fill="#29B6E6"/>
+    <!-- ===== Conexões das saídas ===== -->
+    <path d="M520 160 H815" fill="none" stroke="#29B6E6" stroke-width="2.2" vector-effect="non-scaling-stroke" marker-end="url(#half-adder-arrow-31742)"/>
+    <text x="600" y="148" text-anchor="middle" fill="#D6F0FB" font-size="15" font-weight="600">S = A ⊕ B</text>
+    <path d="M520 275 H815" fill="none" stroke="#29B6E6" stroke-width="2.2" vector-effect="non-scaling-stroke" marker-end="url(#half-adder-arrow-31742)"/>
+    <text x="600" y="263" text-anchor="middle" fill="#D6F0FB" font-size="15" font-weight="600">C = A · B</text>
+    <!-- ===== Explicação ===== -->
+    <rect x="95" y="360" width="710" height="70" rx="15" fill="#1A4A5E" fill-opacity="0.10" stroke="#7FCFF0" stroke-width="1"/>
+    <text x="450" y="386" text-anchor="middle" fill="#D6F0FB" font-size="15" font-weight="600">Exemplo: A = 1 e B = 1</text>
+    <text x="450" y="411" text-anchor="middle" fill="#eeeeee" font-size="14">A XOR B gera S = 0 e A AND B gera C = 1, representando o resultado binário 10.</text>
+  </svg>
+</div>
+
+
 O **meio somador** é um circuito simples que soma dois bits de entrada, geralmente chamados de `A` e `B`. Ele gera duas saídas: `S0`, que representa o bit menos significativo da soma, e `S1`, que representa o carry.
 
 A porta lógica **XOR** gera o resultado da soma sem considerar transporte. A porta lógica **AND** identifica quando ocorre carry, isto é, quando a operação `1 + 1` gera `10`.
 
-| A | B | S1 | S0 | Valor decimal |
-|---:|---:|---:|---:|---:|
-| 0 | 0 | 0 | 0 | 0 |
-| 0 | 1 | 0 | 1 | 1 |
-| 1 | 0 | 0 | 1 | 1 |
-| 1 | 1 | 1 | 0 | 2 |
+|   A |   B |  S1 |  S0 | Valor decimal |
+| --: | --: | --: | --: | ------------: |
+|   0 |   0 |   0 |   0 |             0 |
+|   0 |   1 |   0 |   1 |             1 |
+|   1 |   0 |   0 |   1 |             1 |
+|   1 |   1 |   1 |   0 |             2 |
 
 ```mermaid
 flowchart LR
@@ -281,12 +361,50 @@ O diagrama mostra que o meio somador usa duas operações lógicas: XOR para o b
 > [!tip] Resumindo
 > O meio somador resolve a soma de dois bits, mas não considera carry vindo de uma operação anterior.
 
+
+> [!info]- Porta Lógicas
+> 
+Porta lógica AND
+>
+> | A   | B   | Y   |
+> | --- | --- | --- |
+> | 0   | 0   | 0   |
+> | 0   | 1   | 0   |
+> | 1   | 0   | 0   |
+> | 1   | 1   | 1   |
+>
+>Porta lógica OR ou porta OU
+>
+| A | B | Y |
+|---|---|---|
+| 0 | 0 | 0 |
+| 0 | 1 | 1 |
+| 1 | 0 | 1 |
+| 1 | 1 | 1 |
+>
+>Porta lógica NOT ou porta inversora
+>
+| A | Y |
+|---|---|
+| 0 | 1 |
+| 1 | 0 |
+>
+>
+>| Porta | Funcionamento                              |
+>| ----- | ------------------------------------------ |
+>| NAND  | É a porta AND com saída invertida          |
+>| NOR   | É a porta OR com saída invertida           |
+>| XOR (Exclusivo)  | Gera `1` quando as entradas são diferentes |
+>| XNOR (Coincidência)  | Gera `0` quando as entradas são diferentes   |
+
+
 ---
 
 ## Somador de três bits
 
 > [!info] Conceito
 > Um somador de três bits pode ser construído combinando meios somadores e portas lógicas auxiliares.
+
 
 Para somar três entradas de 1 bit, como `A`, `B` e `C`, o circuito precisa produzir uma saída de 2 bits, formada por `S1` e `S0`. Isso ocorre porque a maior soma possível é:
 
@@ -314,6 +432,10 @@ Em binário, o número `3` é representado como `11`.
 
 > [!info] Conceito
 > O somador completo soma dois bits mais um carry de entrada, gerando uma soma e um carry de saída.
+
+
+<div class="svg-diagram" style=" width: 100%; max-width: 1000px; margin: 1.5rem auto; overflow: hidden; " > <svg width="1000" height="560" viewBox="0 0 1000 560" xmlns="http://www.w3.org/2000/svg" font-family="Arial, sans-serif" preserveAspectRatio="xMidYMid meet" class="logic-diagram" role="img" aria-label="Diagrama didático de um somador completo com entradas A, B e carry de entrada e saídas soma e carry de saída" style=" display: block; width: 100%; height: auto; aspect-ratio: 1000 / 560; " > <defs> <marker id="full-adder-flow-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"> <path d="M1 1 L9 5 L1 9 Z" fill="#29B6E6"/> </marker> <marker id="full-adder-gray-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"> <path d="M1 1 L9 5 L1 9 Z" fill="#aaaaaa"/> </marker> </defs> <rect width="1000" height="560" fill="transparent"/> <!-- ===== Título ===== --> <text x="500" y="35" text-anchor="middle" fill="#D6F0FB" font-size="24" font-weight="700">Somador Completo</text> <text x="500" y="61" text-anchor="middle" fill="#dddddd" font-size="14">Soma dois bits e o carry recebido da posição anterior</text> <!-- ===== Registradores ===== --> <rect x="35" y="100" width="200" height="275" rx="17" fill="#1A4A5E" fill-opacity="0.10" stroke="#7FCFF0" stroke-width="1.2"/> <text x="135" y="130" text-anchor="middle" fill="#D6F0FB" font-size="17" font-weight="600">Entradas</text> <rect x="65" y="155" width="140" height="55" rx="11" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1.3"/> <text x="135" y="178" text-anchor="middle" fill="#D6F0FB" font-size="17" font-weight="700">Aᵢ</text> <text x="135" y="198" text-anchor="middle" fill="#dddddd" font-size="12">Bit do registrador A</text> <rect x="65" y="230" width="140" height="55" rx="11" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1.3"/> <text x="135" y="253" text-anchor="middle" fill="#D6F0FB" font-size="17" font-weight="700">Bᵢ</text> <text x="135" y="273" text-anchor="middle" fill="#dddddd" font-size="12">Bit do registrador B</text> <rect x="65" y="305" width="140" height="55" rx="11" fill="#3C3489" fill-opacity="0.3" stroke="#A89CF5" stroke-width="1.3"/> <text x="135" y="328" text-anchor="middle" fill="#D6F0FB" font-size="17" font-weight="700">Cᵢ</text> <text x="135" y="348" text-anchor="middle" fill="#dddddd" font-size="12">Carry de entrada</text> <!-- ===== Origem do carry ===== --> <rect x="30" y="410" width="220" height="70" rx="14" fill="#1A4A5E" fill-opacity="0.08" stroke="#7FCFF0" stroke-width="1"/> <text x="140" y="435" text-anchor="middle" fill="#D6F0FB" font-size="14" font-weight="600">Posição anterior</text> <text x="140" y="458" text-anchor="middle" fill="#dddddd" font-size="13">O estágio i − 1 envia Cᵢ</text> <path d="M140 410 V375 H135 V360" fill="none" stroke="#29B6E6" stroke-width="2" vector-effect="non-scaling-stroke" marker-end="url(#full-adder-flow-arrow)"/> <!-- ===== Bloco do somador completo ===== --> <rect x="350" y="125" width="300" height="250" rx="22" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1.6"/> <text x="500" y="160" text-anchor="middle" fill="#D6F0FB" font-size="21" font-weight="700">Somador completo</text> <line x1="385" y1="180" x2="615" y2="180" stroke="#7FCFF0" stroke-width="1" opacity="0.7"/> <text x="500" y="212" text-anchor="middle" fill="#eeeeee" font-size="15">Entradas</text> <text x="500" y="238" text-anchor="middle" fill="#D6F0FB" font-size="18" font-weight="600">Aᵢ + Bᵢ + Cᵢ</text> <text x="500" y="279" text-anchor="middle" fill="#eeeeee" font-size="15">Saídas</text> <text x="500" y="305" text-anchor="middle" fill="#D6F0FB" font-size="18" font-weight="600">Sᵢ e Cᵢ₊₁</text> <text x="500" y="342" text-anchor="middle" fill="#dddddd" font-size="13">Processa uma posição da soma binária</text> <!-- ===== Conexões de entrada ===== --> <path d="M205 182 H350" fill="none" stroke="#aaaaaa" stroke-width="1.7" vector-effect="non-scaling-stroke" marker-end="url(#full-adder-gray-arrow)"/> <text x="275" y="170" text-anchor="middle" fill="#dddddd" font-size="13">bit Aᵢ</text> <path d="M205 257 H300 V245 H350" fill="none" stroke="#aaaaaa" stroke-width="1.7" vector-effect="non-scaling-stroke" marker-end="url(#full-adder-gray-arrow)"/> <text x="275" y="246" text-anchor="middle" fill="#dddddd" font-size="13">bit Bᵢ</text> <path d="M205 332 H300 V315 H350" fill="none" stroke="#29B6E6" stroke-width="2" vector-effect="non-scaling-stroke" marker-end="url(#full-adder-flow-arrow)"/> <text x="275" y="322" text-anchor="middle" fill="#D6F0FB" font-size="13" font-weight="600">carry Cᵢ</text> <!-- ===== Saídas ===== --> <rect x="765" y="100" width="200" height="275" rx="17" fill="#3C3489" fill-opacity="0.3" stroke="#A89CF5" stroke-width="1.2"/> <text x="865" y="130" text-anchor="middle" fill="#D6F0FB" font-size="17" font-weight="600">Saídas</text> <rect x="795" y="165" width="140" height="70" rx="12" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1.3"/> <text x="865" y="191" text-anchor="middle" fill="#D6F0FB" font-size="18" font-weight="700">Sᵢ</text> <text x="865" y="216" text-anchor="middle" fill="#dddddd" font-size="13">Bit da soma</text> <rect x="795" y="270" width="140" height="70" rx="12" fill="#3C3489" fill-opacity="0.4" stroke="#A89CF5" stroke-width="1.3"/> <text x="865" y="296" text-anchor="middle" fill="#D6F0FB" font-size="18" font-weight="700">Cᵢ₊₁</text> <text x="865" y="321" text-anchor="middle" fill="#dddddd" font-size="13">Carry de saída</text> <!-- ===== Conexões de saída ===== --> <path d="M650 200 H795" fill="none" stroke="#29B6E6" stroke-width="2.2" vector-effect="non-scaling-stroke" marker-end="url(#full-adder-flow-arrow)"/> <text x="720" y="188" text-anchor="middle" fill="#D6F0FB" font-size="14" font-weight="600">soma</text> <path d="M650 305 H795" fill="none" stroke="#29B6E6" stroke-width="2.2" vector-effect="non-scaling-stroke" marker-end="url(#full-adder-flow-arrow)"/> <text x="720" y="293" text-anchor="middle" fill="#D6F0FB" font-size="14" font-weight="600">carry</text> <!-- ===== Destino do carry ===== --> <rect x="750" y="410" width="230" height="70" rx="14" fill="#1A4A5E" fill-opacity="0.08" stroke="#7FCFF0" stroke-width="1"/> <text x="865" y="435" text-anchor="middle" fill="#D6F0FB" font-size="14" font-weight="600">Próxima posição</text> <text x="865" y="458" text-anchor="middle" fill="#dddddd" font-size="13">O estágio i + 1 recebe Cᵢ₊₁</text> <path d="M865 340 V410" fill="none" stroke="#29B6E6" stroke-width="2" vector-effect="non-scaling-stroke" marker-end="url(#full-adder-flow-arrow)"/> <!-- ===== Fórmulas ===== --> <rect x="285" y="425" width="430" height="100" rx="16" fill="#1A4A5E" fill-opacity="0.10" stroke="#7FCFF0" stroke-width="1"/> <text x="500" y="451" text-anchor="middle" fill="#D6F0FB" font-size="15" font-weight="600">Operações lógicas</text> <text x="500" y="480" text-anchor="middle" fill="#eeeeee" font-size="15">Sᵢ = Aᵢ ⊕ Bᵢ ⊕ Cᵢ</text> <text x="500" y="507" text-anchor="middle" fill="#eeeeee" font-size="15">Cᵢ₊₁ = AᵢBᵢ + Cᵢ(Aᵢ ⊕ Bᵢ)</text> </svg> </div>
+
 
 Diferentemente do meio somador, o **somador completo** considera três entradas: um bit do registrador `A`, um bit do registrador `B` e um carry vindo da posição anterior. Ele gera duas saídas: o bit da soma e o carry que será enviado à próxima posição.
 
