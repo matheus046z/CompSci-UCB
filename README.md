@@ -54,6 +54,19 @@ Preview da versao que vai para o GitHub Pages:
 npm run preview:pages
 ```
 
+Build offline para o aplicativo Tauri/Android:
+
+```bash
+npm run prepare:offline
+npm run build:offline
+```
+
+Documentacao do app Android offline:
+
+```text
+docs/tauri-android-offline.md
+```
+
 ## Observacoes
 
 - O filtro atual usa `publish: true`, nao `draft: true`.
