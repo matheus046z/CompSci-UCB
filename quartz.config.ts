@@ -1,6 +1,8 @@
 import { QuartzConfig } from "./quartz/cfg"
 import * as Plugin from "./quartz/plugins"
 
+const offline = process.env.QUARTZ_OFFLINE === "1"
+
 /**
  * Quartz 4 Configuration
  *
@@ -12,16 +14,20 @@ const config: QuartzConfig = {
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
-    analytics: {
-      provider: "plausible",
-    },
+    analytics: offline
+      ? null
+      : {
+          provider: "plausible",
+        },
     locale: "pt-BR",
-    baseUrl: process.env.QUARTZ_BASE_URL ?? "YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME",
+    baseUrl: offline
+      ? undefined
+      : (process.env.QUARTZ_BASE_URL ?? "YOUR_GITHUB_USERNAME.github.io/YOUR_REPO_NAME"),
     ignorePatterns: ["private", "templates", ".obsidian", ".github"],
     defaultDateType: "modified",
     theme: {
-      fontOrigin: "googleFonts",
-      cdnCaching: true,
+      fontOrigin: offline ? "local" : "googleFonts",
+      cdnCaching: !offline,
       typography: {
         header: "Schibsted Grotesk",
         body: "Source Sans Pro",

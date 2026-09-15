@@ -157,7 +157,7 @@ export const ContentIndex: QuartzEmitterPlugin<Partial<Options>> = (opts) => {
       })
     },
     externalResources: (ctx) => {
-      if (opts?.enableRSS) {
+      if (opts?.enableRSS && ctx.cfg.configuration.baseUrl) {
         return {
           additionalHead: [
             <link
