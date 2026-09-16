@@ -86,12 +86,12 @@ O *HyperText Transfer Protocol Secure* (HTTPS) é a forma protegida do HTTP. A c
 > [!info] Classificação
 > As plataformas IoT podem concentrar-se em nuvem, conectividade, dados ou oferecer uma solução completa de ponta a ponta.
 
-| Tipo | Características |
-|---|---|
-| **Cloud** | Reduz a complexidade da construção de pilhas de rede e fornece recursos de *back-end* para monitorar dispositivos. |
-| **Connectivity** | Oferece conectividade de baixo custo, geralmente por Wi-Fi e redes celulares como 3G, 4G e LTE. |
-| **Data** | Disponibiliza ferramentas para roteamento, gerenciamento, análise e visualização de dados, além de bancos de dados. |
-| **End-to-end** | Integra hardware, software, conectividade, segurança, gerenciamento, monitoramento, nuvem e atualizações remotas de *firmware*. |
+| Tipo             | Características                                                                                                                 |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------- |
+| **Cloud**        | Reduz a complexidade da construção de pilhas de rede e fornece recursos de *back-end* para monitorar dispositivos.              |
+| **Connectivity** | Oferece conectividade de baixo custo, geralmente por Wi-Fi e redes celulares como 3G, 4G e LTE.                                 |
+| **Data**         | Disponibiliza ferramentas para roteamento, gerenciamento, análise e visualização de dados, além de bancos de dados.             |
+| **End-to-end**   | Integra hardware, software, conectividade, segurança, gerenciamento, monitoramento, nuvem e atualizações remotas de *firmware*. |
 
 As plataformas *end-to-end* reúnem recursos necessários para administrar milhões de conexões simultâneas, sendo mais abrangentes do que as plataformas especializadas em apenas uma camada.
 
@@ -216,15 +216,15 @@ A primeira versão do Raspberry Pi foi baseada no sistema em um chip **Broadcom 
 
 Diferentemente do Arduino, o Raspberry Pi permite instalar um sistema operacional e apresenta melhor desempenho no processamento de grandes volumes de dados. Por isso, pode atender a aplicações IoT industriais mais complexas.
 
-| Aspecto | Arduino | Raspberry Pi e BeagleBone |
-|---|---|---|
-| Categoria | Placa microcontrolada | Computadores de placa única |
-| Sistema operacional | Software embarcado | Linux |
-| Uso principal | Controle de sensores, atuadores e circuitos | Processamento, aplicações e serviços |
-| Capacidade de processamento | Mais limitada | Mais elevada |
-| Armazenamento | Memória interna reduzida | Cartão SD |
-| Interfaces | Portas digitais e analógicas; expansão por *shields* | USB, vídeo, rede e pinos de entrada e saída |
-| Indicação geral | Projetos simples e controle eletrônico | Aplicações que exigem sistema operacional e maior processamento |
+| Aspecto                     | Arduino                                              | Raspberry Pi e BeagleBone                                       |
+| --------------------------- | ---------------------------------------------------- | --------------------------------------------------------------- |
+| Categoria                   | Placa microcontrolada                                | Computadores de placa única                                     |
+| Sistema operacional         | Software embarcado                                   | Linux                                                           |
+| Uso principal               | Controle de sensores, atuadores e circuitos          | Processamento, aplicações e serviços                            |
+| Capacidade de processamento | Mais limitada                                        | Mais elevada                                                    |
+| Armazenamento               | Memória interna reduzida                             | Cartão SD                                                       |
+| Interfaces                  | Portas digitais e analógicas; expansão por *shields* | USB, vídeo, rede e pinos de entrada e saída                     |
+| Indicação geral             | Projetos simples e controle eletrônico               | Aplicações que exigem sistema operacional e maior processamento |
 
 > [!tip] Resumindo
 > Arduino prioriza o controle eletrônico direto, enquanto Raspberry Pi e BeagleBone oferecem recursos semelhantes aos de um computador e atendem melhor a tarefas com maior volume de dados.

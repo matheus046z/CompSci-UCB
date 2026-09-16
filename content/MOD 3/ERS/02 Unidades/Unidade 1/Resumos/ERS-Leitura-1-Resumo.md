@@ -102,7 +102,7 @@ flowchart LR
 Entre 1945 e 1965 surgiram o termo e as primeiras concepções da engenharia de software. Entre 1965 e 1985, a crise evidenciou a necessidade de métodos mais rigorosos. De 1985 a 1989, ganharam destaque os projetos de software, os processos definidos e a documentação detalhada. Na década de 1990, a Internet impulsionou sistemas conectados. A partir dos anos 2000, difundiram-se as metodologias ágeis, com maior atenção à produtividade, à colaboração e à adaptação.
 
 > [!tip] Resumindo
-> A engenharia de software nasceu para enfrentar problemas de qualidade, prazo, custo e manutenção provocados pelo crescimento da complexidade dos sistemas.
+> A engenharia de software nasceu para enfrentar problemas de **qualidade, prazo, custo e manutenção** provocados pelo crescimento da complexidade dos sistemas.
 
 ---
 
@@ -127,12 +127,63 @@ O profissional da área precisa dominar teorias, modelos e técnicas para analis
 
 A relação entre ciência da computação e engenharia de software envolve três eixos, atravessados pelas estruturas de dados:
 
+<div
+  class="svg-diagram"
+  style="
+    width: 100%;
+    max-width: 481px;
+    margin: 1.5rem auto;
+    overflow: hidden;
+  "
+>
+  <svg
+    width="481"
+    height="382"
+    viewBox="0 0 481 382"
+    xmlns="http://www.w3.org/2000/svg"
+    font-family="Arial, sans-serif"
+    preserveAspectRatio="xMidYMid meet"
+    class="network-diagram"
+    role="img"
+    aria-label="Diagrama de Venn relacionando Ciência da Computação, Teoria, Abstração, Design e Estrutura de dados"
+    style="
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 481 / 382;
+    "
+  >
+    <rect width="481" height="382" fill="transparent"/>
+    <!-- ===== Título superior ===== -->
+    <text x="240.5" y="28" text-anchor="middle" fill="#D6F0FB" font-size="18" font-weight="600">CIÊNCIA DA COMPUTAÇÃO</text>
+    <!-- ===== Campos principais ===== -->
+    <circle cx="168" cy="134" r="88" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+    <circle cx="300" cy="134" r="88" fill="#1A4A5E" fill-opacity="0.6" stroke="#7FCFF0" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+    <!-- ===== Campo secundário ===== -->
+    <circle cx="229" cy="245" r="88" fill="#1A4A5E" fill-opacity="0.3" stroke="#7FCFF0" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+    <!-- ===== Área central de conteúdo ===== -->
+    <circle cx="234" cy="181" r="51" fill="#3C3489" fill-opacity="0.85" stroke="#A89CF5" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+    <!-- ===== Rótulos principais ===== -->
+    <text x="138" y="141" text-anchor="middle" fill="#eeeeee" font-size="20" font-weight="600">Teoria</text>
+    <text x="329" y="136" text-anchor="middle" fill="#eeeeee" font-size="20" font-weight="600">Abstração</text>
+    <text x="229" y="273" text-anchor="middle" fill="#eeeeee" font-size="20" font-weight="600">Design</text>
+    <!-- ===== Rótulo central ===== -->
+    <text x="234" y="178" text-anchor="middle" fill="#D6F0FB" font-size="15" font-weight="600">
+      <tspan x="234" dy="0">Estrutura</tspan>
+      <tspan x="234" dy="17">de dados</tspan>
+    </text>
+    <!-- ===== Título inferior ===== -->
+    <text x="240.5" y="365" text-anchor="middle" fill="#D6F0FB" font-size="18" font-weight="600">ENGENHARIA DE SOFTWARE</text>
+  </svg>
+</div>
+
+
 - **Teoria:** conceitos, axiomas, provas e interpretações que fundamentam as soluções.
 - **Abstração:** modelos e simplificações utilizados para compreender problemas complexos.
 - **Design:** requisitos, especificações, modelagem e testes que estruturam a solução.
 - **Estruturas de dados:** mecanismos de organização dos dados para garantir seu processamento adequado.
 
-A estrutura de dados relaciona os três eixos porque uma solução depende simultaneamente de fundamentos teóricos, modelos abstratos e decisões de projeto.
+A estrutura de dados relaciona os três eixos porque ==uma solução depende simultaneamente de fundamentos teóricos, modelos abstratos e decisões de projeto==.
 
 ### Diferença entre programa e software
 
@@ -188,13 +239,13 @@ Além dessas premissas, Hooker apresenta sete princípios gerais aplicáveis às
 
 ### 1. A razão pela qual tudo existe
 
-O software deve possuir um propósito claro e entregar valor ao cliente. Os requisitos funcionais e não funcionais expressam suas necessidades, mas cabe à engenharia analisar a viabilidade técnica e distinguir o que é essencial do que é supérfluo.
+O software deve possuir um propósito claro e entregar valor ao cliente. Os requisitos funcionais e não funcionais expressam suas necessidades, mas ==cabe à engenharia analisar a viabilidade técnica== e distinguir o que é essencial do que é supérfluo.
 
 Uma funcionalidade sem valor comprovado não deve consumir os esforços que poderiam ser direcionados aos requisitos realmente importantes.
 
 ### 2. Mantenha as coisas simples
 
-A simplicidade reduz burocracia e facilita compreensão, uso e manutenção. Manter algo simples não significa ignorar a complexidade do problema, mas evitar complicações desnecessárias.
+A simplicidade reduz burocracia e facilita compreensão, uso e manutenção. Manter algo simples não significa ignorar a complexidade do problema, mas ==evitar complicações desnecessárias==.
 
 O sistema deve entregar aquilo de que o cliente precisa de forma clara, integrada e compatível com a infraestrutura tecnológica da organização.
 
@@ -221,7 +272,7 @@ A tecnologia também possui efeitos sociais. Seu avanço deve ser acompanhado po
 
 ### 6. Planeje com antecedência, visando ao reuso
 
-Modelar e planejar antes da implementação reduz retrabalho e melhora a compreensão do sistema. O planejamento deve analisar custos, esforços, módulos, integrações, reaproveitamento e possibilidades futuras.
+==Modelar e planejar antes da implementação== reduz retrabalho e melhora a compreensão do sistema. O planejamento deve analisar custos, esforços, módulos, integrações, reaproveitamento e possibilidades futuras.
 
 Essa visão permite avaliar o retorno sobre o investimento e o legado tecnológico que o sistema deixará para a organização.
 
@@ -255,9 +306,9 @@ flowchart TD
     D --> E
 ```
 
-Os **objetivos** representam fatores externos, como necessidades do negócio, exemplos, requisitos funcionais e não funcionais, expectativas e custos aceitáveis.
+Os **objetivos** representam ==fatores externos==, como necessidades do negócio, exemplos, requisitos funcionais e não funcionais, expectativas e custos aceitáveis.
 
-As **estimativas** consideram aspectos internos, como restrições, dependências, incertezas, escopo, esforço e duração.
+As **estimativas** consideram ==aspectos internos==, como restrições, dependências, incertezas, escopo, esforço e duração.
 
 O **planejamento** divide os objetivos em atividades e marcos, relaciona metas e estimativas e favorece uma negociação de benefício mútuo entre clientes e desenvolvedores. Essa abordagem ganha-ganha fortalece a parceria, a previsibilidade e a fidelização.
 
@@ -268,7 +319,7 @@ O **planejamento** divide os objetivos em atividades e marcos, relaciona metas e
 > [!info] SWEBOK
 > O SWEBOK organiza o corpo de conhecimento da engenharia de software e ajuda a delimitar suas disciplinas profissionais.
 
-O **Guide to the Software Engineering Body of Knowledge — SWEBOK** é mantido pela comunidade da área e regulado pela IEEE Computer Society. O guia reúne conceitos, métodos, ferramentas, práticas e fundamentos relacionados ao ciclo de vida do software.
+O **Guide to the Software Engineering Body of Knowledge — SWEBOK** é mantido pela comunidade da área e regulado pela IEEE Computer Society. O guia reúne conceitos, métodos, ferramentas, práticas e fundamentos relacionados ao ==ciclo de vida do software==.
 
 A versão apresentada no material é a 3.0, reconhecida internacionalmente pelo relatório técnico ISO 19759. O guia define quinze áreas de conhecimento:
 
@@ -304,7 +355,7 @@ Transforma especificações em código. Busca reduzir a complexidade, antecipar 
 
 ### Testes de software
 
-Define critérios, níveis, objetivos, alvos e técnicas de verificação. Os testes podem ser baseados em código, falhas, uso ou modelos e procuram identificar problemas antes que afetem os usuários.
+Define **critérios, níveis, objetivos, alvos e técnicas** de verificação. Os testes podem ser **baseados em código, falhas, uso ou modelos** e procuram identificar problemas antes que afetem os usuários.
 
 ### Manutenção de software
 
@@ -549,7 +600,7 @@ Como trabalhos futuros, os autores sugerem ampliar a lista de ameaças por meio 
 > [!summary] Síntese
 > A engenharia de software transforma o desenvolvimento de sistemas em uma atividade planejada, disciplinada, mensurável e orientada à qualidade.
 
-A crise do software demonstrou que apenas escrever código não era suficiente para produzir sistemas confiáveis. A engenharia de software surgiu para organizar o ciclo de vida por meio de processos, métodos, documentação, planejamento, testes e gestão.
+A crise do software demonstrou que apenas escrever código não era suficiente para produzir sistemas confiáveis. A **engenharia de software** surgiu para organizar o ciclo de vida por meio de ==processos, métodos, documentação, planejamento, testes e gestão==.
 
 Seus princípios orientam a produção de soluções úteis, simples, coerentes, reutilizáveis e preparadas para mudanças. O SWEBOK amplia essa perspectiva ao estruturar áreas que incluem requisitos, projeto, construção, testes, manutenção, configuração, gestão, processos, métodos, qualidade e fundamentos profissionais.
 

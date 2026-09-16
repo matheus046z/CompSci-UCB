@@ -1,7 +1,9 @@
 ---
 publish: true
-title: UX
+title: Experiencia do Usuario
 description: Exercícios e Resumos de Experiência do Usuário
+tags:
+  - UX
 ---
 ### Unidade 1
 [[UX-1.1-Resumo]]

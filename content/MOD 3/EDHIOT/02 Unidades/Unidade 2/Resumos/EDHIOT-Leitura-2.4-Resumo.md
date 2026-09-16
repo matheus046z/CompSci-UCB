@@ -124,7 +124,7 @@ flowchart TD
 
 A **identificação por radiofrequência (RFID)** utiliza etiquetas eletrônicas para identificar objetos automaticamente.
 
-As **redes de sensores sem fio (WSN)** são formadas por nós sensores capazes de detectar, processar e transmitir dados sem fio. O processamento pode ocorrer de maneira independente ou coordenada com nós vizinhos, que encaminham as informações aos usuários ou aos nós processadores, chamados de *sink nodes*. Essas redes variam desde dispositivos minúsculos, como o *smart dust*, até estações meteorológicas equipadas com GPS.
+As **redes de sensores sem fio (WSN)** são formadas por nós sensores capazes de detectar, processar e transmitir dados sem fio. O processamento pode ocorrer de maneira independente ou coordenada com nós vizinhos, que encaminham as informações aos usuários ou aos **nós processadores**, chamados de *sink nodes*. Essas redes variam desde dispositivos minúsculos, como o *smart dust*, até estações meteorológicas equipadas com GPS.
 
 Os padrões **ZigBee, Z-Wave, ANT e Bluetooth** permitem criar redes de pequena escala, como sistemas domésticos, ou de grande escala, como redes de monitoramento industrial.
 

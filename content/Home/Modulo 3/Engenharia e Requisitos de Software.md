@@ -1,7 +1,9 @@
 ---
 publish: true
-title: ERS
+title: Engenharia e Requisitos de Software
 description: Exercícios e Resumos de Engenharia e Requisitos de Software
+tags:
+  - ERS
 ---
 ### Unidade 1
 [[ERS-UN1-Resumo]]

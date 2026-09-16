@@ -70,7 +70,7 @@ As ferramentas auxiliam a execução do trabalho; os métodos orientam como as a
 ## 3. Problemas enfrentados no desenvolvimento
 
 > [!info] Conceito
-> Os desafios do desenvolvimento não se limitam à escrita do código, pois também envolvem custo, prazo, qualidade, manutenção e medição do progresso.
+> Os desafios do desenvolvimento não se limitam à escrita do código, pois também envolvem **custo, prazo, qualidade, manutenção e medição do progresso.**
 
 A aula apresenta alguns questionamentos recorrentes:
 
@@ -88,15 +88,15 @@ Essas questões estão relacionadas, entre outros fatores, à falta de uma metod
 ## 4. O que é software?
 
 > [!info] Conceito
-> Software não corresponde somente ao código executável: também abrange as estruturas de dados e as informações que explicam sua operação e seu uso.
+> Software não corresponde somente ao código executável: também abrange **as estruturas de dados** e as **informações que explicam sua operação e seu uso**.
 
-O material apresenta três componentes que integram o conceito de software:
+O material apresenta **três componentes que integram o conceito de software**:
 
-1. **Instruções:** quando executadas, fornecem as características, funções e o desempenho desejados.
-2. **Estruturas de dados:** permitem que os programas manipulem informações adequadamente.
-3. **Informações descritivas:** documentação impressa ou virtual que descreve a operação e o uso dos programas.
+1. **Instruções:** quando executadas, fornecem as ==características, funções e o desempenho== desejados.
+2. **Estruturas de dados:** permitem que os programas ==manipulem informações== adequadamente.
+3. **Informações descritivas:** ==documentação== impressa ou virtual que descreve a operação e o uso dos programas.
 
-De maneira simplificada, o software pode ser entendido como um ==programa executado em uma máquina==, como um computador, servidor ou dispositivo móvel. Entretanto, sua definição completa inclui também os **dados** utilizados e a **documentação** necessária para compreender seu funcionamento.
+De maneira simplificada, o **software** pode ser entendido como um ==programa executado em uma máquina==, como um computador, servidor ou dispositivo móvel. Entretanto, sua definição completa inclui também os ==dados== utilizados e a ==documentação== necessária para compreender seu funcionamento.
 
 > [!warning] Atenção
 > Reduzir software apenas ao código ignora elementos importantes, como as estruturas de dados e a documentação.
@@ -108,9 +108,153 @@ De maneira simplificada, o software pode ser entendido como um ==programa execut
 
 Durante o projeto e a fabricação de um hardware, muitos defeitos podem ser identificados e corrigidos. Depois dessa fase inicial, a taxa de defeitos tende a se estabilizar. Com o passar do tempo, porém, componentes físicos podem apresentar problemas devido a poeira, vibração, temperaturas extremas e envelhecimento.
 
+<div
+  class="svg-diagram"
+  style="
+    width: 100%;
+    max-width: 920px;
+    margin: 1.5rem auto;
+    overflow: hidden;
+  "
+>
+  <svg
+    width="920"
+    height="700"
+    viewBox="0 0 920 700"
+    xmlns="http://www.w3.org/2000/svg"
+    font-family="Arial, sans-serif"
+    preserveAspectRatio="xMidYMid meet"
+    class="network-diagram"
+    role="img"
+    aria-label="Curva de defeitos para hardware ao longo do tempo, destacando mortalidade infantil e desgaste"
+    style="
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 920 / 700;
+    "
+  >
+    <rect width="920" height="700" fill="transparent"/>
+    <!-- ===== Definições reutilizáveis ===== -->
+    <defs>
+      <marker id="hardware-defects-axis-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L10,5 L0,10 Z" fill="#D6F0FB"/>
+      </marker>
+      <marker id="hardware-defects-label-arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L9,4.5 L0,9 Z" fill="#aaaaaa"/>
+      </marker>
+    </defs>
+    <!-- ===== Área do gráfico ===== -->
+    <rect x="66" y="16" width="806" height="530" fill="#1A4A5E" fill-opacity="0.10"/>
+    <!-- ===== Eixos ===== -->
+    <line x1="66" y1="547" x2="66" y2="20" stroke="#D6F0FB" stroke-width="3" marker-end="url(#hardware-defects-axis-arrow)" vector-effect="non-scaling-stroke"/>
+    <line x1="66" y1="547" x2="870" y2="547" stroke="#D6F0FB" stroke-width="3" marker-end="url(#hardware-defects-axis-arrow)" vector-effect="non-scaling-stroke"/>
+    <!-- ===== Curva de defeitos ===== -->
+    <path d="M89 43 C90 135,103 244,151 344 C190 425,244 459,304 466 C405 476,502 480,579 481 C647 482,697 472,725 446 C751 422,758 394,762 350 C770 271,783 184,813 52" fill="none" stroke="#29B6E6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+    <!-- ===== Anotação: mortalidade infantil ===== -->
+    <line x1="204" y1="170" x2="109" y2="191" stroke="#aaaaaa" stroke-width="2.5" marker-end="url(#hardware-defects-label-arrow)" vector-effect="non-scaling-stroke"/>
+    <text x="211" y="179" fill="#eeeeee" font-size="25" font-weight="600">
+      <tspan x="211" dy="0">"Mortalidade</tspan>
+      <tspan x="211" dy="32">infantil"</tspan>
+    </text>
+    <!-- ===== Anotação: desgaste ===== -->
+    <text x="548" y="180" fill="#eeeeee" font-size="25" font-weight="600">"Desgaste"</text>
+    <line x1="686" y1="171" x2="781" y2="191" stroke="#aaaaaa" stroke-width="2.5" marker-end="url(#hardware-defects-label-arrow)" vector-effect="non-scaling-stroke"/>
+    <!-- ===== Rótulos dos eixos ===== -->
+    <text x="468" y="590" text-anchor="middle" fill="#D6F0FB" font-size="25" font-weight="600">Tempo</text>
+    <text x="43" y="282" text-anchor="middle" fill="#D6F0FB" font-size="24" font-weight="600" transform="rotate(-90 43 282)">Taxa de defeitos</text>
+    <!-- ===== Separador e legenda ===== -->
+    <line x1="10" y1="618" x2="888" y2="618" stroke="#7FCFF0" stroke-width="3" vector-effect="non-scaling-stroke"/>
+    <text x="10" y="659" fill="#7FCFF0" font-size="29" font-weight="600"></text>
+    <text x="211" y="659" fill="#dddddd" font-size="29">Curva de defeitos para hardware.</text>
+  </svg>
+</div>
+
 Quando ocorre uma falha no hardware, muitas vezes é possível substituir a peça danificada e recuperar seu funcionamento. Portanto, o hardware está sujeito ao **desgaste físico**.
 
 No software, os erros também são corrigidos, fazendo com que a taxa de defeitos diminua. Contudo, os clientes podem solicitar alterações ou novas funcionalidades. Cada modificação pode introduzir novos erros, elevando novamente a taxa de defeitos.
+
+
+<div
+  class="svg-diagram"
+  style="
+    width: 100%;
+    max-width: 872px;
+    margin: 1.5rem auto;
+    overflow: hidden;
+  "
+>
+  <svg
+    width="872"
+    height="652"
+    viewBox="0 0 872 652"
+    xmlns="http://www.w3.org/2000/svg"
+    font-family="Arial, sans-serif"
+    preserveAspectRatio="xMidYMid meet"
+    class="network-diagram"
+    role="img"
+    aria-label="Curvas idealizada e real da taxa de defeitos de software ao longo do tempo"
+    style="
+      display: block;
+      width: 100%;
+      height: auto;
+      aspect-ratio: 872 / 652;
+    "
+  >
+    <rect width="872" height="652" fill="transparent"/>
+    <!-- ===== Definições reutilizáveis ===== -->
+    <defs>
+      <marker id="software-defects-axis-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L10,5 L0,10 Z" fill="#D6F0FB"/>
+      </marker>
+      <marker id="software-defects-label-arrow" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="strokeWidth">
+        <path d="M0,0 L9,4.5 L0,9 Z" fill="#aaaaaa"/>
+      </marker>
+    </defs>
+    <!-- ===== Área do gráfico ===== -->
+    <rect x="52" y="20" width="803" height="528" fill="#1A4A5E" fill-opacity="0.10"/>
+    <!-- ===== Eixos ===== -->
+    <line x1="52" y1="548" x2="52" y2="23" stroke="#D6F0FB" stroke-width="3" marker-end="url(#software-defects-axis-arrow)" vector-effect="non-scaling-stroke"/>
+    <line x1="52" y1="548" x2="852" y2="548" stroke="#D6F0FB" stroke-width="3" marker-end="url(#software-defects-axis-arrow)" vector-effect="non-scaling-stroke"/>
+    <!-- ===== Curva idealizada ===== -->
+    <path d="M74 68 C75 187,118 332,199 433 C231 473,260 509,307 516 C390 517,488 516,612 516" fill="none" stroke="#A89CF5" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+    <!-- ===== Curva real: trecho inicial ===== -->
+    <path d="M100 69 C99 183,146 315,220 401 C258 445,299 458,340 458" fill="none" stroke="#29B6E6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+    <!-- ===== Primeira mudança e efeitos colaterais ===== -->
+    <line x1="340" y1="458" x2="340" y2="143" stroke="#29B6E6" stroke-width="3.5" vector-effect="non-scaling-stroke"/>
+    <path d="M340 209 C352 289,378 365,421 402 C438 416,453 422,469 423" fill="none" stroke="#29B6E6" stroke-width="3.5" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <!-- ===== Segunda mudança e efeitos colaterais ===== -->
+    <line x1="469" y1="423" x2="469" y2="126" stroke="#29B6E6" stroke-width="3.5" vector-effect="non-scaling-stroke"/>
+    <path d="M469 181 C482 263,513 332,552 362 C568 374,583 378,598 378" fill="none" stroke="#29B6E6" stroke-width="3.5" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <!-- ===== Terceira mudança e efeitos colaterais ===== -->
+    <line x1="598" y1="378" x2="598" y2="111" stroke="#29B6E6" stroke-width="3.5" vector-effect="non-scaling-stroke"/>
+    <path d="M598 155 C606 228,638 285,675 307 C694 319,710 322,724 322" fill="none" stroke="#29B6E6" stroke-width="3.5" stroke-linecap="round" vector-effect="non-scaling-stroke"/>
+    <!-- ===== Tendência crescente da curva real ===== -->
+    <path d="M340 458 C430 442,516 413,598 378 C648 357,694 337,724 322 C740 313,752 301,763 292" fill="none" stroke="#29B6E6" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" vector-effect="non-scaling-stroke"/>
+    <!-- ===== Ponto de mudança ===== -->
+    <circle cx="340" cy="458" r="7" fill="#D6F0FB" stroke="#7FCFF0" stroke-width="1.5" vector-effect="non-scaling-stroke"/>
+    <!-- ===== Anotação dos efeitos colaterais ===== -->
+    <text x="270" y="63" text-anchor="middle" fill="#eeeeee" font-size="22" font-weight="600">
+      <tspan x="270" dy="0">Aumento da taxa</tspan>
+      <tspan x="270" dy="28">de defeitos devido</tspan>
+      <tspan x="270" dy="28">a efeitos colaterais</tspan>
+    </text>
+    <line x1="266" y1="133" x2="332" y2="211" stroke="#aaaaaa" stroke-width="2.5" marker-end="url(#software-defects-label-arrow)" vector-effect="non-scaling-stroke"/>
+    <!-- ===== Anotação da mudança ===== -->
+    <text x="213" y="357" fill="#eeeeee" font-size="23" font-weight="600">Mudança</text>
+    <line x1="263" y1="365" x2="334" y2="449" stroke="#aaaaaa" stroke-width="2.5" marker-end="url(#software-defects-label-arrow)" vector-effect="non-scaling-stroke"/>
+    <!-- ===== Identificação das curvas ===== -->
+    <text x="621" y="403" fill="#D6F0FB" font-size="23" font-weight="600">Curva real</text>
+    <text x="621" y="523" fill="#D6F0FB" font-size="23" font-weight="600">Curva idealizada</text>
+    <!-- ===== Rótulos dos eixos ===== -->
+    <text x="452" y="586" text-anchor="middle" fill="#D6F0FB" font-size="24" font-weight="600">Tempo</text>
+    <text x="33" y="285" text-anchor="middle" fill="#D6F0FB" font-size="23" font-weight="600" transform="rotate(-90 33 285)">Taxa de defeitos</text>
+    <!-- ===== Separador e legenda ===== -->
+    <line x1="41" y1="598" x2="870" y2="598" stroke="#7FCFF0" stroke-width="3" vector-effect="non-scaling-stroke"/>
+    <text x="41" y="634" fill="#7FCFF0" font-size="27" font-weight="600"></text>
+    <text x="224" y="634" fill="#dddddd" font-size="27">Curva de defeitos para software.</text>
+  </svg>
+</div>
 
 Esse comportamento produz sucessivos ciclos de alteração e correção:
 

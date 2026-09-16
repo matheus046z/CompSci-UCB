@@ -1,7 +1,9 @@
 ---
 publish: true
-title: TGC
+title: Teoria Geral da Computacao
 description: Exercícios e Resumos de Teoria Geral da Computação
+tags:
+  - TGC
 ---
 
 ### Unidade 1

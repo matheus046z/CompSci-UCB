@@ -21,9 +21,9 @@ A automação tradicional utiliza softwares para substituir atividades manuais, 
 
 No desenvolvimento de software, a automação também ajuda a enfrentar problemas como a sobrecarga dos desenvolvedores, a necessidade contínua de novas funcionalidades e a rotatividade das equipes. Ferramentas automatizadas e *frameworks* podem reduzir o trabalho operacional, preservar a continuidade dos processos e acelerar a entrega de produtos.
 
-A cultura DevOps amplia esse uso ao integrar pessoas, processos e tecnologias ao longo do projeto. Nesse contexto, a hiperautomatização surge como uma infraestrutura formada pela combinação de ferramentas capazes de automatizar tarefas operacionais, analisar processos e auxiliar decisões.
+A cultura DevOps amplia esse uso ao integrar pessoas, processos e tecnologias ao longo do projeto. Nesse contexto, a **hiperautomatização** surge como uma **infraestrutura formada pela combinação de ferramentas capazes de automatizar tarefas operacionais, analisar processos e auxiliar decisões.**
 
-Diferentemente de uma ferramenta de automação utilizada isoladamente, a hiperautomatização integra diversos recursos tecnológicos. A IA amplia essa capacidade ao permitir que os sistemas processem dados, reconheçam padrões e executem algumas tarefas cognitivas anteriormente dependentes da intervenção humana.
+Diferentemente de uma ferramenta de automação utilizada isoladamente, a hiperautomatização ==integra diversos recursos tecnológicos==. A IA amplia essa capacidade ao permitir que os sistemas processem dados, reconheçam padrões e executem algumas tarefas cognitivas anteriormente dependentes da intervenção humana.
 
 > [!warning] Atenção
 > A hiperautomatização não corresponde a uma única tecnologia. Ela resulta da integração coordenada de diferentes ferramentas de automação, gerenciamento, inteligência artificial e análise de dados.
@@ -99,11 +99,11 @@ A sigla RPA vem de *Robotic Process Automation*, ou automação robótica de pro
 
 A trajetória da RPA está relacionada a três tecnologias principais:
 
-| Tecnologia | Características |
-|---|---|
-| *Screen scraping* | Raspagem de dados utilizada como ponte entre sistemas atuais e sistemas legados incompatíveis com integrações. Pode exigir trabalho manual e profissionais qualificados. |
-| *Workflow automation* | Automação de fluxos de trabalho formados por uma sequência de ações. Suas origens remontam à organização dos processos da Revolução Industrial e sua aplicação foi ampliada pelas ferramentas de automação e robótica. |
-| Inteligência artificial | Capacidade de realizar tarefas normalmente associadas aos seres humanos, como analisar informações e tomar decisões, permitindo automatizar fluxos mais complexos. |
+| Tecnologia              | Características                                                                                                                                                                                                        |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| *Screen scraping*       | Raspagem de dados utilizada como ponte entre sistemas atuais e sistemas legados incompatíveis com integrações. Pode exigir trabalho manual e profissionais qualificados.                                               |
+| *Workflow automation*   | Automação de fluxos de trabalho formados por uma sequência de ações. Suas origens remontam à organização dos processos da Revolução Industrial e sua aplicação foi ampliada pelas ferramentas de automação e robótica. |
+| Inteligência artificial | Capacidade de realizar tarefas normalmente associadas aos seres humanos, como analisar informações e tomar decisões, permitindo automatizar fluxos mais complexos.                                                     |
 
 ```mermaid
 flowchart TD

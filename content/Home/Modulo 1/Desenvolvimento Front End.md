@@ -1,7 +1,9 @@
 ---
 publish: true
-title: DFE
+title: Desenvolvimento Front End
 description: Exercícios e Resumos de Desenolvimento Front End
+tags:
+  - DFE
 ---
 ### Unidade 1
 [[DFE-1.1-Resumo]]

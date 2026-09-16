@@ -98,7 +98,6 @@ As duas análises são complementares. A análise qualitativa permite reconhecer
 
 A leitura apresenta seis processos principais para controlar os riscos que podem surgir durante um projeto:
 
-![[Pasted image 20260910182500.png]]
 
 ```mermaid
 flowchart LR

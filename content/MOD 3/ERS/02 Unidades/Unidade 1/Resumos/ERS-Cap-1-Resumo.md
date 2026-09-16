@@ -165,9 +165,9 @@ Essas perguntas expressam uma preocupação não apenas com o produto final, mas
 
 O capítulo define software por meio de três elementos:
 
-1. **Instruções ou programas:** quando executados, fornecem as funções, características e o desempenho desejados.
-2. **Estruturas de dados:** possibilitam que os programas representem e manipulem informações adequadamente.
-3. **Informações descritivas:** documentação impressa ou virtual que explica a operação e a utilização dos programas.
+1. **Instruções ou programas:** quando executados, ==fornecem as funções, características e o desempenho== desejados.
+2. **Estruturas de dados:** possibilitam que os programas ==representem e manipulem informações== adequadamente.
+3. **Informações descritivas:** ==documentação== impressa ou virtual que explica a operação e a utilização dos programas.
 
 Portanto, software não corresponde apenas ao código-fonte ou ao arquivo executável. Os dados e a documentação também fazem parte do produto.
 

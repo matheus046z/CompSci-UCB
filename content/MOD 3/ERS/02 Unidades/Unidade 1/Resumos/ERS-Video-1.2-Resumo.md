@@ -35,7 +35,7 @@ As camadas possuem as seguintes funções:
 > [!info] Conceito
 > Processo é um conjunto de atividades, ações e tarefas realizadas para criar um produto de trabalho.
 
-Uma **metodologia de processo** estabelece o alicerce para o desenvolvimento de software. Ela identifica um conjunto de atividades estruturais aplicáveis aos projetos, independentemente de seu tamanho ou de sua complexidade.
+Uma **metodologia de processo** estabelece o alicerce para o desenvolvimento de software. Ela identifica um ==conjunto de atividades estruturais aplicáveis aos projetos==, independentemente de seu tamanho ou de sua complexidade.
 
 A metodologia genérica apresentada na aula é composta por cinco atividades:
 

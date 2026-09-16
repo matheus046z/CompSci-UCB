@@ -28,3 +28,5 @@ aliases:
 ### [[Engenharia e Requisitos de Software]]
 
 ### [[Estrutura DevOps, Hiperautomatizacao e IoT]]
+
+### [[Resumo Geral]]

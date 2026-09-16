@@ -1,7 +1,9 @@
 ---
 publish: true
-title: EDHIOT
+title: Estrutura DevOps, Hiperautomatizacao e IoT
 description: Exercícios e Resumos de Estrutura DevOps, Hiperautomatização e IoT
+tags:
+  - EDHIOT
 ---
 ### Unidade 1
 [[EDHIOT-UN1-Resumo]]

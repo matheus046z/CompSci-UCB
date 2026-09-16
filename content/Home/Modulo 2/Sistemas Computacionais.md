@@ -1,7 +1,9 @@
 ---
 publish: true
-title: SISCOMP
+title: Sistemas Computacionais
 description: Exercícios e Resumos de Sistemas Computacionais
+tags:
+  - SISCOMP
 ---
 ### Unidade 1
 [[SISCOMP-1.1-Resumo]]

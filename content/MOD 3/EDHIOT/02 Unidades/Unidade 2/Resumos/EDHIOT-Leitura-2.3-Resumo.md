@@ -115,7 +115,9 @@ flowchart TD
     B --> D --> F
 ```
 
-Nas duas primeiras revoluções predominaram os **sistemas físicos**, associados às máquinas e aos processos industriais. A terceira introduziu os **sistemas cibernéticos**, baseados em computação e automação digital. A quarta reúne as duas dimensões em **sistemas ciberfísicos**, nos quais elementos físicos e digitais comunicam-se e atuam conjuntamente por meio da IoT.
+Nas duas primeiras revoluções predominaram os **sistemas físicos**, associados às máquinas e aos processos industriais. 
+A terceira introduziu os **sistemas cibernéticos**, baseados em computação e automação digital. 
+A quarta reúne as duas dimensões em **sistemas ciberfísicos**, nos quais elementos físicos e digitais comunicam-se e atuam conjuntamente por meio da IoT.
 
 Essa transformação também exige repensar os sistemas econômicos, políticos e sociais, além de promover o empreendedorismo e o desenvolvimento de produtos inovadores e de baixo custo.
 

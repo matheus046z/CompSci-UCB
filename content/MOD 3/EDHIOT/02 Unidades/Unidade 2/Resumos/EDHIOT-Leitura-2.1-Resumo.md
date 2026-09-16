@@ -109,15 +109,27 @@ Os prestadores de serviços de IoT atuam desde a elaboração de desenhos indust
 
 O engenheiro de rede interpreta a solução IoT como uma **pilha de rede** (*networking stack*). Essa pilha reúne formatos de dados, protocolos de aplicação, transporte, roteamento e comunicação física.
 
-| Camada ou função | Tecnologias e protocolos apresentados |
-|---|---|
-| Formato dos dados | Binário, ISOM e CBOR |
-| Aplicações | MQTT, CoAP, DSS e XMPP |
-| Transporte | UDP |
-| Intranet ou rede | IPv6/IP e 6LoWPAN |
+| Camada ou função           | Tecnologias e protocolos apresentados       |
+| -------------------------- | ------------------------------------------- |
+| Formato dos dados          | Binário, ISOM e CBOR                        |
+| Aplicações                 | MQTT, CoAP, DSS e XMPP                      |
+| Transporte                 | UDP                                         |
+| Intranet ou rede           | IPv6/IP e 6LoWPAN                           |
 | Rede, enlace e meio físico | IEEE 802.15.4 MAC e IEEE 802.15.4 PHY/Rádio |
 
+ **ISOM** -> International Specification for Orienteering Maps -> Especificação de mapas
+
+**CBOR** -> Concise Binary Object Representation -> Organiza informações de forma semelhante ao JSON, mas em binários compactos.
+
+**MQTT** -> Message Queuing Telemetry Transport -> Protocolo leve de mensagens para comunicação entre maquinas e dispositivos IoT
+
+**CoAP** -> Constrained Application Protocol -> Protocolo de transferência de dados (UDP) da camada de aplicação desenvolvido para dispositivos com recursos limitados na IoT (Pouca memoria e internet com perda de pacotes)
+
+**DSS** -> Decision Support Systems -> sistema de informação computadorizado que ajuda líderes e gestores a tomar decisões estratégicas baseadas em dados de sensores.
+
 Os protocolos definem regras para a comunicação entre dispositivos e sistemas. Eles permitem transferir os dados originados nos sensores até os aplicativos que os utilizarão.
+
+**XMPP** -> Extensible Messaging and Presence Protocol  -> protocolo de comunicação aberto e descentralizado, baseado em XML, usado para troca de mensagens instantâneas e informações de presença em tempo real e IoT
 
 ### 5.2 Visão do escritório de design
 
@@ -214,6 +226,11 @@ A **rede em névoa** (*fog network*) inclui redes de Tecnologia de Operações e
 - **Tecnologia de Operações — TO:** encontra-se dentro do produto IoT e comunica-se com sensores e acionadores;
 - **Tecnologia da Informação — TI:** localiza-se externamente ao produto e integra seus dados a outros sistemas.
 
+>[!tip] Rede em Névoa (Fog Network)
+> É a camada de rede intermediária local, composta por dispositivos como roteadores inteligentes, switches e _gateways_ de IoT localizados próximos aos sensores físicos.
+> 
+> Segundo Sinclair, a rede em névoa (ou rede OT/TI) serve para processar e filtrar os dados localmente (na borda) antes de enviá-los para níveis mais distantes. Ela reduz drasticamente a latência e economiza largura de banda de internet, pois permite que decisões urgentes e automações rápidas aconteçam sem precisar viajar até a nuvem centralizada.
+
 ### 7.2 Rede em nuvem pública
 
 A rede em nuvem pública, denominada no material como **uplink**, conecta os dispositivos à internet por ondas de rádio e por protocolos da pilha de rede. Ela inclui:
@@ -223,6 +240,11 @@ A rede em nuvem pública, denominada no material como **uplink**, conecta os dis
 - **camada de aplicação:** MQTT, CoAP e DSS.
 
 Essas camadas permitem transportar e transformar os dados coletados em metadados utilizados pelos aplicativos.
+
+> [!tip] Rede em Nuvem Pública (_Public Cloud_)
+> Refere-se à internet convencional e à infraestrutura de servidores globais compartilhados pertencentes a grandes provedores terceiros (como AWS, Google Cloud ou Microsoft Azure)
+> 
+> Segundo Sinclair, é o "meio de transporte" genérico e em larga escala. Ela hospeda serviços de ampla conectividade e recursos elásticos sob demanda. Na arquitetura de IoT, a nuvem pública atua como a espinha dorsal conectora que viabiliza a comunicação entre as redes de névoa locais e as nuvens privadas focadas no produto.
 
 ### 7.3 Nuvem do produto
 
@@ -241,6 +263,13 @@ flowchart LR
 
     A --> B --> C --> D --> E
 ```
+
+
+> [!tip] Nuvem do Produto (_Product Cloud_)
+> É um ambiente em nuvem **privado, dedicado e específico para o produto IoT** da empresa (onde reside a "plataforma de IoT")
+> 
+> Segundo Sinclair, é o "cérebro" central do ecossistema do produto. Enquanto a nuvem pública é apenas a estrada, a nuvem do produto é o destino final onde os dados coletados de todos os dispositivos são permanentemente armazenados, consolidados e analisados a longo prazo. É nela onde roda o Gêmeo Digital (a versão em software do produto físico) e onde acontecem as análises profundas de dados (Big Data Analytics) e a integração com sistemas de negócios corporativos.
+
 
 ## 8. Protocolos IPv4 e IPv6
 

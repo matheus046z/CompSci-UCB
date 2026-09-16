@@ -24,13 +24,13 @@ Por meio de sensores, dispositivos e sistemas conectados, objetos físicos podem
 > [!info] Contexto histórico
 > O desenvolvimento da IoT está relacionado às transformações da sociedade e à evolução da própria internet.
 
-Alvin Toffler descreveu a evolução humana por meio de três grandes ondas:
+**Alvin Toffler** descreveu a evolução humana por meio de três grandes ondas:
 
 1. **Primeira onda:** advento da agricultura e formação de uma sociedade agrícola sedentária.
 2. **Segunda onda:** Revolução Industrial, produção e distribuição em massa.
 3. **Terceira onda:** Era da Informação, marcada pela revolução digital e comunicacional.
 
-Com base especialmente na Era da Informação, Case organizou a evolução da internet em três ondas tecnológicas.
+Com base especialmente na Era da Informação, **Case** organizou a evolução da internet em três ondas tecnológicas.
 
 | Onda da internet | Características | Empresas e exemplos |
 |---|---|---|
